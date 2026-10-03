@@ -1,0 +1,10 @@
+<figure class="figure-aside">
+  <div class="phone">
+    <img src="{{ include.image }}" alt="{{ include.alt | default: 'Elvina-appen' }}" loading="lazy" />
+  </div>
+  <div class="caption-block">
+    {% if include.eyebrow %}<div class="eyebrow">{{ include.eyebrow }}</div>{% endif %}
+    {% if include.heading %}<h3>{{ include.heading }}</h3>{% endif %}
+    {% if include.body %}<p>{{ include.body }}</p>{% endif %}
+  </div>
+</figure>

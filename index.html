@@ -1,0 +1,366 @@
+---
+---
+
+<!doctype html>
+<html lang="sv" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elvina – Din digitala vinkällare och vinmatchning till maten</title>
+    <meta
+      name="description"
+      content="Elvina är en app för att bygga och organisera din egen digitala vinkällare, med smakprofil och drickfönster för varje flaska – och hitta vilket vin som passar till maten. Sök också direkt i Systembolagets sortiment."
+    />
+    <meta name="theme-color" content="#0B4F46" />
+    <!-- TODO: lägg till <meta name="apple-itunes-app" content="app-id=..."> när Elvina finns i App Store -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://elvina.se/" />
+    <meta property="og:title" content="Elvina – Din digitala vinkällare" />
+    <meta
+      property="og:description"
+      content="Organisera din egen vinsamling, se smakprofil och drickfönster för varje flaska och ta reda på vad som passar till maten. Elvina ger också vinrekommendationer utifrån Systembolagets faktiska sortiment."
+    />
+    <!-- TODO: skapa en Elvina-version av og-bilden (1200x630) som /og-image.png -->
+    <meta property="og:image" content="https://elvina.se/logo_primary.png" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:site_name" content="Elvina" />
+    <link rel="canonical" href="https://elvina.se/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Elvina",
+        "url": "https://elvina.se/",
+        "logo": "https://elvina.se/logo_primary.png",
+        "email": "hej@elvina.se",
+        "parentOrganization": { "@type": "Organization", "name": "Savino AS" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Elvina",
+        "url": "https://elvina.se/",
+        "description": "Elvina är en digital vinkällare med smakprofil, drickfönster och AI-sommelier, och ger vinrekommendationer till mat – utifrån din egen källare eller Systembolagets sortiment i din butik.",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "LifestyleApplication",
+        "offers": [
+          { "@type": "Offer", "name": "Gratis", "price": "0", "priceCurrency": "SEK" }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vilka viner använder Elvina?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Elvina matchar i första hand mot dina egna viner i din digitala vinkällare. Vill du köpa något nytt använder Elvina Systembolagets sortiment och tar hänsyn till vilken butik du har valt, så att förslagen faktiskt finns att köpa." }
+          },
+          {
+            "@type": "Question",
+            "name": "Är Elvina gratis?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Grundfunktionerna är gratis och kräver inget konto. Ett valfritt Premium-abonnemang ger obegränsad vinkällare, AI-sommelier och möjlighet att skanna restaurangens vinlista." }
+          },
+          {
+            "@type": "Question",
+            "name": "Är det här reklam eller sponsrade rekommendationer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Elvina fokuserar på bra vinval. Eventuella sponsrade produkter visas tydligt." }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan Elvina läsa vinlistan på en restaurang?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ja, med Premium kan du fotografera restaurangens vinlista, och Elvina ger dig rekommendationer utifrån just de viner som står på listan." }
+          },
+          {
+            "@type": "Question",
+            "name": "Vad är ett drickfönster?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Drickfönstret visar när ett vin antas vara som bäst att dricka. Det visas för varje vin du sparar i din digitala vinkällare, så att du vet om det är värt att vänta eller om vinet bör drickas snart." }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag importera min vinsamling från Excel eller CellarTracker?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Ja, du kan importera många viner på en gång till din digitala vinkällare från ett kalkylark (Excel/CSV) eller från CellarTracker, så att du slipper lägga in samlingen vin för vin." }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    <main>
+      <section class="hero">
+        <div class="container grid">
+          <div class="hero-copy">
+            <h1>Din vinkällare – matchad till maten, på sekunder.</h1>
+            <p class="lead">
+              Elvina är en app för att bygga och organisera din egen digitala
+              vinkällare – med smakprofil och drickfönster för varje flaska.
+              Beskriv middagen, så hittar appen vilket av dina viner som passar
+              bäst. Du kan också söka direkt i Systembolagets sortiment i den
+              butik du väljer.
+            </p>
+
+            <div class="cta-row">
+              {% include store-buttons.html %}
+              <a class="btn btn-secondary btn-lg" href="#sa-fungerar-det">
+                Kom igång på 3 steg
+              </a>
+            </div>
+
+            <div class="trust-row">
+              <div class="trust-card">
+                <div class="trust-title">Inget konto</div>
+                <div class="trust-sub">Kom igång direkt</div>
+              </div>
+              <div class="trust-card">
+                <div class="trust-title">Ingen reklam</div>
+                <div class="trust-sub">Fokus på bra val</div>
+              </div>
+              <div class="trust-card">
+                <div class="trust-title">Systembolaget</div>
+                <div class="trust-sub">Förslag som finns i din butik</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <!-- TODO: byt till en svensk skärmbild, t.ex. /screenshots/elvina-light.png (1284x2778) -->
+            <div class="phone-frame">
+              <img
+                id="phoneShot"
+                class="phone-shot-single"
+                src="/logo_primary.png"
+                alt="Elvina"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-intro">
+        <div class="container">
+          <div class="section-box">
+            <h2>Vad är Elvina?</h2>
+            <p class="lead">
+              Elvina är en vinapp som hjälper dig att organisera din egen
+              vinsamling och ta reda på vilket vin som passar till maten.
+            </p>
+            <p>
+              Du sparar dina viner i en digital vinkällare, ser smakprofil och
+              drickfönster för varje flaska och chattar med en AI-sommelier som
+              känner din samling. Beskriv rätten du ska laga, så hittar Elvina
+              vilket av dina viner som passar – eller föreslår något ur
+              Systembolagets sortiment i din butik.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-features">
+        <div class="container">
+          <h2>Vad kan Elvina hjälpa till med?</h2>
+          <div class="cards cards-2">
+            <div class="card card-feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" /></svg>
+              </div>
+              <h3>Digital vinkällare</h3>
+              <p>
+                Spara viner i din digitala vinkällare, se smakprofil och
+                drickfönster för varje flaska – och ta reda på vad som passar
+                till maten. Gratis upp till 10 viner – obegränsat med Premium.
+              </p>
+            </div>
+            <div class="card card-feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" /></svg>
+              </div>
+              <h3>Vinmatchning till maten</h3>
+              <p>
+                Beskriv rätten och få konkreta förslag – ur din egen vinkällare
+                eller ur Systembolagets sortiment i den butik du väljer – med
+                matchningspoäng och förklaring till varför de passar.
+              </p>
+            </div>
+            <div class="card card-feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2a1 1 0 0 0-.8.4L6.75 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2.75L15.8 2.4A1 1 0 0 0 15 2H9zm3 6a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" /></svg>
+              </div>
+              <h3>Skanna vinlistan</h3>
+              <p>
+                Fotografera vinlistan på restaurangen – Elvina ger dig
+                rekommendationer utifrån just de viner de har.
+              </p>
+              <span class="badge-premium">Premium</span>
+            </div>
+            <div class="card card-feature">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" /></svg>
+              </div>
+              <h3>AI-sommelier</h3>
+              <p>
+                Chatta med en AI-sommelier som känner din vinkällare. Få hjälp
+                med meny, tillfälle och smakbeskrivningar.
+              </p>
+              <span class="badge-premium">Premium</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO: lägg tillbaka skärmbildsgalleriet ("Se appen i aktion") när svenska skärmbilder finns i /screenshots/ -->
+
+      <section id="sa-fungerar-det" class="section">
+        <div class="container">
+          <h2>Hur fungerar Elvina?</h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card-kicker">1</div>
+              <h3>Skriv in maten</h3>
+              <p>
+                Beskriv rätten (ingredienser, tillagning, sås). Elvina tolkar
+                smaken och strukturen.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-kicker">2</div>
+              <h3>Få rekommendationer</h3>
+              <p>
+                Du får konkreta viner med matchningspoäng och förklaring till
+                varför de passar.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card-kicker">3</div>
+              <h3>Finns där du handlar</h3>
+              <p>
+                Rekommendationerna tar hänsyn till den Systembolagsbutik du har
+                valt – så att vinerna faktiskt går att köpa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Vanliga frågor</h2>
+          <div class="cards cards-2">
+            <div class="card">
+              <h3>Vilka viner använder Elvina?</h3>
+              <p>
+                Elvina matchar i första hand mot dina egna viner i din digitala
+                vinkällare. Vill du köpa något nytt använder Elvina
+                Systembolagets sortiment och tar hänsyn till vilken butik du har
+                valt, så att förslagen faktiskt finns att köpa.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Är Elvina gratis?</h3>
+              <p>
+                Grundfunktionerna är gratis och kräver inget konto. Ett valfritt
+                Premium-abonnemang ger obegränsad vinkällare, AI-sommelier och
+                möjlighet att skanna restaurangens vinlista.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Är det här reklam eller sponsrade rekommendationer?</h3>
+              <p>
+                Elvina fokuserar på bra vinval. Eventuella sponsrade produkter
+                visas tydligt.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Kan Elvina läsa vinlistan på en restaurang?</h3>
+              <p>
+                Ja, med Premium kan du fotografera restaurangens vinlista, och
+                Elvina ger dig rekommendationer utifrån just de viner som står
+                på listan.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Vad är ett drickfönster?</h3>
+              <p>
+                Drickfönstret visar när ett vin antas vara som bäst att dricka.
+                Det visas för varje vin du sparar i din digitala vinkällare, så
+                att du vet om det är värt att vänta eller om vinet bör drickas
+                snart.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Kan jag importera min vinsamling från Excel eller CellarTracker?</h3>
+              <p>
+                Ja, du kan importera många viner på en gång till din digitala
+                vinkällare från ett kalkylark (Excel/CSV) eller från
+                CellarTracker, så att du slipper lägga in samlingen vin för vin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {% if site.posts.size > 0 %}
+      <section class="section">
+        <div class="container">
+          <h2>Från bloggen</h2>
+          <div class="cards">
+            {% for post in site.posts limit: 3 %}
+            <a class="card" href="{{ post.url | relative_url }}" style="display:block; text-decoration:none; color:inherit;">
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.description }}</p>
+            </a>
+            {% endfor %}
+          </div>
+          <p style="margin-top:16px">
+            <a class="btn btn-secondary" href="/blogg/">Se alla vinmatchningar →</a>
+          </p>
+        </div>
+      </section>
+      {% endif %}
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Elvina · Savino AS</div>
+        <div class="footer-links">
+          <a href="/om/">Om Elvina</a>
+          <a href="./privacy.html">Integritet</a>
+          <a href="./terms.html">Villkor</a>
+          <a href="mailto:hej@elvina.se">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      if (window.location.pathname === "/index.html") {
+        window.location.replace("/" + window.location.search);
+      }
+    </script>
+
+    {% include cookie-consent.html %}
+    <script type="module" src="/assets/js/ref-tracking.js"></script>
+    <script type="module" src="/assets/js/meta-pixel.js"></script>
+    <script type="module" src="/assets/js/google-ads.js"></script>
+  </body>
+</html>

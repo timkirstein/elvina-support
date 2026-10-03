@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="inner">
+    <a class="lockup" href="/">
+      <img src="/assets/img/logo.png" alt="Elvina" width="38" height="38" />
+      <span class="word">
+        <span class="name">ELVINA</span>
+        <span class="tag">Ett enklare vinval</span>
+      </span>
+    </a>
+    <nav class="nav-actions" aria-label="Sidnavigering">
+      <a class="text-link{% if page.url != "/" %} hide-mobile{% endif %}" href="/blogg/">Blogg</a>
+      <a class="text-link" href="{{ site.web_app_url }}" target="_blank" rel="noopener">Källare</a>
+      {% include store-buttons.html class="header-cta" %}
+    </nav>
+  </div>
+</header>

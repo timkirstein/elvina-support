@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="sv" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elvina – Användarvillkor</title>
+    <meta name="description" content="Användarvillkor för Elvina." />
+    <meta name="theme-color" content="#0B4F46" />
+    <link rel="canonical" href="https://elvina.se/terms.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <img
+            src="./logo_primary.png"
+            alt="Elvina"
+            class="logo"
+            width="48"
+            height="48"
+          />
+          <div class="brand-text">
+            <div class="brand-name">ELVINA</div>
+            <div class="brand-tagline">Användarvillkor</div>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="./index.html">Tillbaka</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="first-section">
+      <div class="container">
+        <h1>Användarvillkor</h1>
+        <p class="lead">Senast uppdaterad: 7 augusti 2026</p>
+
+        <div class="card" style="max-width: 860px">
+          <h3>Om Elvina</h3>
+          <p>
+            Elvina är en app som ger vinrekommendationer utifrån de maträtter
+            användaren skriver in. Elvina tillhandahålls av Savino AS. Genom
+            att använda appen godkänner du dessa villkor.
+          </p>
+
+          <h3 style="margin-top: 18px">Premium-prenumeration</h3>
+          <p>
+            Elvina erbjuder en valfri Premium-prenumeration med följande
+            villkor:
+          </p>
+          <ul class="list">
+            <li><strong>Månadsprenumeration:</strong> faktureras per månad</li>
+            <li><strong>Årsprenumeration:</strong> faktureras per år</li>
+            <li>Aktuella priser visas i appen före köp.</li>
+            <li>
+              Prenumerationen förnyas automatiskt om den inte sägs upp senast
+              24 timmar innan den aktuella perioden löper ut.
+            </li>
+            <li>
+              I appen debiteras ditt App Store- eller Google Play-konto när
+              köpet bekräftas. På webbplatsen (app.elvina.se) hanteras
+              betalningen av Stripe och debiteras det kort du anger där.
+              <!-- TODO granska: app.elvina.se sätts upp i steg 4 (svensk build av webbappen); bekräfta att Premium kan köpas där innan lansering. -->
+            </li>
+            <li>
+              Du kan hantera eller säga upp prenumerationen i inställningarna
+              för App Store eller Google Play (köp i appen), eller via
+              kontosidan på webbplatsen (köp via Stripe).
+            </li>
+          </ul>
+
+          <h3 style="margin-top: 18px">Användning av tjänsten</h3>
+          <ul class="list">
+            <li>Appen är avsedd för personligt, icke-kommersiellt bruk.</li>
+            <li>
+              Du får inte missbruka tjänsten eller försöka kringgå
+              betalningslösningar.
+            </li>
+          </ul>
+
+          <h3 style="margin-top: 18px">Ansvarsfriskrivning</h3>
+          <p>
+            Elvinas vinrekommendationer är avsedda som vägledning och inte som
+            professionell sommelierrådgivning. Vi ansvarar inte för köp som
+            görs utifrån appens rekommendationer.
+          </p>
+
+          <h3 style="margin-top: 18px">Ändringar av villkoren</h3>
+          <p>
+            Vi förbehåller oss rätten att uppdatera dessa villkor. Väsentliga
+            ändringar kommer att meddelas i appen.
+          </p>
+
+          <h3 style="margin-top: 18px">Kontakt</h3>
+          <p class="mono"><a href="mailto:hej@elvina.se">hej@elvina.se</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Elvina</div>
+        <div class="footer-links">
+          <a href="./index.html">Hem</a>
+          <a href="mailto:hej@elvina.se">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      if (window.location.pathname === "/index.html") {
+        window.location.replace("/");
+      }
+    </script>
+  </body>
+</html>

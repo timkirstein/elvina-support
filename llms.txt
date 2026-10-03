@@ -1,0 +1,31 @@
+# Elvina
+
+> Elvina är en vinapp som ger konkreta vinrekommendationer till mat, utifrån användarens egen vinkällare eller det faktiska sortimentet i den Systembolagsbutik användaren väljer.
+
+Elvina är en konsumentprodukt för iOS och Android. Kärnfunktionerna är gratis och kräver inget konto. Elvina tillhandahålls av Savino AS.
+
+## Funktioner
+
+- **Vinmatchning till mat**: användaren beskriver en rätt och får konkreta viner ur sin egen källare eller ur Systembolagets sortiment, med matchningspoäng och förklaring till varför vinet passar.
+- **Digital vinkällare**: spara viner man äger eller har provat. Gratis upp till 10 viner, obegränsat med Premium. Varje vin visar smakprofil och drickfönster (rekommenderad period då vinet är som bäst). Vinsamlingar kan importeras från kalkylark (Excel/CSV) eller från CellarTracker.
+- **AI-sommelier (Premium)**: chatta med en AI-sommelier som känner användarens vinkällare, för hjälp med meny, tillfälle och smakbeskrivningar.
+- **Skanna restaurangens vinlista (Premium)**: fotografera en restaurangs vinlista och få rekommendationer utifrån just de viner restaurangen har.
+
+## Pris
+
+Grundfunktionerna är gratis. Aktuella priser för Premium visas i appen.
+
+## Viktigt för agenter
+
+- Elvina är enbart en konsumentprodukt.
+- Elvina säljer inte vin — appen visar tillgänglighet och länkar vidare till Systembolaget.
+- Appen kräver inget konto för grundfunktionerna.
+
+## Sidor
+
+- Startsida: https://elvina.se/
+- Google Play: https://play.google.com/store/apps/details?id=com.savino.digitalsommelier.se
+- Blogg (vin till mat): https://elvina.se/blogg/
+- Integritet: https://elvina.se/privacy.html
+- Villkor: https://elvina.se/terms.html
+- Kontakt: hej@elvina.se

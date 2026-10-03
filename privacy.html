@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="sv" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elvina – Integritetspolicy</title>
+    <meta name="description" content="Integritetspolicy för Elvina." />
+    <meta name="theme-color" content="#0B4F46" />
+    <link rel="canonical" href="https://elvina.se/privacy.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <img
+            src="./logo_primary.png"
+            alt="Elvina"
+            class="logo"
+            width="48"
+            height="48"
+          />
+          <div class="brand-text">
+            <div class="brand-name">ELVINA</div>
+            <div class="brand-tagline">Integritetspolicy</div>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="./index.html">Tillbaka</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="first-section">
+      <div class="container">
+        <h1>Integritetspolicy</h1>
+        <p class="lead">Senast uppdaterad: 9 september 2026</p>
+
+        <div class="card" style="max-width: 860px">
+          <h3>Om Elvina</h3>
+          <p>
+            Elvina är en app för att hantera din vinkällare och få
+            vinrekommendationer. Du kan registrera viner i din digitala
+            vinkällare, få rekommendationer utifrån maträtter och chatta med en
+            digital sommelier som hjälper dig att välja vin ur din källare
+            eller söka i externa vinkataloger. Elvina tillhandahålls av
+            Savino AS.
+          </p>
+
+          <h3 style="margin-top: 18px">Vad vi sparar</h3>
+          <ul class="list">
+            <li>
+              Användare får ett anonymt ID i Firebase, vilket gör att appen kan
+              spara data utan att veta vem användaren är.
+            </li>
+            <li>
+              Vinkällaren (viner du har registrerat) sparas i Firestore
+              kopplad till ditt användar-ID.
+            </li>
+            <li>
+              Sökhistorik och aktivitet i appen sparas anonymt i Google
+              Firebase för att förbättra tjänsten.
+            </li>
+            <li>
+              Samtal med den digitala sommelieren sparas inte – de är bara
+              aktiva medan sessionen pågår.
+            </li>
+            <li>
+              Om du väljer att koppla ett Google- eller Apple-konto sparas din
+              e-postadress i Firebase Authentication.
+            </li>
+          </ul>
+
+          <h3 style="margin-top: 18px">Tredjepartstjänster</h3>
+          <ul class="list">
+            <li>
+              <strong>OpenAI:</strong> Vinrekommendationer och samtal med
+              sommelieren behandlas av OpenAI. Inga personuppgifter skickas –
+              endast uppgifter om maträtter och viner.
+            </li>
+            <li>
+              <strong>RevenueCat:</strong> Prenumerationsstatus och
+              köphistorik delas med RevenueCat för att hantera köp och
+              förnyelser.
+            </li>
+            <li>
+              <strong>Apple App Store / Google Play:</strong>
+              Betalningar hanteras uteslutande via App Store eller Google Play
+              – Elvina sparar inga betalningsuppgifter.
+            </li>
+            <li>
+              <strong>Systembolaget:</strong> Vinsökningen använder offentligt
+              tillgänglig sortimentsdata.
+            </li>
+            <li>
+              <strong>Stripe:</strong> Vid köp av Premium via webbplatsen
+              (app.elvina.se) hanteras betalningen av Stripe. Elvina sparar
+              inga kortuppgifter – endast ett Stripe-kund-ID kopplat till din
+              användare.
+              <!-- TODO granska: app.elvina.se sätts upp i steg 4 (svensk build av webbappen); bekräfta att Premium kan köpas där innan lansering. -->
+            </li>
+            <li>
+              <strong>Meta (Facebook/Instagram):</strong> För att mäta hur
+              effektiva våra annonser är delar vi vissa uppgifter med Meta när
+              du startar en provperiod eller köper Premium: en hashad
+              (krypterad) version av din e-postadress, IP-adress och
+              webbläsartyp (webbplatsen), samt ett annons-ID (IDFA på iOS,
+              GAID på Android) från mobilappen – endast om du har godkänt
+              spårning. På webbplatsen sker detta först efter att du har
+              godkänt kakor i samtyckesbannern; i appen visas en separat
+              behörighetsförfrågan från Apple (App Tracking Transparency) på
+              iOS, och du kan när som helst stänga av annons-ID på Android i
+              telefonens inställningar. Du kan också se och hantera hur Meta
+              använder denna information i
+              <a href="https://www.facebook.com/adpreferences" target="_blank" rel="noopener">
+                Metas annonsinställningar</a
+              >.
+            </li>
+            <li>
+              <strong>Google Ads (Customer Match):</strong> För att visa
+              relevanta annonser för användare som redan känner till Elvina kan
+              vi dela en hashad (krypterad) version av din e-postadress med
+              Google – endast för användare som har samtyckt till att ta emot
+              marknadsföring från oss. Detta används till exempel för att visa
+              annonser för användare som har skapat ett konto men inte slutfört
+              ett köp av Premium. Du kan när som helst återkalla ditt samtycke
+              genom att avregistrera dig i de e-postmeddelanden du får från
+              oss, eller genom att kontakta
+              <a href="mailto:hej@elvina.se">hej@elvina.se</a>. Du kan också se
+              och hantera hur Google använder denna information i
+              <a href="https://myadcenter.google.com" target="_blank" rel="noopener">
+                Googles annonsinställningar</a
+              >.
+            </li>
+          </ul>
+
+          <h3 style="margin-top: 18px">Kakor (cookies)</h3>
+          <p>
+            Webbplatsen (app.elvina.se) använder inga kakor förrän du aktivt
+            godkänner det i samtyckesbannern som visas vid första besöket.
+            Godkänner du sätts en kaka från Meta (`_fbp`) som används för den
+            annonsmätning som beskrivs ovan. Avböjer du sätts inga
+            spårningskakor, och appen fungerar ändå som vanligt.
+          </p>
+
+          <h3 style="margin-top: 18px">Prenumeration</h3>
+          <p>
+            Prenumerationsdata (nivå, utgångsdatum, leverantör) sparas i
+            Firestore kopplad till ditt användar-ID. Elvina sparar inga
+            betalningsuppgifter utöver det som nämns om Stripe ovan.
+          </p>
+
+          <h3 style="margin-top: 18px">Dina rättigheter</h3>
+          <p>
+            Du kan när som helst radera ditt konto och all tillhörande data
+            från Konto-sidan i appen (GDPR art. 17). Kontakta oss på
+            <a href="mailto:hej@elvina.se">hej@elvina.se</a> om du har frågor
+            om dina uppgifter.
+          </p>
+
+          <h3 style="margin-top: 18px">Lagring och säkerhet</h3>
+          <p>
+            All data lagras i Google Firebase (EU/EES). Kommunikationen mellan
+            appen och servrarna är krypterad (HTTPS).
+          </p>
+
+          <h3 style="margin-top: 18px">Kontakt</h3>
+          <p class="mono"><a href="mailto:hej@elvina.se">hej@elvina.se</a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Elvina</div>
+        <div class="footer-links">
+          <a href="./index.html">Hem</a>
+          <a href="./terms.html">Villkor</a>
+          <a href="mailto:hej@elvina.se">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      if (window.location.pathname === "/index.html") {
+        window.location.replace("/");
+      }
+    </script>
+  </body>
+</html>

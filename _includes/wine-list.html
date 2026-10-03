@@ -1,0 +1,15 @@
+{% assign wines = include.wines %}
+{% if wines %}
+<div class="wine-list" aria-label="Förslag från Systembolaget">
+  {% for wine in wines %}
+  <div class="wine-row">
+    <span class="badge" aria-hidden="true">{{ forloop.index }}</span>
+    <div class="info">
+      <div class="name">{{ wine.name }}</div>
+      {% if wine.meta %}<div class="meta">{{ wine.meta }}</div>{% endif %}
+    </div>
+    {% if wine.price %}<span class="price">{{ wine.price }}</span>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

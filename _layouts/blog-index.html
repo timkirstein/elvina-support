@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<main>
+  <div class="blog-index-wrap">
+
+    <div class="blog-index-header">
+      <h1>{{ page.title | default: "Blogg" }}</h1>
+      {% if page.description %}
+      <p>{{ page.description }}</p>
+      {% endif %}
+    </div>
+
+    {% if site.categories.size > 0 %}
+    <nav class="meta-row" aria-label="Kategorier" style="margin-bottom:32px; flex-wrap:wrap;">
+      {% for cat in site.categories %}
+      <a class="cat" href="/blogg/kategori/{{ cat[0] | slugify }}/">{{ cat[0] }} ({{ cat[1].size }})</a>
+      {% endfor %}
+    </nav>
+    {% endif %}
+
+    {% if site.posts.size > 0 %}
+    <div class="post-grid">
+      {% for post in site.posts %}
+      {% assign day       = post.date | date: "%-d" %}
+      {% assign month_idx = post.date | date: "%-m" | minus: 1 %}
+      {% assign sv_month = site.months[month_idx] %}
+      {% assign year      = post.date | date: "%Y" %}
+      <a class="post-grid-card" href="{{ post.url | relative_url }}">
+        {% if post.category %}<span class="cat-tag">{{ post.category }}</span>{% endif %}
+        <h2>{{ post.title }}</h2>
+        {% if post.description %}<p class="post-desc">{{ post.description }}</p>{% endif %}
+        <span class="date">{{ day }}. {{ sv_month }} {{ year }}</span>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p style="color:var(--muted)">Inga artiklar publicerade ännu.</p>
+    {% endif %}
+
+  </div>
+</main>

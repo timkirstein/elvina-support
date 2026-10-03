@@ -1,0 +1,19 @@
+{% assign related = site.related_posts | slice: 0, 3 %}
+{% if related.size > 0 %}
+<section class="related" aria-label="Läs vidare">
+  <h4>Läs vidare</h4>
+  <div class="grid">
+    {% for post in related %}
+    {% assign r_day       = post.date | date: "%-d" %}
+    {% assign r_month_idx = post.date | date: "%-m" | minus: 1 %}
+    {% assign r_month     = site.months[r_month_idx] %}
+    {% assign r_year      = post.date | date: "%Y" %}
+    <a class="card" href="{{ post.url | relative_url }}">
+      {% if post.category %}<span class="cat-tag">{{ post.category }}</span>{% endif %}
+      <h5>{{ post.title }}</h5>
+      <span class="date">{{ r_day }}. {{ r_month }} {{ r_year }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

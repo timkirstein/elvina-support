@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="article-wrap">
+
+    {% include meta-row.html %}
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.lead %}
+    <p class="post-lead">{{ page.lead }}</p>
+    {% endif %}
+
+    {% if page.hero.src %}
+    <figure class="hero-fig">
+      <div class="frame">
+        <img src="{{ page.hero.src }}" alt="{{ page.hero.alt | default: page.title }}" loading="eager" />
+      </div>
+      {% if page.hero.caption %}
+      <figcaption>{{ page.hero.caption }}</figcaption>
+      {% endif %}
+    </figure>
+    {% endif %}
+
+    <div class="body">
+      {{ content }}
+    </div>
+
+    {% include conversion-card.html %}
+
+    <div class="back-link">
+      <a href="/blogg/">← Tillbaka till bloggen</a>
+    </div>
+
+    {% include related-posts.html %}
+
+  </div>
+</article>

@@ -1,0 +1,42 @@
+title: Elvina
+description: Vinappen – rätt vin till maten
+url: https://elvina.se
+baseurl: ""
+lang: sv
+
+# Butikslänkar – lämna tomt tills appen är publicerad, så döljs knappen.
+# TODO: fyll i App Store-länken när Elvina finns i App Store.
+app_store_url: ""
+play_store_url: "https://play.google.com/store/apps/details?id=com.savino.digitalsommelier.se"
+# TODO: byt till https://app.elvina.se när webbappen finns där (steg 4).
+web_app_url: "https://app.savino.no"
+
+permalink: /blogg/:slug/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  style: compressed
+
+months:
+  - januari
+  - februari
+  - mars
+  - april
+  - maj
+  - juni
+  - juli
+  - augusti
+  - september
+  - oktober
+  - november
+  - december
+
+exclude:
+  - README.md
+  - .DS_Store
+  - Gemfile
+  - Gemfile.lock
+  - vendor

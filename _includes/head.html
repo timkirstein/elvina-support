@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} · Elvina{% else %}Elvina Blogg{% endif %}</title>
+  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
+  <meta name="theme-color" content="#199978" />
+  <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}" />
+  <meta property="og:site_name" content="Elvina" />
+  <meta property="og:title" content="{{ page.title }} · Elvina" />
+  {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+  {% if page.hero.src %}<meta property="og:image" content="{{ page.hero.src | absolute_url }}" />{% endif %}
+  <meta property="og:locale" content="sv_SE" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  {% if page.date %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      {% if page.description %}"description": {{ page.description | jsonify }},{% endif %}
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      {% if page.hero.src %}"image": "{{ page.hero.src | absolute_url }}",{% endif %}
+      "url": "{{ page.url | absolute_url }}",
+      "mainEntityOfPage": "{{ page.url | absolute_url }}",
+      "author": { "@type": "Organization", "name": "Elvina" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Elvina",
+        "logo": { "@type": "ImageObject", "url": "https://elvina.se/logo_primary.png" }
+      }
+    }
+  </script>
+  {% endif %}
+</head>

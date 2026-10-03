@@ -1,0 +1,57 @@
+.mobile-cta-bar {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .mobile-cta-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    padding: 12px 20px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    z-index: 100;
+    box-shadow: 0 -4px 20px rgba(10, 26, 20, 0.08);
+  }
+
+  .mobile-cta-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .mobile-cta-buttons {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .mobile-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--green-dark);
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: background 0.15s;
+
+    &:hover { background: var(--green-darker); }
+  }
+
+  /* Push page content up so bar doesn't cover it */
+  body { padding-bottom: 72px; }
+}

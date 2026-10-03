@@ -1,0 +1,55 @@
+{% if page.wine_recommendations and page.wine_recommendations.size > 0 %}
+<div class="wine-live">
+
+  <div class="wine-live-header">
+    <span class="live-dot"></span>
+    <span class="live-label">Från Elvina</span>
+  </div>
+
+  {% if page.wine_intro %}
+  <p class="wine-live-intro">{{ page.wine_intro }}</p>
+  {% endif %}
+
+  <ul class="wine-live-list">
+    {% for rec in page.wine_recommendations %}
+    {% assign w = rec.wine %}
+    <li class="wine-live-card">
+
+      {% if w.imageUrl %}
+      <div class="wine-live-bottle">
+        <img src="{{ w.imageUrl }}" alt="{{ w.name }}" loading="lazy" width="64" />
+      </div>
+      {% else %}
+      <div class="wine-live-bottle wine-live-bottle--empty"></div>
+      {% endif %}
+
+      {% assign score_pct = rec.score | times: 100 | round %}
+      {% if score_pct >= 90 %}{% assign badge_label = "Perfekt match" %}{% assign badge_mod = "badge--perfect" %}
+      {% elsif score_pct >= 80 %}{% assign badge_label = "Mycket bra match" %}{% assign badge_mod = "badge--great" %}
+      {% elsif score_pct >= 70 %}{% assign badge_label = "Bra match" %}{% assign badge_mod = "badge--good" %}
+      {% else %}{% assign badge_label = "Ok match" %}{% assign badge_mod = "badge--ok" %}
+      {% endif %}
+      <div class="wine-live-info">
+        <span class="wine-badge {{ badge_mod }}">{{ badge_label }}</span>
+        <strong class="wine-live-name">{{ w.name }}</strong>
+        {% if w.region or w.country %}
+        <span class="wine-live-meta">{{ w.region }}{% if w.region and w.country %} · {% endif %}{{ w.country }}</span>
+        {% endif %}
+        {% if rec.motivation %}
+        <em class="wine-live-motivation">{{ rec.motivation }}</em>
+        {% endif %}
+      </div>
+
+      <div class="wine-live-price-col">
+        <span class="wine-live-price">{{ w.price | wine_price }}</span>
+        {% if w.url %}
+        <a class="wine-live-pol" href="{{ w.url }}" target="_blank" rel="noopener noreferrer">Systembolaget →</a>
+        {% endif %}
+      </div>
+
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endif %}

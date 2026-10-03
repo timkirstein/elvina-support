@@ -1,0 +1,16 @@
+{% assign day         = page.date | date: "%-d" %}
+{% assign month_idx   = page.date | date: "%-m" | minus: 1 %}
+{% assign sv_month   = site.months[month_idx] %}
+{% assign year        = page.date | date: "%Y" %}
+{% assign words       = content | number_of_words %}
+{% assign read_time   = words | divided_by: 220 | plus: 1 %}
+<div class="meta-row">
+  {% if page.category %}
+  <a class="cat" href="/blogg/kategori/{{ page.category | slugify }}/">{{ page.category }}</a>
+  {% endif %}
+  <span>{{ day }}. {{ sv_month }} {{ year }}</span>
+  <span class="dot" aria-hidden="true"></span>
+  <span>Elvina</span>
+  <span class="dot" aria-hidden="true"></span>
+  <span>{{ read_time }} min läsning</span>
+</div>

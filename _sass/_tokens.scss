@@ -1,0 +1,34 @@
+:root {
+  --green:           #199978;
+  --green-secondary: #4AA783;
+  --green-deep:      #146F5B;
+  --green-dark:      #115F4E;
+  --green-darker:    #0B3F35;
+  --mint-bright:     #5DE0A8;
+  --mint:            #E8F5EE;
+  --mint-2:          #D5EBDF;
+  --mint-3:          #c8e3d3;
+  --white:           #FFFFFF;
+  --ink:             #0A1A14;
+  --ink-2:           #3A4B43;
+  --muted:           #6E7E76;
+  --line:            rgba(10,26,20,0.10);
+  --line-strong:     rgba(10,26,20,0.18);
+  // Premium accent — matches premiumGold in savino-colors.md and the
+  // paywall's gold star chips in the app (AppColors.premiumGold).
+  --gold:            #C8952A;
+
+  --sans:  'Manrope', system-ui, sans-serif;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --mono:  'JetBrains Mono', monospace;
+
+  --reading-width: 680px;
+  --content-width: 1080px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--mint); }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }

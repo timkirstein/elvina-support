@@ -1,0 +1,63 @@
+<div id="savino-consent-banner" hidden>
+  <style>
+    #savino-consent-banner {
+      position: fixed;
+      inset: auto 0 0 0;
+      z-index: 999;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px 20px;
+      background: #0b2b26;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+    #savino-consent-banner[hidden] {
+      display: none;
+    }
+    #savino-consent-banner p {
+      margin: 0;
+      max-width: 640px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #eaf6f3;
+    }
+    #savino-consent-banner a {
+      color: #eaf6f3;
+      text-decoration: underline;
+    }
+    #savino-consent-banner .savino-consent-actions {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    #savino-consent-banner button {
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: transparent;
+      color: #eaf6f3;
+    }
+    #savino-consent-banner button[data-consent-accept] {
+      background: #146f5b;
+      border-color: #146f5b;
+      color: #fff;
+    }
+  </style>
+  <p>
+    Vi använder kakor för att mäta var besökarna kommer ifrån och hur bra
+    sidan fungerar. Du kan godkänna eller avvisa detta. Läs mer i vår
+    <a href="/privacy">integritetspolicy</a>.
+  </p>
+  <div class="savino-consent-actions">
+    <button type="button" data-consent-decline>Avvisa</button>
+    <button type="button" data-consent-accept>Godkänn</button>
+  </div>
+</div>
+<script type="module" src="/assets/js/cookie-consent.js"></script>
