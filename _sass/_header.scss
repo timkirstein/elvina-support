@@ -30,7 +30,8 @@
     flex-direction: column;
     gap: 1px;
 
-    .name { font-weight: 700; font-size: 16px; letter-spacing: 0.18em; color: var(--green); line-height: 1; }
+    .name { font-family: 'Italiana', Georgia, serif; font-weight: 400; font-size: 20px; letter-spacing: 0.14em; color: var(--ink); -webkit-text-stroke: 0.028em currentColor; line-height: 1; }
+    .name .vin { color: var(--green); }
     .tag  { font-size: 12px; color: var(--ink-2); }
   }
 }

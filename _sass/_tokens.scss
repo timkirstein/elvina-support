@@ -1,25 +1,27 @@
 :root {
-  --green:           #199978;
-  --green-secondary: #4AA783;
-  --green-deep:      #146F5B;
-  --green-dark:      #115F4E;
-  --green-darker:    #0B3F35;
-  --mint-bright:     #5DE0A8;
-  --mint:            #E8F5EE;
-  --mint-2:          #D5EBDF;
-  --mint-3:          #c8e3d3;
-  --white:           #FFFFFF;
-  --ink:             #0A1A14;
-  --ink-2:           #3A4B43;
-  --muted:           #6E7E76;
-  --line:            rgba(10,26,20,0.10);
-  --line-strong:     rgba(10,26,20,0.18);
+  // Elvina-paletten (appens ElvinaPalette). Variabelnamnen är kvar från
+  // savino-support så att alla partials fungerar oförändrade.
+  --green:           #7A2E3A;  // granat – accent
+  --green-secondary: #9A4A55;
+  --green-deep:      #1A1715;  // noir – knappar
+  --green-dark:      #2A2522;
+  --green-darker:    #1A1715;
+  --mint-bright:     #C9A876;
+  --mint:            #EDE3D1;  // champagne – bakgrund
+  --mint-2:          #E6DCC9;
+  --mint-3:          #DFD3BE;
+  --white:           #FBF8F2;  // crème – kort
+  --ink:             #1A1715;
+  --ink-2:           #3A3430;
+  --muted:           #55504A;
+  --line:            rgba(26,23,21,0.10);
+  --line-strong:     rgba(26,23,21,0.18);
   // Premium accent — matches premiumGold in savino-colors.md and the
   // paywall's gold star chips in the app (AppColors.premiumGold).
-  --gold:            #C8952A;
+  --gold:            #7A5B33;  // brons – Premium
 
   --sans:  'Manrope', system-ui, sans-serif;
-  --serif: 'DM Serif Display', Georgia, serif;
+  --serif: 'Italiana', Georgia, serif;
   --mono:  'JetBrains Mono', monospace;
 
   --reading-width: 680px;

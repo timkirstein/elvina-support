@@ -73,11 +73,11 @@ article.post {
 
 /* H1 */
 .article-wrap h1 {
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: clamp(36px, 5vw, 64px);
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(40px, 5.5vw, 72px);
   line-height: 1.04;
-  letter-spacing: -0.022em;
+  letter-spacing: 0.01em;
   margin: 0 0 22px;
   color: var(--ink);
   max-width: 880px;
@@ -87,7 +87,7 @@ article.post {
 /* Lead paragraph */
 .post-lead {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(20px, 2.2vw, 27px);
   line-height: 1.4;
   color: var(--green-deep);
@@ -117,7 +117,7 @@ article.post {
 
   figcaption {
     font-family: var(--serif);
-    font-style: italic;
+    font-style: normal;
     font-size: 14px;
     color: var(--ink-2);
     margin: 12px auto 0;
@@ -204,7 +204,7 @@ article.post {
     padding: 4px 0 4px 24px;
     border-left: 3px solid var(--green);
     font-family: var(--serif);
-    font-style: italic;
+    font-style: normal;
     font-size: 22px;
     line-height: 1.45;
     color: var(--green-deep);
