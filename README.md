@@ -28,7 +28,7 @@ Vinrekommendationer i inläggen (`dish:` i front matter) är avstängda tills
 ## Att göra innan lansering
 
 - App Store-länk i `_config.yml` (`app_store_url`) när appen är publicerad.
-- `web_app_url` → `https://app.elvina.se` när webbappen finns där.
+- `web_app_url` = `https://app.elvina.se` (Elvina-webbappen).
 - Svenska skärmbilder (`/screenshots/`) och en og-bild (1200x630).
 - Egen Meta-pixel / Google Ads (avstängda i `assets/js/`).
 - Lägg till `elvina.se` i reCAPTCHA-nyckelns domänlista (App Check för `ref-tracking.js`).
