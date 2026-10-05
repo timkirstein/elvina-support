@@ -7,7 +7,7 @@ lang: sv
 # Butikslänkar – lämna tomt tills appen är publicerad, så döljs knappen.
 # TODO: fyll i App Store-länken när Elvina finns i App Store.
 app_store_url: ""
-play_store_url: "https://play.google.com/store/apps/details?id=com.savino.digitalsommelier.se"
+play_store_url: ""  # fylls i när Elvina är publicerad i Google Play
 web_app_url: "https://app.elvina.se"
 
 permalink: /blogg/:slug/
