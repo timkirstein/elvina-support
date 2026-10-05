@@ -8,16 +8,16 @@ module Jekyll
   module WinePriceFilter
     def wine_price(price)
       return '' if price.nil?
-      format('%.2f', price.to_f).gsub('.', ',') + ' kr' # SEK när endpointen stöder Systembolaget
+      format('%.2f', price.to_f).gsub('.', ',') + ' kr' # SEK
     end
   end
 end
 
 Liquid::Template.register_filter(Jekyll::WinePriceFilter)
 
-# TODO (Elvina): blogSearchWines söker idag bara i Vinmonopolets sortiment och
-# svarar på norska. Pluginen är därför avstängd (ELVINA_API_KEY sätts inte i
-# deploy.yml) tills endpointen har ett Systembolaget/svenskt läge.
+# blogSearchWines svarar med Systembolagets sortiment på svenska när anropet
+# skickar marketId "se". ELVINA_API_KEY (samma värde som BLOG_API_KEY i
+# Firebase) sätts som GitHub-secret; saknas den hoppas vinförslagen över.
 module Savino
   ENDPOINT     = 'https://europe-west1-grapemate-f80e3.cloudfunctions.net/blogSearchWines'
   CACHE_DIR    = '.jekyll-cache/wine_fetcher'
@@ -32,7 +32,7 @@ module Savino
   RETRY_DELAY_SECONDS  = 3
 
   def self.fetch_wines(dish, api_key)
-    cache_key  = Digest::MD5.hexdigest("#{dish}|100|500|3")
+    cache_key  = Digest::MD5.hexdigest("se|#{dish}|100|400|3")
     cache_file = File.join(CACHE_DIR, "#{cache_key}.json")
 
     if File.exist?(cache_file)
@@ -69,8 +69,9 @@ module Savino
     req['X-Api-Key']    = api_key
     req.body = JSON.generate(
       dishText:   dish.encode('UTF-8'),
+      marketId:   'se',
       priceMin:   100,
-      priceMax:   500,
+      priceMax:   400,
       maxResults: 3
     )
     req.body.force_encoding('UTF-8')

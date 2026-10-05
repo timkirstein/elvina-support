@@ -22,8 +22,9 @@ Sajten publiceras automatiskt via **GitHub Actions → GitHub Pages** vid push t
 ## Blogginlägg
 
 Lägg Markdown-filer i `_posts/` (`ÅÅÅÅ-MM-DD-slug.md`). Permalänk: `/blogg/:slug/`.
-Vinrekommendationer i inläggen (`dish:` i front matter) är avstängda tills
-`blogSearchWines` stöder Systembolaget — se `_plugins/wine_fetcher.rb`.
+Vinrekommendationer i inläggen (`dish:` i front matter) hämtas från Systembolagets
+sortiment via `blogSearchWines` (`_plugins/wine_fetcher.rb`). Kräver GitHub-secreten
+`ELVINA_API_KEY` (samma värde som `BLOG_API_KEY` i Firebase).
 
 ## Att göra innan lansering
 

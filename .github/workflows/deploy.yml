@@ -40,7 +40,7 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-          # ELVINA_API_KEY sätts när blogSearchWines stöder Systembolaget (se _plugins/wine_fetcher.rb)
+          ELVINA_API_KEY: ${{ secrets.ELVINA_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
