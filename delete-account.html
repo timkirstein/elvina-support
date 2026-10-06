@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="sv" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elvina – Radera konto</title>
+    <meta name="description" content="Så raderar du ditt Elvina-konto och din data." />
+    <meta name="theme-color" content="#0B4F46" />
+    <link rel="canonical" href="https://elvina.se/delete-account.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <img
+            src="./logo_primary.png"
+            alt="Elvina"
+            class="logo"
+            width="48"
+            height="48"
+          />
+          <div class="brand-text">
+            <div class="brand-name">ELVINA</div>
+            <div class="brand-tagline">Radera konto</div>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-secondary" href="./index.html">Tillbaka</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="first-section">
+      <div class="container">
+        <h1>Radera konto</h1>
+        <p class="lead">Elvina – Savino AS</p>
+
+        <div class="card" style="max-width: 860px">
+          <h3>Radera ditt konto i appen</h3>
+          <ol class="list">
+            <li>Öppna Elvina-appen.</li>
+            <li>Gå till fliken <strong>Mer</strong> och välj <strong>Profil</strong>.</li>
+            <li>Tryck på <strong>Radera konto</strong> och bekräfta.</li>
+          </ol>
+          <p>
+            Raderingen sker direkt och går inte att ångra. Du loggas ut när
+            kontot är borttaget.
+          </p>
+
+          <h3 style="margin-top: 18px">Kan du inte öppna appen?</h3>
+          <p>
+            Skicka ett mejl från den e-postadress som är kopplad till kontot
+            till <a href="mailto:hej@elvina.se">hej@elvina.se</a> med rubriken
+            "Radera mitt Elvina-konto". Vi raderar kontot inom 30 dagar.
+          </p>
+
+          <h3 style="margin-top: 18px">Vad som raderas</h3>
+          <ul class="list">
+            <li>Ditt konto (användar-ID och e-postadress).</li>
+            <li>Din vinkällare, din önskelista och dina egna anteckningar, priser och foton.</li>
+            <li>Din sökhistorik och dina inställningar.</li>
+            <li>Dina prenumerationsuppgifter hos oss.</li>
+          </ul>
+
+          <h3 style="margin-top: 18px">Vad som kan sparas</h3>
+          <p>
+            Anonymiserad statistik som inte kan kopplas till dig kan sparas.
+            Uppgifter om köp kan sparas hos Google Play enligt deras regler
+            och enligt bokföringslagen. En aktiv prenumeration avslutar du
+            separat i Google Play (Betalningar och prenumerationer).
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Elvina</div>
+        <div class="footer-links">
+          <a href="./index.html">Hem</a>
+          <a href="./terms.html">Villkor</a>
+          <a href="mailto:hej@elvina.se">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      if (window.location.pathname === "/index.html") {
+        window.location.replace("/");
+      }
+    </script>
+  </body>
+</html>
