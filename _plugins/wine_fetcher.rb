@@ -69,7 +69,7 @@ module Savino
     @usage
   end
 
-  def self.pick_diverse(recommendations, count = RESULTS_PER_POST)
+  def self.pick_diverse(recommendations, count = RESULTS_PER_POST, home_country = nil)
     return recommendations if recommendations.nil? || recommendations.length <= count
 
     best = recommendations.map { |r| r['score'].to_f }.max
@@ -78,7 +78,7 @@ module Savino
     while picked.length < count && !pool.empty?
       choice = pool.max_by do |r|
         r['score'].to_f -
-          DIVERSITY_PENALTY * @usage[wine_key(r)] -
+          DIVERSITY_PENALTY * repeat_use(r, home_country) -
           GRAPE_REPEAT_PENALTY * picked.count { |p| same_grape?(p, r) }
       end
       picked << choice
@@ -90,6 +90,15 @@ module Savino
     end
     picked.each { |r| @usage[wine_key(r)] += 1 }
     picked.sort_by { |r| -r['score'].to_f }
+  end
+
+  # Variety is not worth more than a dish's own country: for a dish with a
+  # clear home country (pesto → Italy) wines from that country are never
+  # pushed down for having appeared in an earlier post.
+  def self.repeat_use(rec, home_country)
+    return 0 if home_country && rec.dig('wine', 'country').to_s == home_country.to_s
+
+    @usage[wine_key(rec)]
   end
 
   def self.same_grape?(a, b)
@@ -216,7 +225,7 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
   next unless data
 
   post.data['wine_intro']           = data['introText']
-  post.data['wine_recommendations'] = Savino.pick_diverse(data['recommendations'])
+  post.data['wine_recommendations'] = Savino.pick_diverse(data['recommendations'], Savino::RESULTS_PER_POST, data.dig('meta', 'homeCountry'))
   Savino.report_picks(dish, post.data['wine_recommendations'], api_key)
   Jekyll.logger.info 'WineFetcher:', "#{post.data['wine_recommendations']&.length || 0} wines ready"
 end
