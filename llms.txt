@@ -8,6 +8,7 @@ Elvina är en konsumentprodukt för iOS och Android. Kärnfunktionerna är grati
 
 - **Vinmatchning till mat**: användaren beskriver en rätt och får konkreta viner ur sin egen källare eller ur Systembolagets sortiment, med matchningspoäng och förklaring till varför vinet passar.
 - **Digital vinkällare**: spara viner man äger eller har provat. Gratis upp till 10 viner, obegränsat med Premium. Varje vin visar smakprofil och drickfönster (rekommenderad period då vinet är som bäst). Vinsamlingar kan importeras från kalkylark (Excel/CSV) eller från CellarTracker.
+- **Källaranalys – vad är källaren värd? (Premium)**: uppskattat värde på vinkällaren utifrån Systembolagets aktuella priser, anpassat efter flaskstorlek och årgång. Visar värdeutveckling över tid, avkastning för viner med inköpspris, de mest värdefulla vinerna och fördelning efter typ, land och region. Viner utan tillförlitligt pris räknas inte med. Kan exporteras som PDF till försäkring.
 - **AI-sommelier (Premium)**: chatta med en AI-sommelier som känner användarens vinkällare, för hjälp med meny, tillfälle och smakbeskrivningar.
 - **Skanna restaurangens vinlista (Premium)**: fotografera en restaurangs vinlista och få rekommendationer utifrån just de viner restaurangen har.
 
