@@ -20,7 +20,16 @@
         <img src="{{ w.imageUrl }}" alt="{{ w.name }}" loading="lazy" width="64" />
       </div>
       {% else %}
-      <div class="wine-live-bottle wine-live-bottle--empty"></div>
+      {% assign wt = rec.wineType | downcase %}
+      {% if wt contains "hvit" or wt == "white" %}{% assign ph = "white" %}
+      {% elsif wt contains "ros" %}{% assign ph = "rose" %}
+      {% elsif wt contains "musser" or wt contains "sparkling" %}{% assign ph = "sparkling" %}
+      {% elsif wt contains "sterk" or wt contains "dessert" or wt contains "fortified" %}{% assign ph = "fortified" %}
+      {% else %}{% assign ph = "red" %}
+      {% endif %}
+      <div class="wine-live-bottle wine-live-bottle--placeholder">
+        <img src="/assets/img/placeholders/{{ ph }}_bottle.png" alt="" loading="lazy" width="64" />
+      </div>
       {% endif %}
 
       {% assign score_pct = rec.score | times: 100 | round %}

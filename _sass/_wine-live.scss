@@ -77,6 +77,22 @@
     background: var(--mint);
     border-radius: 6px;
   }
+
+  // Generic bottle shot (no real photo): the PNGs are wide with a lot of white
+  // margin, so contain would shrink the bottle to a sliver. Zoom to fill, like
+  // the web app's BottleThumbnail. Real photos keep contain (cap/base intact).
+  &--placeholder {
+    overflow: hidden;
+    border-radius: 6px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
+      object-fit: cover;
+    }
+  }
 }
 
 .wine-live-info {
