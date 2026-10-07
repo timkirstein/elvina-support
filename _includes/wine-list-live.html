@@ -45,7 +45,7 @@
         <span class="wine-live-meta">{{ w.region }}{% if w.region and w.country %} · {% endif %}{{ w.country }}</span>
         {% endif %}
         {% if rec.motivation %}
-        <em class="wine-live-motivation">{{ rec.motivation }}</em>
+        <em class="wine-live-motivation">{{ rec.motivation | wine_description }}</em>
         {% endif %}
       </div>
 

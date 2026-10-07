@@ -15,6 +15,26 @@ end
 
 Liquid::Template.register_filter(Jekyll::WinePriceFilter)
 
+module Jekyll
+  # The generated wine text is "description. Passer godt til …" — the pairing
+  # sentence repeats what the post is already about, so only the description
+  # is shown. Always keeps at least the first sentence.
+  module WineDescriptionFilter
+    PAIRING_SENTENCE = /\A(Passer|Passar|Serveres|Serveras)\b.*\b(til|till)\b/i
+
+    def wine_description(text)
+      return '' if text.nil?
+      sentences = text.to_s.strip.split(/(?<=[.!?])\s+/)
+      kept = sentences.reject.with_index { |s, i| i.positive? && s =~ PAIRING_SENTENCE }
+      kept = sentences.first(1) if kept.empty?
+      kept.join(' ')
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::WineDescriptionFilter)
+
+
 # blogSearchWines svarar med Systembolagets sortiment på svenska när anropet
 # skickar marketId "se". ELVINA_API_KEY (samma värde som BLOG_API_KEY i
 # Firebase) sätts som GitHub-secret; saknas den hoppas vinförslagen över.
@@ -110,6 +130,39 @@ module Savino
     data
   end
 
+  # Reports the three wines a post actually shows so the backend's nightly
+  # dishDrinkFeedback review judges exactly what visitors see. Best effort:
+  # a failure never affects the build. The server de-duplicates per dish shape.
+  def self.report_picks(dish, picks, api_key)
+    uri  = URI(ENDPOINT)
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl      = true
+    http.read_timeout = READ_TIMEOUT_SECONDS
+    req = Net::HTTP::Post.new(uri.path)
+    req['Content-Type'] = 'application/json'
+    req['X-Api-Key']    = api_key
+    req.body = JSON.generate(
+      action:   'report',
+      dishText: dish.encode('UTF-8'),
+      marketId: 'se',
+      picks:    picks.map do |r|
+        {
+          name:     r.dig('wine', 'name'),
+          wineType: r['wineType'],
+          score:    r['score'],
+          region:   r.dig('wine', 'region'),
+          country:  r.dig('wine', 'country'),
+          grape:    r.dig('wine', 'grape')
+        }
+      end
+    )
+    req.body.force_encoding('UTF-8')
+    res = http.request(req)
+    Jekyll.logger.warn 'WineFetcher:', "report HTTP #{res.code} for '#{dish}'" unless res.is_a?(Net::HTTPSuccess)
+  rescue StandardError => e
+    Jekyll.logger.warn 'WineFetcher:', "report failed for '#{dish}': #{e.message}"
+  end
+
   def self.request_wines(dish, api_key)
     uri  = URI(ENDPOINT)
     http = Net::HTTP.new(uri.host, uri.port)
@@ -165,5 +218,6 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
 
   post.data['wine_intro']           = data['introText']
   post.data['wine_recommendations'] = Savino.pick_diverse(data['recommendations'])
+  Savino.report_picks(dish, post.data['wine_recommendations'], api_key)
   Jekyll.logger.info 'WineFetcher:', "#{post.data['wine_recommendations']&.length || 0} wines ready"
 end
