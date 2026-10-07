@@ -6,7 +6,7 @@ lead: "Ripbröst är en delikatess med intensiv och karakteristisk viltsmak som 
 date: 2026-04-08
 category: Vilt
 permalink: /blogg/vin-till-ripbrost/
-dish: "ripbröst"
+dish: "stekt ripbröst"
 hero:
   src: /assets/img/ripa.jpg
   alt: "ripbröst på ett träbord"
