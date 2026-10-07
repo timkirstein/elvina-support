@@ -1,0 +1,370 @@
+.giftcard-hero {
+  padding: 0;
+}
+
+.giftcard-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 72px 40px 96px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: start;
+}
+
+// ── Left column: pitch ──────────────────────────────────────────────
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 18px;
+}
+
+.giftcard-intro h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(38px, 4.4vw, 56px);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 22px;
+
+  em {
+    font-style: italic;
+    color: var(--gold);
+  }
+}
+
+.giftcard-intro .lead {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 480px;
+  margin: 0 0 36px;
+}
+
+.delivery-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 26px 28px;
+  margin: 0 0 40px;
+  max-width: 480px;
+  box-shadow: 0 10px 30px -18px rgba(26, 23, 21, 0.25);
+
+  .delivery-label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 12px;
+
+    svg { flex-shrink: 0; }
+  }
+
+  .delivery-title {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink);
+    margin: 0 0 8px;
+  }
+
+  .delivery-desc {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    margin: 0;
+  }
+}
+
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 480px;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+
+    &:first-child { border-top: none; padding-top: 0; }
+  }
+
+  .feature-check {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--green-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .feature-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 4px;
+  }
+
+  .feature-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0;
+  }
+}
+
+// ── Right column: purchase card ─────────────────────────────────────
+
+.giftcard-purchase {
+  position: sticky;
+  top: 96px;
+}
+
+.giftcard-card-wrap {
+  background: var(--white);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px -24px rgba(26, 23, 21, 0.3);
+}
+
+.giftcard-preview {
+  background: var(--green-darker);
+  color: var(--mint);
+  padding: 28px 28px 24px;
+
+  .preview-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 22px;
+  }
+
+  .preview-logo {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    color: var(--white);
+
+    // Granat is unreadable on the noir card — the wordmark's "VIN" uses
+    // the champagne gold here instead.
+    .vin { color: var(--mint-bright); }
+  }
+
+  .preview-badge {
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(251, 248, 242, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    padding: 4px 10px;
+  }
+
+  .preview-to {
+    font-family: var(--serif);
+    font-size: 22px;
+    color: var(--white);
+    margin: 0 0 8px;
+    word-break: break-word;
+  }
+
+  .preview-message {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: rgba(251, 248, 242, 0.7);
+    margin: 0 0 22px;
+    word-break: break-word;
+  }
+
+  .preview-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 0 0 16px;
+  }
+
+  .preview-duration {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(251, 248, 242, 0.6);
+    margin: 0;
+  }
+}
+
+.giftcard-purchase-body {
+  padding: 28px 28px 30px;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+
+  .price {
+    font-family: var(--serif);
+    font-size: 32px;
+    color: var(--ink);
+  }
+
+  .price-sub {
+    font-size: 13px;
+    color: var(--muted);
+  }
+}
+
+.giftcard-form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-top: 16px;
+    margin-bottom: 6px;
+
+    .optional {
+      font-weight: 400;
+      color: var(--muted);
+    }
+  }
+
+  input,
+  textarea {
+    background: var(--mint);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--ink);
+    font-size: 15px;
+    font-family: var(--sans);
+    resize: vertical;
+
+    &::placeholder { color: var(--muted); }
+
+    &:focus {
+      outline: none;
+      border-color: var(--green);
+    }
+  }
+
+  .char-count {
+    align-self: flex-end;
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+}
+
+.giftcard-submit {
+  margin-top: 22px;
+  background: var(--green-dark);
+  color: var(--white);
+  border: 0;
+  border-radius: 999px;
+  padding: 15px 24px;
+  font-weight: 600;
+  font-size: 15.5px;
+  cursor: pointer;
+  transition: background 0.15s;
+
+  &:hover:not(:disabled) { background: var(--green-deep); }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+}
+
+.giftcard-error {
+  margin-top: 14px;
+  font-size: 13.5px;
+  color: #b8433a;
+}
+
+.giftcard-terms {
+  margin: 18px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-align: center;
+}
+
+.giftcard-success {
+  background: var(--white);
+  border-radius: 22px;
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: 0 20px 50px -24px rgba(26, 23, 21, 0.3);
+
+  h2 {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 26px;
+    margin: 0 0 12px;
+    color: var(--green-darker);
+  }
+
+  p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    margin: 0;
+  }
+}
+
+.giftcard-links {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 13px;
+
+  a {
+    color: var(--green-deep);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  .sep {
+    color: var(--line-strong);
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .giftcard-grid {
+    grid-template-columns: 1fr;
+    padding: 48px 20px 72px;
+    gap: 40px;
+  }
+
+  .giftcard-purchase {
+    position: static;
+  }
+
+  .giftcard-intro .lead,
+  .delivery-card,
+  .feature-list {
+    max-width: none;
+  }
+}

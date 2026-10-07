@@ -1,0 +1,43 @@
+---
+layout: null
+permalink: /gave/
+---
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Öppnar din present… · Elvina</title>
+  <meta name="robots" content="noindex" />
+  <script>
+    // The real redemption page (Firebase Auth + Firestore) lives on
+    // app.elvina.se; this static stub exists so a literal elvina.se/gave?code=...
+    // link still resolves. Redirect runs in <head>, before render.
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var code = params.get("code") || "";
+      var target =
+        "https://app.elvina.se/gave" +
+        (code ? "?code=" + encodeURIComponent(code) : "");
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>
+    Öppnar din present&hellip; Om du inte skickas vidare automatiskt,
+    <a id="fallback-link" href="https://app.elvina.se/gave">klicka här</a>.
+  </p>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var code = params.get("code") || "";
+      var target =
+        "https://app.elvina.se/gave" +
+        (code ? "?code=" + encodeURIComponent(code) : "");
+      var link = document.getElementById("fallback-link");
+      if (link) link.href = target;
+    })();
+  </script>
+</body>
+</html>
