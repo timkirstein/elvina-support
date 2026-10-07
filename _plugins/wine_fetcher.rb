@@ -31,8 +31,49 @@ module Savino
   MAX_ATTEMPTS         = 2
   RETRY_DELAY_SECONDS  = 3
 
+  # Variation across the blog: the endpoint is asked for a wider shortlist and
+  # the plugin picks the three shown wines, so the same few bottles don't
+  # appear in every post. A wine's adjusted score drops by DIVERSITY_PENALTY
+  # for every earlier post it already appears in, and nothing more than
+  # DIVERSITY_MAX_SCORE_GAP below the best candidate is ever chosen (a worse
+  # match is never swapped in just for variety).
+  CANDIDATE_COUNT       = 8
+  RESULTS_PER_POST      = 3
+  DIVERSITY_PENALTY     = 0.03
+  DIVERSITY_MAX_SCORE_GAP = 0.06
+  @usage = Hash.new(0)
+
+  def self.usage
+    @usage
+  end
+
+  def self.pick_diverse(recommendations, count = RESULTS_PER_POST)
+    return recommendations if recommendations.nil? || recommendations.length <= count
+
+    best = recommendations.map { |r| r['score'].to_f }.max
+    pool = recommendations.select { |r| r['score'].to_f >= best - DIVERSITY_MAX_SCORE_GAP }
+    picked = []
+    while picked.length < count && !pool.empty?
+      choice = pool.max_by do |r|
+        r['score'].to_f - DIVERSITY_PENALTY * @usage[wine_key(r)]
+      end
+      picked << choice
+      pool.delete(choice)
+    end
+    # Too few close candidates: fill with the next best by score.
+    if picked.length < count
+      (recommendations - picked).first(count - picked.length).each { |r| picked << r }
+    end
+    picked.each { |r| @usage[wine_key(r)] += 1 }
+    picked.sort_by { |r| -r['score'].to_f }
+  end
+
+  def self.wine_key(rec)
+    (rec.dig('wine', 'name') || rec.dig('wine', 'id') || '').to_s
+  end
+
   def self.fetch_wines(dish, api_key)
-    cache_key  = Digest::MD5.hexdigest("se|#{dish}|100|400|3")
+    cache_key  = Digest::MD5.hexdigest("se|#{dish}|100|400|#{CANDIDATE_COUNT}")
     cache_file = File.join(CACHE_DIR, "#{cache_key}.json")
 
     if File.exist?(cache_file)
@@ -72,7 +113,7 @@ module Savino
       marketId:   'se',
       priceMin:   100,
       priceMax:   400,
-      maxResults: 3
+      maxResults: CANDIDATE_COUNT
     )
     req.body.force_encoding('UTF-8')
 
@@ -112,6 +153,6 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
   next unless data
 
   post.data['wine_intro']           = data['introText']
-  post.data['wine_recommendations'] = data['recommendations']
-  Jekyll.logger.info 'WineFetcher:', "#{data['recommendations']&.length || 0} wines ready"
+  post.data['wine_recommendations'] = Savino.pick_diverse(data['recommendations'])
+  Jekyll.logger.info 'WineFetcher:', "#{post.data['wine_recommendations']&.length || 0} wines ready"
 end

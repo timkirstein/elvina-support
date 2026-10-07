@@ -6,7 +6,7 @@ lead: "Lammlägg som stått i ugnen i timmar utvecklar en djup, intensiv smak so
 date: 2025-12-17
 category: Kött
 permalink: /blogg/vin-till-lammlagg/
-dish: "lammlägg"
+dish: "långbräserat lammlägg i rödvin med rotfrukter"
 hero:
   src: /assets/img/lamb_skank.jpg
   alt: "lammlägg på ett träbord"
