@@ -16,18 +16,17 @@ end
 Liquid::Template.register_filter(Jekyll::WinePriceFilter)
 
 module Jekyll
-  # The generated wine text is "description. Passer godt til …" — the pairing
-  # sentence repeats what the post is already about, so only the description
-  # is shown. Always keeps at least the first sentence.
+  # The generated wine text is "description. Passer godt til …": the last
+  # sentence is the pairing part, which the post already covers. Same rule as
+  # the app's recommendation card (_dropLastSentence): cut at the last ". ",
+  # keep a single-sentence text as it is.
   module WineDescriptionFilter
-    PAIRING_SENTENCE = /\A(Passer|Passar|Serveres|Serveras)\b.*\b(til|till)\b/i
-
     def wine_description(text)
       return '' if text.nil?
-      sentences = text.to_s.strip.split(/(?<=[.!?])\s+/)
-      kept = sentences.reject.with_index { |s, i| i.positive? && s =~ PAIRING_SENTENCE }
-      kept = sentences.first(1) if kept.empty?
-      kept.join(' ')
+      trimmed = text.to_s.rstrip
+      last_dot = trimmed.rindex('. ')
+      return trimmed if last_dot.nil? || last_dot <= 0
+      trimmed[0..last_dot]
     end
   end
 end
