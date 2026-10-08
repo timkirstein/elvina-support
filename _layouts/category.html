@@ -17,13 +17,14 @@ layout: default
     <p><a href="/blogg/">← Alla kategorier</a></p>
 
     {% if page.posts.size > 0 %}
+    {% include blog-search.html %}
     <div class="post-grid">
       {% for post in page.posts %}
       {% assign day       = post.date | date: "%-d" %}
       {% assign month_idx = post.date | date: "%-m" | minus: 1 %}
       {% assign sv_month = site.months[month_idx] %}
       {% assign year      = post.date | date: "%Y" %}
-      <a class="post-grid-card" href="{{ post.url | relative_url }}">
+      <a class="post-grid-card" href="{{ post.url | relative_url }}" data-search="{{ post.title }} {{ post.description }} {{ post.category }} {{ post.dish }}">
         {% if post.category %}<span class="cat-tag">{{ post.category }}</span>{% endif %}
         <h2>{{ post.title }}</h2>
         {% if post.description %}<p class="post-desc">{{ post.description }}</p>{% endif %}
