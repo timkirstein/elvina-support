@@ -569,3 +569,11 @@ h2 {
     aspect-ratio: 9 / 14;
   }
 }
+
+/* "Appen kommer snart" – visas tills App Store/Google Play-länkar finns */
+.is-soon {
+  opacity: 0.75;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+}

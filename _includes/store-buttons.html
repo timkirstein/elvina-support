@@ -16,3 +16,6 @@
   Google Play
 </a>
 {% endif %}
+{% unless site.app_store_url != "" or site.play_store_url != "" %}
+<span class="{{ btn_class }} is-soon" aria-disabled="true">Appen kommer snart</span>
+{% endunless %}
