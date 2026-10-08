@@ -59,10 +59,13 @@ module Savino
   CANDIDATE_COUNT       = 8
   RESULTS_PER_POST      = 3
   DIVERSITY_PENALTY     = 0.03
-  DIVERSITY_MAX_SCORE_GAP = 0.06
+  DIVERSITY_MAX_SCORE_GAP = 0.08
   # Within one post, a second/third wine of the same grape is penalised too
   # (three Chardonnay for a paella is not a selection).
   GRAPE_REPEAT_PENALTY    = 0.04
+  # ...and a little for the same wine colour, so a cheese board or mixed menu
+  # gets a red, a fortified/white and not three of the same kind.
+  COLOR_REPEAT_PENALTY    = 0.03
   @usage = Hash.new(0)
 
   def self.usage
@@ -79,7 +82,8 @@ module Savino
       choice = pool.max_by do |r|
         r['score'].to_f -
           DIVERSITY_PENALTY * repeat_use(r, home_country) -
-          GRAPE_REPEAT_PENALTY * picked.count { |p| same_grape?(p, r) }
+          GRAPE_REPEAT_PENALTY * picked.count { |p| same_grape?(p, r) } -
+          COLOR_REPEAT_PENALTY * picked.count { |p| p['wineType'] == r['wineType'] }
       end
       picked << choice
       pool.delete(choice)
