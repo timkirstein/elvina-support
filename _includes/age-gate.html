@@ -1,0 +1,61 @@
+<div id="elvina-age-gate" role="dialog" aria-modal="true" aria-labelledby="elvina-age-title" hidden>
+  <style>
+    #elvina-age-gate {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: #EDE3D1;
+      font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: #1a1715;
+    }
+    #elvina-age-gate[hidden] { display: none; }
+    html.age-gate-open { overflow: hidden; }
+    #elvina-age-gate .age-box { max-width: 420px; text-align: center; }
+    #elvina-age-gate .age-brand {
+      font-family: "Italiana", serif;
+      font-size: 28px;
+      letter-spacing: 0.12em;
+      margin: 0 0 28px;
+    }
+    #elvina-age-gate h2 { font-size: 26px; font-weight: 600; margin: 0 0 10px; }
+    #elvina-age-gate p { margin: 0 0 28px; font-size: 15px; line-height: 1.5; opacity: 0.75; }
+    #elvina-age-gate button {
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 999px;
+      cursor: pointer;
+      border: 1px solid #7a2e3a;
+      background: #7a2e3a;
+      color: #fff;
+      width: 100%;
+    }
+    #elvina-age-gate button[data-age-no] {
+      background: transparent;
+      color: inherit;
+      border-color: transparent;
+      margin-top: 8px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  </style>
+  <div class="age-box">
+    <p class="age-brand">ELVINA</p>
+    <div data-age-ask>
+      <h2 id="elvina-age-title">Är du över 25 år?</h2>
+      <p>Du måste vara över 25 för att använda Elvina.</p>
+      <button type="button" data-age-yes>Ja, jag är över 25</button>
+      <button type="button" data-age-no>Nej</button>
+    </div>
+    <div data-age-blocked hidden>
+      <h2>Tyvärr</h2>
+      <p>Du måste vara över 25 år för att använda Elvina.</p>
+    </div>
+  </div>
+</div>
+<script type="module" src="/assets/js/age-gate.js"></script>
