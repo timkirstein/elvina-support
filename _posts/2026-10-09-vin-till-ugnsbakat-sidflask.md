@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Kött
 permalink: /blogg/vin-till-ugnsbakat-sidflask/
 dish: "ugnsbakat sidfläsk med krispig svål, serverat med äppelmos och ugnsrostade rotfrukter"
+hero:
+  src: /assets/img/pork_belly.jpg
+  alt: "ugnsbakat sidfläsk serverat med potatismos och sås"
+  caption: "Ugnsbakat sidfläsk – fett, krispigt och fullt av smak"
 ---
 **Kort svar:** hög syra, saftig frukt och låga tanniner är vad du bör leta efter i vin till ugnsbakat sidfläsk.
 

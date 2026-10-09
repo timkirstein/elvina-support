@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Vegetariskt
 permalink: /blogg/vin-till-kantareller-pa-toast/
 dish: "kantareller på toast – smörstekta kantareller med vitlök och persilja på rostat surdegsbröd"
+hero:
+  src: /assets/img/chanterelle_toast.jpg
+  alt: "två skivor toast med smörstekta kantareller och ruccola"
+  caption: "Kantareller på toast – säsongens enklaste svamprätt"
 ---
 **Kort svar:** rund fyllighet, en lätt smörig ton och frisk syra är vad du bör leta efter i vin till kantareller på toast.
 

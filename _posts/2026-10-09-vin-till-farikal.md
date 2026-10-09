@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Kött
 permalink: /blogg/vin-till-farikal/
 dish: "fårikål – lammkött och vitkål kokta i lager med hel svartpeppar, serverat med kokt potatis"
+hero:
+  src: /assets/img/farikal.jpg
+  alt: "en skål med lamm och kål i buljong"
+  caption: "Fårikål – Norges nationalrätt och höstens stora gryträtt"
 ---
 **Kort svar:** frisk syra, måttliga tanniner och en kryddig frukt med pepparton är vad du bör leta efter i vin till fårikål.
 

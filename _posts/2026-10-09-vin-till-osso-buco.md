@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Kött
 permalink: /blogg/vin-till-osso-buco/
 dish: "osso buco – kalvlägg långbräserad i vitt vin och tomat, serverad med gremolata och risotto alla milanese"
+hero:
+  src: /assets/img/osso_buco.jpg
+  alt: "osso buco i tomatsås serverad i en gjutjärnsform"
+  caption: "Osso buco – italiensk långkokt kalv"
 ---
 **Kort svar:** hög syra, medelfyllig kropp och fasta men inte för kraftiga tanniner är vad du bör leta efter i vin till osso buco.
 

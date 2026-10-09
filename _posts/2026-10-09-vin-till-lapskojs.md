@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Vardagsmat
 permalink: /blogg/vin-till-lapskojs/
 dish: "lapskojs – brun gryta med nötkött, potatis, morot och kålrot"
+hero:
+  src: /assets/img/lapskaus.jpg
+  alt: "en skål lapskojs med kött, morot och potatis"
+  caption: "Lapskojs – husmanskost när den är som bäst"
 ---
 **Kort svar:** saftig frukt, medelfyllig kropp och mjuka tanniner är vad du bör leta efter i vin till lapskojs.
 

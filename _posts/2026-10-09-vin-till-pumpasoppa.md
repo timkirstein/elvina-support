@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Vegetariskt
 permalink: /blogg/vin-till-pumpasoppa/
 dish: "krämig pumpasoppa med grädde, vitlök och rostade pumpakärnor"
+hero:
+  src: /assets/img/pumpkin_soup.jpg
+  alt: "krämig pumpasoppa med krutonger och pumpakärnor"
+  caption: "Pumpasoppa – hösten i en skål"
 ---
 **Kort svar:** rund, fruktig fyllighet och god syra är vad du bör leta efter i vin till pumpasoppa.
 

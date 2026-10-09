@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Kött
 permalink: /blogg/vin-till-coq-au-vin/
 dish: "coq au vin – kyckling långbräserad i rött vin med bacon, champinjoner och pärllök"
+hero:
+  src: /assets/img/coq_au_vin.jpg
+  alt: "coq au vin med morot och pärllök i en djup tallrik"
+  caption: "Coq au vin – fransk höstklassiker bräserad i rött vin"
 ---
 **Kort svar:** elegant frukt, mjuka tanniner och jordiga toner är vad du bör leta efter i vin till coq au vin.
 

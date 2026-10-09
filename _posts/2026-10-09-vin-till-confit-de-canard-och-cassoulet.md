@@ -7,6 +7,10 @@ date: 2026-10-09
 category: Kött
 permalink: /blogg/vin-till-confit-de-canard-och-cassoulet/
 dish: "cassoulet med ankconfit, toulousekorv, fläskkött och vita bönor"
+hero:
+  src: /assets/img/confit_de_canard.jpg
+  alt: "confit de canard med potatismos och mörk sås"
+  caption: "Confit de canard – sydvästra Frankrikes höstklassiker"
 ---
 **Kort svar:** fasta tanniner, frisk syra och mörk, kryddig frukt är vad du bör leta efter i vin till confit de canard och cassoulet.
 
