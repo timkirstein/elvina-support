@@ -1,5 +1,5 @@
 {% if page.wine_recommendations and page.wine_recommendations.size > 0 %}
-<div class="wine-live">
+<div class="wine-live" data-dish="{{ page.dish | escape }}">
 
   <div class="wine-live-header">
     <span class="live-dot"></span>
@@ -13,7 +13,7 @@
   <ul class="wine-live-list">
     {% for rec in page.wine_recommendations %}
     {% assign w = rec.wine %}
-    <li class="wine-live-card">
+    <li class="wine-live-card" data-wine-code="{{ w.code | escape }}" data-wine-name="{{ w.name | escape }}" data-wine-type="{{ rec.wineType | escape }}" data-position="{{ forloop.index }}">
 
       {% if w.imageUrl %}
       <div class="wine-live-bottle">
