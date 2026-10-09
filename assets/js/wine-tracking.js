@@ -87,4 +87,9 @@ function init() {
   });
 }
 
-init();
+// Räkna inte visningar medan åldersspärren täcker sidan.
+if (document.documentElement.classList.contains("age-gate-open")) {
+  window.addEventListener("elvina:age-confirmed", init, { once: true });
+} else {
+  init();
+}
