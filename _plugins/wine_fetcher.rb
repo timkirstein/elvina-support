@@ -175,6 +175,48 @@ module Savino
     Jekyll.logger.warn 'WineFetcher:', "report failed for '#{dish}': #{e.message}"
   end
 
+  # Intro text written for exactly the wines the post shows. The search
+  # response's own intro describes the pipeline's top three, which the variety
+  # pick above often replaces, so it named wines the post never showed.
+  # Returns nil on failure: no intro is better than one about other wines.
+  def self.fetch_intro(dish, picks, api_key)
+    codes = picks.map { |r| r.dig('wine', 'code') }.compact
+    return nil if codes.empty?
+
+    cache_file = File.join(CACHE_DIR, "intro-#{Digest::MD5.hexdigest("se|#{dish}|#{codes.join(',')}")}.json")
+    return JSON.parse(File.read(cache_file))['introText'] if File.exist?(cache_file)
+
+    uri  = URI(ENDPOINT)
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl      = true
+    http.read_timeout = READ_TIMEOUT_SECONDS
+    req = Net::HTTP::Post.new(uri.path)
+    req['Content-Type'] = 'application/json'
+    req['X-Api-Key']    = api_key
+    req.body = JSON.generate(
+      action:   'intro',
+      dishText: dish.encode('UTF-8'),
+      marketId: 'se',
+      codes:    codes
+    )
+    req.body.force_encoding('UTF-8')
+    res = http.request(req)
+    unless res.is_a?(Net::HTTPSuccess)
+      Jekyll.logger.warn 'WineFetcher:', "intro HTTP #{res.code} for '#{dish}'"
+      return nil
+    end
+
+    intro = JSON.parse(res.body)['introText']
+    return nil if intro.nil? || intro.strip.empty?
+
+    FileUtils.mkdir_p(CACHE_DIR)
+    File.write(cache_file, JSON.generate('introText' => intro))
+    intro
+  rescue StandardError => e
+    Jekyll.logger.warn 'WineFetcher:', "intro failed for '#{dish}': #{e.message}"
+    nil
+  end
+
   def self.request_wines(dish, api_key)
     uri  = URI(ENDPOINT)
     http = Net::HTTP.new(uri.host, uri.port)
@@ -189,7 +231,9 @@ module Savino
       marketId:   'se',
       priceMin:   100,
       priceMax:   400,
-      maxResults: CANDIDATE_COUNT
+      maxResults: CANDIDATE_COUNT,
+      # The intro is requested for the three shown wines (fetch_intro).
+      skipIntro:  true
     )
     req.body.force_encoding('UTF-8')
 
@@ -228,8 +272,8 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
   data = Savino.fetch_wines(dish, api_key)
   next unless data
 
-  post.data['wine_intro']           = data['introText']
   post.data['wine_recommendations'] = Savino.pick_diverse(data['recommendations'], Savino::RESULTS_PER_POST, data.dig('meta', 'homeCountry'))
+  post.data['wine_intro']           = Savino.fetch_intro(dish, post.data['wine_recommendations'], api_key)
   Savino.report_picks(dish, post.data['wine_recommendations'], api_key)
   Jekyll.logger.info 'WineFetcher:', "#{post.data['wine_recommendations']&.length || 0} wines ready"
 end
