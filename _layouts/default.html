@@ -7,7 +7,10 @@
     {% include footer.html %}
     {% include mobile-cta-bar.html %}
     {% include cookie-consent.html %}
+    {% comment %}Åldersspärr: bara på bloggen (inlägg, index, kategorier).{% endcomment %}
+    {% if page.layout == "post" or page.layout == "blog-index" or page.layout == "category" %}
     {% include age-gate.html %}
+    {% endif %}
     <script type="module" src="/assets/js/ref-tracking.js"></script>
     <script type="module" src="/assets/js/meta-pixel.js"></script>
     <script type="module" src="/assets/js/google-ads.js"></script>
