@@ -4,12 +4,19 @@
   <title>{% if page.title %}{{ page.title }} · Elvina{% else %}Elvina Blogg{% endif %}</title>
   {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
   <meta name="theme-color" content="#EDE3D1" />
+  {% assign og_image = page.hero.src | default: '/logo_primary.png' | absolute_url %}
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}" />
   <meta property="og:site_name" content="Elvina" />
   <meta property="og:title" content="{{ page.title }} · Elvina" />
   {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
-  {% if page.hero.src %}<meta property="og:image" content="{{ page.hero.src | absolute_url }}" />{% endif %}
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ og_image }}" />
   <meta property="og:locale" content="sv_SE" />
+  {% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />{% endif %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }} · Elvina" />
+  {% if page.description %}<meta name="twitter:description" content="{{ page.description }}" />{% endif %}
+  <meta name="twitter:image" content="{{ og_image }}" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,10 +33,13 @@
       "headline": {{ page.title | jsonify }},
       {% if page.description %}"description": {{ page.description | jsonify }},{% endif %}
       "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "inLanguage": "sv-SE",
+      {% if page.category %}"articleSection": {{ page.category | jsonify }},{% endif %}
       {% if page.hero.src %}"image": "{{ page.hero.src | absolute_url }}",{% endif %}
       "url": "{{ page.url | absolute_url }}",
       "mainEntityOfPage": "{{ page.url | absolute_url }}",
-      "author": { "@type": "Organization", "name": "Elvina" },
+      "author": { "@type": "Organization", "name": "Elvina", "url": "https://elvina.se/" },
       "publisher": {
         "@type": "Organization",
         "name": "Elvina",
