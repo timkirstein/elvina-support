@@ -1,12 +1,12 @@
 // Åldersspärr (över 25) för hela webbplatsen. Svaret sparas i localStorage
 // (nödvändigt för att inte fråga på varje sida, kräver inget cookie-samtycke).
 // "Nej" blockerar sidan, och blockeringen kvarstår vid nästa besök.
-// Sökmotorer och förhandsgranskare får se sidan utan spärr.
+// Sökmotorer, AI-agenter och förhandsgranskare får se sidan utan spärr.
 const KEY = "elvina_age_gate";
 export const AGE_CONFIRMED_EVENT = "elvina:age-confirmed";
 
 const BOT =
-  /bot|crawl|spider|slurp|facebookexternalhit|preview|headless|lighthouse/i;
+  /bot|crawl|spider|slurp|facebookexternalhit|preview|headless|lighthouse|chatgpt|claude|anthropic|openai|perplexity|gemini|applebot|duckassist|youbot|cohere|mistral/i;
 
 function read() {
   try {

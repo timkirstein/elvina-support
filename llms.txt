@@ -2,7 +2,7 @@
 
 > Elvina är en vinapp som ger konkreta vinrekommendationer till mat, utifrån användarens egen vinkällare eller det faktiska sortimentet i den Systembolagsbutik användaren väljer.
 
-Elvina är en konsumentprodukt för iOS och Android. Kärnfunktionerna är gratis och kräver inget konto. Elvina tillhandahålls av Savino AS.
+Elvina är en konsumentprodukt. Appen finns för iOS (App Store); Android är under test och släpps inom kort. Kärnfunktionerna är gratis och kräver inget konto. Elvina tillhandahålls av Savino AS.
 
 ## Funktioner
 
@@ -14,7 +14,7 @@ Elvina är en konsumentprodukt för iOS och Android. Kärnfunktionerna är grati
 
 ## Pris
 
-Grundfunktionerna är gratis. Aktuella priser för Premium visas i appen.
+Grundfunktionerna är gratis. Premium-abonnemang: 79 SEK/månad eller 699 SEK/år.
 
 ## Viktigt för agenter
 
@@ -25,7 +25,9 @@ Grundfunktionerna är gratis. Aktuella priser för Premium visas i appen.
 ## Sidor
 
 - Startsida: https://elvina.se/
-- Google Play: https://play.google.com/store/apps/details?id=com.savino.digitalsommelier.se
+- App Store (iOS): https://apps.apple.com/se/app/elvina/id6819676948
+- Om Elvina: https://elvina.se/om/
+- Fullständig beskrivning för agenter: https://elvina.se/llms-full.txt
 - Blogg (vin till mat): https://elvina.se/blogg/
 - Integritet: https://elvina.se/privacy.html
 - Villkor: https://elvina.se/terms.html

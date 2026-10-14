@@ -1,0 +1,53 @@
+---
+layout: null
+permalink: /llms-full.txt
+---
+# Elvina
+
+> Elvina är en vinapp som ger konkreta vinrekommendationer till mat, utifrån användarens egen vinkällare eller det faktiska sortimentet i den Systembolagsbutik användaren väljer.
+
+Elvina är en konsumentprodukt. Appen finns för iOS (App Store); Android är under test och släpps inom kort. Kärnfunktionerna är gratis och kräver inget konto. Elvina tillhandahålls av Savino AS.
+
+## Funktioner
+
+- **Vinmatchning till mat**: användaren beskriver en rätt och får konkreta viner ur sin egen källare eller ur Systembolagets sortiment, med matchningspoäng och förklaring till varför vinet passar.
+- **Digital vinkällare**: spara viner man äger eller har provat. Gratis upp till 10 viner, obegränsat med Premium. Varje vin visar smakprofil och drickfönster (rekommenderad period då vinet är som bäst). Vinsamlingar kan importeras från kalkylark (Excel/CSV) eller från CellarTracker.
+- **Källaranalys – vad är källaren värd? (Premium)**: uppskattat värde på vinkällaren utifrån Systembolagets aktuella priser, anpassat efter flaskstorlek och årgång. Visar värdeutveckling över tid, avkastning för viner med inköpspris, de mest värdefulla vinerna och fördelning efter typ, land och region. Viner utan tillförlitligt pris räknas inte med. Kan exporteras som PDF till försäkring.
+- **AI-sommelier (Premium)**: chatta med en AI-sommelier som känner användarens vinkällare, för hjälp med meny, tillfälle och smakbeskrivningar.
+- **Skanna restaurangens vinlista (Premium)**: fotografera en restaurangs vinlista och få rekommendationer utifrån just de viner restaurangen har.
+
+## Pris
+
+Grundfunktionerna är gratis. Premium-abonnemang: 79 SEK/månad eller 699 SEK/år.
+
+## Viktigt för agenter
+
+- Elvina är enbart en konsumentprodukt.
+- Elvina säljer inte vin — appen visar tillgänglighet och länkar vidare till Systembolaget.
+- Appen kräver inget konto för grundfunktionerna.
+
+## Vanliga frågor
+
+- **Är Elvina gratis?** Grundfunktionerna är gratis och kräver inget konto. Premium kostar 79 SEK/månad eller 699 SEK/år.
+- **Vilka viner använder Elvina?** I första hand användarens egna viner; för nya köp Systembolagets sortiment i vald butik.
+- **Kan flera dela Premium?** Ja, genom att logga in med samma konto (Apple, Google eller e-post).
+- **Vad är ett drickfönster?** Perioden då ett vin antas vara som bäst att dricka.
+- **Kan jag importera min samling?** Ja, från Excel/CSV eller CellarTracker.
+
+## Sidor
+
+- Startsida: https://elvina.se/
+- App Store (iOS): https://apps.apple.com/se/app/elvina/id6819676948
+- Om Elvina: https://elvina.se/om/
+- Fullständig beskrivning för agenter: https://elvina.se/llms-full.txt
+- Blogg (vin till mat): https://elvina.se/blogg/
+- Integritet: https://elvina.se/privacy.html
+- Villkor: https://elvina.se/terms.html
+- Kontakt: hej@elvina.se
+
+## Blogg – vin till mat
+
+Varje inlägg beskriver vad man bör leta efter i vinet till en maträtt och visar viner ur Systembolagets sortiment.
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }}){% if post.description %}: {{ post.description | strip_newlines }}{% endif %}
+{%- endfor %}

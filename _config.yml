@@ -5,8 +5,7 @@ baseurl: ""
 lang: sv
 
 # Butikslänkar – lämna tomt tills appen är publicerad, så döljs knappen.
-# TODO: fyll i App Store-länken när Elvina finns i App Store.
-app_store_url: ""
+app_store_url: "https://apps.apple.com/se/app/elvina/id6819676948"
 play_store_url: ""  # fylls i när Elvina är publicerad i Google Play
 web_app_url: "https://app.elvina.se"
 
