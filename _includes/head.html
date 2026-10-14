@@ -4,7 +4,7 @@
   <title>{% if page.title %}{{ page.title }} · Elvina{% else %}Elvina Blogg{% endif %}</title>
   {% if page.description %}<meta name="description" content="{{ page.description }}" />{% endif %}
   <meta name="theme-color" content="#EDE3D1" />
-  {% assign og_image = page.hero.src | default: '/logo_primary.png' | absolute_url %}
+  {% assign og_image = page.hero.src | default: '/assets/og-image.png' | absolute_url %}
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}" />
   <meta property="og:site_name" content="Elvina" />
   <meta property="og:title" content="{{ page.title }} · Elvina" />

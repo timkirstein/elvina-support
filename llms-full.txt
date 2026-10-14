@@ -37,7 +37,7 @@ Grundfunktionerna är gratis. Premium-abonnemang: 79 SEK/månad eller 699 SEK/å
 ## Sidor
 
 - Startsida: https://elvina.se/
-- App Store (iOS): https://apps.apple.com/us/app/elvina/id6819676948
+- App Store (iOS): https://apps.apple.com/se/app/elvina/id6819676948
 - Om Elvina: https://elvina.se/om/
 - Fullständig beskrivning för agenter: https://elvina.se/llms-full.txt
 - Blogg (vin till mat): https://elvina.se/blogg/
