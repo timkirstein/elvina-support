@@ -5,7 +5,9 @@ import { hasAnalyticsConsent, onConsentAccepted } from "./cookie-consent.js";
 // TODO (Elvina): Savinos Google Ads-konto är avstängt här. Fyll i Elvinas
 // konverterings-ID och etikett när det finns ett Ads-konto för Elvina.
 const AW_ID = "AW-18395465832";
-const CONVERSION_LABEL = "";
+// Konverteringsetiketter (Google Ads, konto Savino, åtgärder för Elvina).
+const LABEL_DOWNLOAD = "Ehr5CKbU_J0dEOiQ0sNE"; // Elvina nedladdningsklick
+const LABEL_GIFT_CLICK = "IvisCKPU_J0dEOiQ0sNE"; // Elvina presentkort klick
 
 /**
  * Consent Mode v2 state object. Before "Godta", every signal is "denied" —
@@ -68,14 +70,19 @@ function attachDownloadClickTracking() {
       window.gtag("event", name, { store: ga4Target.dataset.store || "" });
     }
 
-    const target = event.target.closest('[data-track="download_click"]');
-    if (!target || !window.gtag || !CONVERSION_LABEL) return;
+    const label =
+      ga4Target?.dataset.track === "download_click"
+        ? LABEL_DOWNLOAD
+        : ga4Target?.dataset.track === "giftcard_checkout_click"
+          ? LABEL_GIFT_CLICK
+          : null;
+    if (!label || !window.gtag) return;
 
     // No consent check here on purpose: gtag.js itself respects whatever
     // consent state was set via consentState() above, sending either a full
     // conversion event (granted) or a modeled, cookieless ping (denied).
     window.gtag("event", "conversion", {
-      send_to: CONVERSION_LABEL,
+      send_to: `${AW_ID}/${label}`,
       value: 1.0,
       currency: "SEK",
     });

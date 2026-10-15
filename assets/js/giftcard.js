@@ -121,6 +121,12 @@ function trackGiftPurchase() {
     value: 699,
     currency: "SEK",
   });
+  // Google Ads-konvertering "Elvina presentkort köp".
+  window.gtag?.("event", "conversion", {
+    send_to: "AW-18395465832/1VnwCKDU_J0dEOiQ0sNE",
+    value: 699,
+    currency: "SEK",
+  });
 }
 
 function init() {
