@@ -27,7 +27,12 @@ function consentState(granted) {
 
 /** Loads gtag.js and configures the Google Ads tag. Runs for every visitor, consenting or not — see consentState() above. */
 function bootstrapGoogleAds() {
-  if (typeof window === "undefined" || window.gtag) return;
+  if (typeof window === "undefined") return;
+  // Taggen kan redan vara laddad statiskt från head.html (så Google Ads kan verifiera den).
+  if (window.gtag) {
+    if (hasAnalyticsConsent()) window.gtag("consent", "update", consentState(true));
+    return;
+  }
 
   window.dataLayer = window.dataLayer || [];
   function gtag(...args) {
