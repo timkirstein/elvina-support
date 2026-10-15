@@ -7,6 +7,8 @@ lang: sv
 # Butikslänkar – lämna tomt tills appen är publicerad, så döljs knappen.
 app_store_url: "https://apps.apple.com/se/app/elvina/id6819676948"
 play_store_url: ""  # fylls i när Elvina är publicerad i Google Play
+# Cloudflare Web Analytics-token (Cloudflare > Analytics & Logs > Web Analytics). Tomt = ingen mätning.
+cloudflare_analytics_token: "7299497bf36946a3961b557abc639f3d"
 web_app_url: "https://app.elvina.se"
 
 permalink: /blogg/:slug/

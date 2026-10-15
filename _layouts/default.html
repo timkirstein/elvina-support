@@ -11,6 +11,10 @@
     {% if page.layout == "post" or page.layout == "blog-index" or page.layout == "category" %}
     {% include age-gate.html %}
     {% endif %}
+    {% comment %}Cloudflare Web Analytics: cookielös, ingen samtyckesbanner behövs. Fyll i cloudflare_analytics_token i _config.yml.{% endcomment %}
+    {% if site.cloudflare_analytics_token and site.cloudflare_analytics_token != "" %}
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_analytics_token }}"}'></script>
+    {% endif %}
     <script type="module" src="/assets/js/ref-tracking.js"></script>
     <script type="module" src="/assets/js/meta-pixel.js"></script>
     <script type="module" src="/assets/js/google-ads.js"></script>
