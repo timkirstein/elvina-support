@@ -106,6 +106,21 @@ function showPurchasedBannerIfNeeded() {
   const success = document.getElementById("giftcard-success");
   if (card) card.hidden = true;
   if (success) success.hidden = false;
+  trackGiftPurchase();
+}
+
+/** Köphändelse (GA4 → Google Ads). Skickas en gång per flik, även om sidan laddas om. */
+function trackGiftPurchase() {
+  try {
+    if (sessionStorage.getItem("elvina_gift_purchase_sent")) return;
+    sessionStorage.setItem("elvina_gift_purchase_sent", "1");
+  } catch {
+    // sessionStorage kan vara blockerat — då räknas händelsen hellre än att den missas.
+  }
+  window.gtag?.("event", "elvina_gift_purchase", {
+    value: 699,
+    currency: "SEK",
+  });
 }
 
 function init() {
