@@ -4,7 +4,7 @@ import { hasAnalyticsConsent, onConsentAccepted } from "./cookie-consent.js";
 // "Klick på nedladdningsknapp" conversion action, savino.no.
 // TODO (Elvina): Savinos Google Ads-konto är avstängt här. Fyll i Elvinas
 // konverterings-ID och etikett när det finns ett Ads-konto för Elvina.
-const AW_ID = "";
+const AW_ID = "AW-18395465832";
 const CONVERSION_LABEL = "";
 
 /**
@@ -51,7 +51,7 @@ function bootstrapGoogleAds() {
 function attachDownloadClickTracking() {
   document.addEventListener("click", (event) => {
     const target = event.target.closest('[data-track="download_click"]');
-    if (!target || !window.gtag) return;
+    if (!target || !window.gtag || !CONVERSION_LABEL) return;
 
     // No consent check here on purpose: gtag.js itself respects whatever
     // consent state was set via consentState() above, sending either a full
@@ -59,7 +59,7 @@ function attachDownloadClickTracking() {
     window.gtag("event", "conversion", {
       send_to: CONVERSION_LABEL,
       value: 1.0,
-      currency: "NOK",
+      currency: "SEK",
     });
   });
 }
