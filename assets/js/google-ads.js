@@ -55,6 +55,19 @@ function bootstrapGoogleAds() {
 /** Delegated click listener for every "Last ned"-button on the site — mirrors meta-pixel.js's download_click. */
 function attachDownloadClickTracking() {
   document.addEventListener("click", (event) => {
+    // GA4-händelser (egna namn för Elvina, så de kan importeras som separata
+    // konverteringar i Google Ads utan att blandas med Savino).
+    const ga4Target = event.target.closest(
+      '[data-track="download_click"], [data-track="giftcard_checkout_click"]',
+    );
+    if (ga4Target && window.gtag) {
+      const name =
+        ga4Target.dataset.track === "download_click"
+          ? "elvina_download_click"
+          : "elvina_gift_click";
+      window.gtag("event", name, { store: ga4Target.dataset.store || "" });
+    }
+
     const target = event.target.closest('[data-track="download_click"]');
     if (!target || !window.gtag || !CONVERSION_LABEL) return;
 
