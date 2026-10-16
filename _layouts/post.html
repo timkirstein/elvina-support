@@ -15,7 +15,7 @@ layout: default
     {% if page.hero.src %}
     <figure class="hero-fig">
       <div class="frame">
-        <img src="{{ page.hero.src }}" alt="{{ page.hero.alt | default: page.title }}" loading="eager" />
+        <img src="{{ page.hero.src }}" alt="{{ page.hero.alt | default: page.title }}" loading="eager"{% if page.hero.position %} style="object-position: {{ page.hero.position }}"{% endif %} />
       </div>
       {% if page.hero.caption %}
       <figcaption>{{ page.hero.caption }}</figcaption>
