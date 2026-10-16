@@ -1,0 +1,119 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--noir:#1A1715;--granat:#7A2E3A;--champagne:#EDE3D1;--creme:#FBF8F2;--gold:#C9A876;--bronze:#7A5B33}
+*{box-sizing:border-box;margin:0}
+html,body{width:100%;height:100%}
+body{font-family:Manrope,sans-serif;background:var(--champagne);color:var(--noir);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.wm{font-family:Italiana,serif;letter-spacing:.28em}
+.wm i{font-style:normal;color:var(--granat)}
+.stage{width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;position:relative}
+/* gift card */
+.card{background:var(--noir);color:var(--creme);border-radius:2.2vmin;box-shadow:0 3vmin 6vmin rgba(26,23,21,.28);padding:4.4vmin 5vmin;width:62vmin;height:39vmin;display:flex;flex-direction:column;justify-content:space-between;position:relative;transform:rotate(-4deg)}
+.card .wm{font-size:5.2vmin;color:var(--creme)} .card .wm i{color:var(--gold)}
+.card .rule{height:.35vmin;background:var(--gold);width:9vmin;margin:2vmin 0}
+.card .t{font-size:3.7vmin;font-family:Italiana,serif;line-height:1.1}
+.card .s{font-size:1.9vmin;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;font-weight:600}
+.card .c{font-size:2.1vmin;letter-spacing:.12em;opacity:.8}
+.txt h1{font-family:Italiana,serif;font-weight:400;line-height:1.02}
+.txt p{font-weight:500}
+.cta{display:inline-block;background:var(--granat);color:var(--creme);font-weight:700;border-radius:99px}
+/* layouts */
+.wide .stage{flex-direction:row;gap:7vmin;padding:0 5vmin}
+.wide .card{width:62vmin;height:38vmin;padding:4.2vmin 4.8vmin}
+.wide .card .wm{font-size:5vmin}.wide .card .t{font-size:3.8vmin}.wide .card .s{font-size:1.9vmin}.wide .card .c{font-size:2.1vmin}
+.wide .txt{max-width:56vw}.wide .txt h1{font-size:13vmin}.wide .txt p{font-size:4.4vmin;margin-top:2.4vmin;color:var(--bronze)}
+.wide .cta{margin-top:3.4vmin;font-size:4vmin;padding:2vmin 4.6vmin}
+.sq .stage,.port .stage{flex-direction:column;gap:6vmin}
+.sq .txt,.port .txt{text-align:center}
+.sq .txt h1{font-size:11vmin}.sq .txt p{font-size:3.6vmin;margin-top:2vmin;color:var(--bronze)}
+.sq .cta{margin-top:3.5vmin;font-size:3.4vmin;padding:1.8vmin 4.2vmin}
+.port .card{width:66vmin;height:41vmin}
+.port .txt h1{font-size:9.4vmin}.port .txt p{font-size:3vmin;margin-top:2vmin;color:var(--bronze)}
+.port .cta{margin-top:3vmin;font-size:2.8vmin;padding:1.6vmin 3.6vmin}
+.sq .card{width:70vmin;height:43.5vmin}
+/* motif B: mail */
+.mail .stage{flex-direction:column;gap:4vmin;text-align:center;background:var(--noir);color:var(--creme)}
+.mail .env{width:56vmin;height:36vmin;background:var(--creme);border-radius:1.6vmin;position:relative;box-shadow:0 2.4vmin 5vmin rgba(0,0,0,.4)}
+.mail .env:before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom right,transparent 49.6%,rgba(26,23,21,.14) 50%) , linear-gradient(to bottom left,transparent 49.6%,rgba(26,23,21,.14) 50%);clip-path:polygon(0 0,100% 0,50% 58%);}
+.mail .seal{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);width:9vmin;height:9vmin;border-radius:50%;background:var(--granat);display:flex;align-items:center;justify-content:center;font-family:Italiana,serif;color:var(--creme);font-size:5vmin}
+.mail h1{font-family:Italiana,serif;font-weight:400;font-size:9.5vmin;line-height:1.05}
+.mail h1 i{font-style:normal;color:var(--gold)}
+.mail p{font-size:3.2vmin;color:var(--gold);font-weight:500}
+.mail.wide .stage{flex-direction:row;padding:0 7vmin;gap:8vmin;text-align:left}
+.mail.wide h1{font-size:9vmin}.mail.wide .env{width:46vmin;height:30vmin;flex:none}
+/* motif C: typographic */
+.type .stage{flex-direction:column;gap:3.2vmin;text-align:center;background:var(--granat);color:var(--creme);padding:0 8vmin}
+.type h1{font-family:Italiana,serif;font-weight:400;font-size:14vmin;line-height:1}
+.type h1 i{font-style:normal;color:var(--gold)}
+.type .wm{font-size:4.6vmin;color:var(--creme)}
+.type .wm i{color:var(--gold)}
+.type p{font-size:3.4vmin;font-weight:500;opacity:.9}
+.type.wide .stage{padding:0 9vmin}.type.wide h1{font-size:12.5vmin}
+
+/* motif D: app */
+.app .stage{background:var(--champagne);gap:6vmin}
+.phone{width:34vmin;height:56vmin;border-radius:5vmin;border:1.1vmin solid var(--noir);background:var(--creme) url(app-search.png) top center/100% auto no-repeat;box-shadow:0 3vmin 6vmin rgba(26,23,21,.3);flex:none}
+.app .txt h1{font-family:Italiana,serif;font-weight:400;line-height:1.02}
+.app .txt p{font-weight:500;color:var(--bronze)}
+.app.wide .stage{flex-direction:row;padding:0 6vmin;gap:8vmin}
+.app.wide .phone{width:26vmin;height:56vmin;transform:translateY(8vmin)}
+.app.wide .txt h1{font-size:12vmin}.app.wide .txt p{font-size:4vmin;margin-top:2.2vmin}
+.app.wide .cta{margin-top:3.2vmin;font-size:3.8vmin;padding:2vmin 4.4vmin}
+.app.sq .stage,.app.port .stage{flex-direction:column}
+.app.sq .phone{width:34vmin;height:50vmin}.app.port .phone{width:36vmin;height:52vmin}
+.app.sq .txt h1,.app.port .txt h1{font-size:9vmin}.app.sq .txt p,.app.port .txt p{font-size:3.2vmin;margin-top:1.6vmin}
+.app.sq .cta,.app.port .cta{margin-top:2.4vmin;font-size:3vmin;padding:1.5vmin 3.8vmin}
+
+/* motif E/F: skärmklipp */
+.shot .stage{background:var(--champagne);gap:6vmin}
+.shot .img{border-radius:2.4vmin;box-shadow:0 3vmin 6vmin rgba(26,23,21,.25);background-size:100% 100%;background-repeat:no-repeat;flex:none;border:.5vmin solid rgba(26,23,21,.08)}
+.shot .txt h1{font-family:Italiana,serif;font-weight:400;line-height:1.02}
+.shot .txt p{font-weight:500;color:var(--bronze)}
+.shot.wide .stage{flex-direction:row;padding:0 6vmin;gap:7vmin}
+.shot.wide .txt h1{font-size:11.5vmin}.shot.wide .txt p{font-size:3.8vmin;margin-top:2.2vmin}
+.shot.wide .cta{margin-top:3vmin;font-size:3.6vmin;padding:1.9vmin 4.2vmin}
+.shot.sq .stage,.shot.port .stage{flex-direction:column;gap:5vmin}
+.shot.sq .txt h1,.shot.port .txt h1{font-size:9vmin}.shot.sq .txt p,.shot.port .txt p{font-size:3.2vmin;margin-top:1.6vmin}
+.shot.sq .cta,.shot.port .cta{margin-top:2.4vmin;font-size:3vmin;padding:1.5vmin 3.8vmin}
+
+/* motif G: hela detaljskärmen (beskuren före producenttexten) */
+.full .stage{background:var(--champagne)}
+.full .phone2{border-radius:4vmin;border:1vmin solid var(--noir);background:var(--creme) url(app-details-full.png) top center/100% 100% no-repeat;box-shadow:0 3vmin 6vmin rgba(26,23,21,.3);flex:none;aspect-ratio:1170/2209}
+.full .txt h1{font-family:Italiana,serif;font-weight:400;line-height:1.02}
+.full .txt p{font-weight:500;color:var(--bronze)}
+.full.wide .stage{flex-direction:row;gap:8vmin;padding:0 6vmin}
+.full.wide .phone2{height:88vmin}
+.full.wide .txt h1{font-size:11vmin}.full.wide .txt p{font-size:3.8vmin;margin-top:2vmin}
+.full.wide .cta{margin-top:3vmin;font-size:3.6vmin;padding:1.9vmin 4.2vmin}
+.full.sq .stage,.full.port .stage{flex-direction:column;gap:4vmin}
+.full.sq .phone2{height:62vmin}.full.port .phone2{height:64vmin}
+.full.sq .txt h1,.full.port .txt h1{font-size:8.6vmin}.full.sq .txt p,.full.port .txt p{font-size:3vmin;margin-top:1.4vmin}
+.full.sq .cta,.full.port .cta{margin-top:2.2vmin;font-size:2.9vmin;padding:1.4vmin 3.6vmin}
+</style></head><body>
+<script>
+const q=new URLSearchParams(location.search);
+const m=q.get('m')||'A', f=q.get('f')||'wide';
+document.body.className=f+(m==='B'?' mail':m==='C'?' type':m==='D'?' app':(m==='E'||m==='F')?' shot':m==='G'?' full':'');
+const logo='<span class="wm">EL<i>VIN</i>A</span>';
+const card=`<div class="card"><div><div class="wm">EL<i>VIN</i>A</div><div class="rule"></div></div><div><div class="s">Gåva · 12 månader</div><div class="t">Elvina Premium</div></div><div class="c">ELVINA-XXXX-XXXX</div></div>`;
+let html='';
+if(m==='A'){
+ html=`<div class="stage">${card}<div class="txt"><h1>Ge bort en sommelier</h1><p>Presentkort på mejl. Klart på två minuter.</p><span class="cta">Ge bort Elvina Premium</span></div></div>`;
+}else if(m==='B'){
+ html=`<div class="stage"><div class="env"><div class="seal">E</div></div><div><h1>Julklappen som <i>skickas</i> direkt</h1><p>Digitalt presentkort · ingen frakt</p></div></div>`;
+}else if(m==='D'){
+ html=`<div class="stage"><div class="phone"></div><div class="txt"><h1>Ge bort en sommelier</h1><p>Hjälper den du ger till att välja rätt till maten</p><span class="cta">Ge bort Elvina Premium</span></div></div>`;
+}else if(m==='G'){
+ html=`<div class="stage"><div class="phone2"></div><div class="txt"><h1>Ge bort en sommelier</h1><p>Stil, druvor och rätt tid att öppna – allt på ett ställe</p><span class="cta">Ge bort Elvina Premium</span></div></div>`;
+}else if(m==='E'||m==='F'){
+ const img=m==='E'?'shot-stil.png':'shot-fonster.png';
+ const ratio=m==='E'?(637/810):(445/810);
+ const sub=m==='E'?'Visar stil, fyllighet och karaktär – så att den du ger till vet vad hen väljer':'Berättar när det är dags att öppna – på rätt dag, inte för tidigt';
+ const w=f==='wide'?(m==='E'?44:50):(f==='sq'?(m==='E'?42:58):(m==='E'?44:60));
+ html=`<div class="stage"><div class="img" style="background-image:url(${img});width:${w}vmin;height:${w*ratio}vmin"></div><div class="txt"><h1>Ge bort en sommelier</h1><p>${sub}</p><span class="cta">Ge bort Elvina Premium</span></div></div>`;
+}else{
+ html=`<div class="stage">${logo}<h1>En sommelier <i>i fickan</i></h1><p>Ge bort Elvina Premium i 12 månader</p></div>`;
+}
+document.body.innerHTML=html;
+</script></body></html>
