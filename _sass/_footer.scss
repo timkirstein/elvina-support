@@ -35,4 +35,10 @@
     gap: 16px;
     padding: 24px 20px;
   }
+
+  // Six links don't fit on one line on a phone.
+  .site-footer .links {
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
 }

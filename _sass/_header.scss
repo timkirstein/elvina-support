@@ -77,8 +77,19 @@
 }
 
 @media (max-width: 880px) {
-  .site-header .inner { padding: 14px 20px; }
+  .site-header .inner { padding: 14px 20px; gap: 12px; }
   .nav-actions { gap: 8px; }
   .text-link.hide-mobile { display: none; }
   .header-cta { display: none; }
+}
+
+// Small phones: the lockup plus three links is wider than the screen.
+@media (max-width: 420px) {
+  .lockup { gap: 10px; }
+  .lockup .word .tag { display: none; }
+  .nav-actions { gap: 4px; }
+}
+
+@media (max-width: 340px) {
+  .nav-actions .text-link:first-child { display: none; }
 }
