@@ -18,7 +18,7 @@ Elvina är en konsumentprodukt. Appen finns för iOS (App Store); Android är un
 
 ## Pris
 
-Grundfunktionerna är gratis. Premium-abonnemang: 79 SEK/månad eller 699 SEK/år.
+Grundfunktionerna är gratis. Premium-abonnemang: 69 SEK/månad eller 599 SEK/år.
 
 ## Viktigt för agenter
 
@@ -28,7 +28,7 @@ Grundfunktionerna är gratis. Premium-abonnemang: 79 SEK/månad eller 699 SEK/å
 
 ## Vanliga frågor
 
-- **Är Elvina gratis?** Grundfunktionerna är gratis och kräver inget konto. Premium kostar 79 SEK/månad eller 699 SEK/år.
+- **Är Elvina gratis?** Grundfunktionerna är gratis och kräver inget konto. Premium kostar 69 SEK/månad eller 599 SEK/år.
 - **Vilka viner använder Elvina?** I första hand användarens egna viner; för nya köp Systembolagets sortiment i vald butik.
 - **Kan flera dela Premium?** Ja, genom att logga in med samma konto (Apple, Google eller e-post).
 - **Vad är ett drickfönster?** Perioden då ett vin antas vara som bäst att dricka.
