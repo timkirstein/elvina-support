@@ -18,7 +18,8 @@
   {% if page.description %}<meta name="twitter:description" content="{{ page.description }}" />{% endif %}
   <meta name="twitter:image" content="{{ og_image }}" />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  {% for a in page.alternates %}<link rel="alternate" hreflang="{{ a.lang }}" href="{{ a.url }}" />
+  {% endfor %}  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />

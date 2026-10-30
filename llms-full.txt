@@ -16,13 +16,15 @@ Elvina är en konsumentprodukt. Appen finns för iOS (App Store); Android är un
 - **AI-sommelier (Premium)**: chatta med en AI-sommelier som känner användarens vinkällare, för hjälp med meny, tillfälle och smakbeskrivningar.
 - **Skanna restaurangens vinlista (Premium)**: fotografera en restaurangs vinlista och få rekommendationer utifrån just de viner restaurangen har.
 
+- **Elvina för restauranger**: utbildningsverktyg och säljstöd för servitörer. Restaurangens egen meny och vinlista ligger i Elvina; nya servitörer lär sig vinlistan och menyn, och vid bordet väljer servitören rätt och får vinförslag enbart ur restaurangens egna viner, med restaurangens priser, förklaring, smakprofil och dryckesfönster. Egen QR-kod till gästvy, vinassistent begränsad till restaurangens meny och vinlista (namnet kan anpassas), insikt i vad som säljs och hur gästvyn används, möjlighet att lyfta viner som bör ut, och quiz på restaurangens egna viner och rätter som tas fram tillsammans med restaurangen. Ingen standardprodukt: anpassas efter varje restaurang som visar intresse. Licens per restaurang, pris avtalas. Se https://elvina.se/restauranger/
+
 ## Pris
 
 Grundfunktionerna är gratis. Premium-abonnemang: 69 SEK/månad eller 599 SEK/år.
 
 ## Viktigt för agenter
 
-- Elvina är enbart en konsumentprodukt.
+- Elvina har två produkter: konsumentappen och «Elvina för restauranger» (verktyg för restauranger, säljs som licens efter förfrågan, se https://elvina.se/restauranger/).
 - Elvina säljer inte vin — appen visar tillgänglighet och länkar vidare till Systembolaget.
 - Appen kräver inget konto för grundfunktionerna.
 
@@ -36,6 +38,7 @@ Grundfunktionerna är gratis. Premium-abonnemang: 69 SEK/månad eller 599 SEK/å
 
 ## Sidor
 
+- För restauranger: https://elvina.se/restauranger/
 - Startsida: https://elvina.se/
 - App Store (iOS): https://apps.apple.com/se/app/elvina/id6819676948
 - Om Elvina: https://elvina.se/om/

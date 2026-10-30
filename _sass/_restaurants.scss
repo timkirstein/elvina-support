@@ -1,0 +1,197 @@
+// Restaurant landing page + interest form (savino.no/restauranter,
+// elvina.se/restauranger). Same file in both sites; colours come from tokens.
+.rest-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+
+  .eyebrow { margin-bottom: 14px; }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(34px, 4.6vw, 52px);
+    line-height: 1.1;
+    margin: 0 0 20px;
+    em { font-style: italic; color: var(--gold); }
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(26px, 3vw, 34px);
+    line-height: 1.15;
+    margin: 56px 0 16px;
+  }
+
+  h3 { font-size: 17px; margin: 0 0 6px; }
+  p, li { font-size: 16.5px; line-height: 1.6; color: var(--ink-2); }
+  .lead { font-size: 19px; color: var(--ink); max-width: 720px; }
+
+  .definition {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin: 24px 0 0;
+    p { margin: 0; color: var(--ink); }
+  }
+
+  .cta-row { margin-top: 24px; }
+  .btn {
+    display: inline-block;
+    background: var(--green-dark);
+    color: var(--white);
+    border-radius: 999px;
+    padding: 14px 26px;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover { background: var(--green-deep); }
+  }
+
+  ol.steps {
+    list-style: none;
+    counter-reset: step;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+    li {
+      counter-increment: step;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px 20px 16px 64px;
+      position: relative;
+      &::before {
+        content: counter(step);
+        position: absolute;
+        left: 20px;
+        top: 14px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--green-dark);
+        color: var(--white);
+        font-weight: 700;
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    > div {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+      p { margin: 0; }
+    }
+  }
+
+  dl.faq {
+    dt { font-weight: 700; color: var(--ink); margin-top: 22px; font-size: 17px; }
+    dd { margin: 6px 0 0; }
+  }
+
+  .note { font-size: 14px; color: var(--muted); }
+}
+
+.rest-form {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 14px 0 6px;
+    .optional { font-weight: 400; color: var(--muted); }
+  }
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    background: var(--mint);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font: 15px var(--sans);
+    color: var(--ink);
+    resize: vertical;
+    &:focus-visible { outline: 2px solid var(--green); outline-offset: 1px; }
+  }
+  .consent {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 18px;
+    input { margin-top: 3px; }
+  }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  button[type="submit"] {
+    margin-top: 20px;
+    align-self: flex-start;
+    background: var(--green-dark);
+    color: var(--white);
+    border: 0;
+    border-radius: 999px;
+    padding: 14px 28px;
+    font: 600 15.5px var(--sans);
+    cursor: pointer;
+    &:hover:not(:disabled) { background: var(--green-deep); }
+    &:disabled { opacity: 0.6; cursor: default; }
+  }
+  .status { margin-top: 14px; font-size: 14.5px; min-height: 1.4em; }
+  .status.error { color: #b8433a; }
+  .status.ok { color: var(--green-dark); font-weight: 600; }
+}
+
+@media (max-width: 720px) {
+  .rest-page { padding: 36px 16px 72px; .grid-2 { grid-template-columns: 1fr; } }
+  .rest-form { padding: 20px; }
+}
+
+.rest-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.rest-page figure.shot {
+  margin: 0;
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 24px;
+    border: 1px solid var(--line);
+    box-shadow: 0 18px 40px -24px rgba(10, 26, 20, 0.4);
+  }
+  figcaption {
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.rest-split {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 32px;
+  align-items: start;
+  h2 { margin-top: 0; }
+}
+
+@media (max-width: 720px) {
+  .rest-hero, .rest-split { grid-template-columns: 1fr; }
+  .rest-page figure.shot img { max-width: 240px; }
+}
