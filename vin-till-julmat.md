@@ -8,6 +8,7 @@ category: Guide
 permalink: /blogg/vin-till-julmat/
 hero:
   src: /assets/img/julskinka.jpg
+  position: "50% 45%"
   alt: "julskinka med senap och ströbröd på julbordet"
   caption: "Julbordet samlar fett, salt, sött och syrligt på samma tallrik"
 courses:
