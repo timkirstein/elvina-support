@@ -1,7 +1,7 @@
 # Elvina – webbplats (elvina.se)
 
 Jekyll-sajt för elvina.se — marknadsföringssida, blogg, integritetspolicy och villkor.
-Svensk motsvarighet till savino-support (savino.no). Elvina tillhandahålls av Savino AS.
+Svensk motsvarighet till savino-support (savino.no). Elvina tillhandahålls av Savino Kirstein.
 
 ## Köra lokalt
 

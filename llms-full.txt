@@ -6,7 +6,7 @@ permalink: /llms-full.txt
 
 > Elvina är en vinapp som ger konkreta vinrekommendationer till mat, utifrån användarens egen vinkällare eller det faktiska sortimentet i den Systembolagsbutik användaren väljer.
 
-Elvina är en konsumentprodukt. Appen finns för iOS (App Store); Android är under test och släpps inom kort. Kärnfunktionerna är gratis och kräver inget konto. Elvina tillhandahålls av Savino AS.
+Elvina är en konsumentprodukt. Appen finns för iOS (App Store); Android är under test och släpps inom kort. Kärnfunktionerna är gratis och kräver inget konto. Elvina tillhandahålls av Savino Kirstein.
 
 ## Funktioner
 
