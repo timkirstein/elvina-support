@@ -22,22 +22,22 @@ courses:
         wine: "Friskt, syrligt vitt vin eller mousserande med ren frukt, till exempel Champagne eller torr Riesling."
         url: /blogg/vin-till-gravad-lax/
       - name: "Janssons frestelse"
-        wine: "Friskt, rent vin med god syra och medelfyllig kropp."
+        wine: "Friskt, rent vin med god syra och medelkropp."
         url: /blogg/vin-till-janssons-frestelse/
   - title: "Kött och varmrätter"
-    intro: "Julbordets kött är fett och salt. God syra, fruktighet och låg tannin gör vinet allsidigt."
+    intro: "Julbordets kött är fett och salt. God syra, fruktighet och låga tanniner gör vinet allsidigt."
     dishes:
       - name: "Julskinka"
-        wine: "Fruktighet, frisk syra och lätt tannin. Lätt till medelfyllig kropp."
+        wine: "Fruktighet, frisk syra och lätta tanniner. Lätt till medelfylligt vin."
         url: /blogg/vin-till-julskinka/
       - name: "Julköttbullar"
-        wine: "Fruktigt rött med mjuk tannin och frisk syra, som Pinot Noir eller Gamay."
+        wine: "Fruktigt rött med mjuka tanniner och frisk syra, som Pinot Noir eller Gamay."
         url: /blogg/vin-till-julkottbullar/
       - name: "Ugnsbakat sidfläsk"
         wine: "Hög syra, saftig frukt och låga tanniner."
         url: /blogg/vin-till-ugnsbakat-sidflask/
       - name: "Kalkon med kastanjefyllning"
-        wine: "Fruktigt, men balanserat vin med nötig djup och god syra."
+        wine: "Fruktigt, men balanserat vin med nötigt djup och god syra."
         url: /blogg/vin-till-kalkon-med-kastanjefyllning/
   - title: "Dessert och ost"
     intro: "Vinet bör vara minst lika sött som desserten, annars känns det tunt och surt."
@@ -46,25 +46,25 @@ courses:
         wine: "Lätt sött vin med frisk syra och bärfrukt, till exempel Moscato d'Asti eller Brachetto d'Acqui."
         url: /blogg/vin-till-ris-a-la-malta/
       - name: "Ostbricka"
-        wine: "God syra, intensitetsmatchning och låg till måttlig tannin."
+        wine: "God syra, intensitetsmatchning och låga till måttliga tanniner."
         url: /blogg/vin-till-ostbricka/
 faq:
   - q: "Vilket vin passar till hela julbordet?"
-    a: "Inget vin är perfekt till allt, men ett allsidigt vin med god syra, mogen frukt och medelfyllig kropp är sällan fel. Halvtorr Riesling, Pinot Gris eller en lätt Pinot Noir fungerar till julskinka, köttbullar och sidfläsk. Torrt mousserande vin passar från förrätten och framåt."
+    a: "Inget vin är perfekt till allt, men ett allsidigt vin med god syra, mogen frukt och medelkropp är sällan fel. Halvtorr Riesling, Pinot Gris eller en lätt Pinot Noir fungerar till julskinka, köttbullar och sidfläsk. Torrt mousserande vin passar från förrätten och framåt."
   - q: "Rött eller vitt till julskinka?"
-    a: "Båda kan fungera. Julskinkan med senap och ströbröd passar bäst med ett fruktigt vin med frisk syra och lätt till medelfyllig kropp. Är skinkan penslad med söt senap passar en halvtorr Riesling eller Pinot Gris. Föredrar du rött fungerar lätt Pinot Noir, Gamay eller en fruktig Dolcetto. Undvik kraftiga viner med mycket tannin och ek."
+    a: "Båda kan fungera. Julskinkan med senap och ströbröd passar bäst med ett fruktigt, lätt till medelfylligt vin med frisk syra. Är skinkan penslad med söt senap passar en halvtorr Riesling eller Pinot Gris. Föredrar du rött fungerar lätt Pinot Noir, Gamay eller en fruktig Dolcetto. Undvik kraftiga viner med mycket tannin och ek."
   - q: "Vilket vin passar till sill?"
     a: "Sillen är syrlig och salt, så välj ett friskt, syrligt vin eller ett mousserande med ren frukt. Torrt mousserande fungerar genom hela sillbordet. Till söt senapssill passar halvtorr Riesling, till löksill och matjessill torr Riesling, Chablis eller Sauvignon Blanc. Många tycker dock att snaps och öl smakar bäst till sillen."
   - q: "Vilket vin passar till Janssons frestelse?"
-    a: "Janssons frestelse är krämig och salt av ansjovis och grädde. Ett friskt, rent vin med god syra och medelfyllig kropp lyfter rätten utan att ta över. Är gratängen rik på grädde passar Chablis, en ekfri Chardonnay eller Chenin Blanc. Champagne och andra torra mousserande viner är också ett klassiskt val."
+    a: "Janssons frestelse är krämig och salt av ansjovis och grädde. Ett friskt, rent vin med god syra och medelkropp lyfter rätten utan att ta över. Är gratängen rik på grädde passar Chablis, en ekfri Chardonnay eller Chenin Blanc. Champagne och andra torra mousserande viner är också ett klassiskt val."
   - q: "Vilket vin passar till ris à la Malta?"
     a: "Ett lätt sött vin med frisk syra och bärfrukt, till exempel Moscato d'Asti, Asti eller Brachetto d'Acqui. Är hallonsåsen mycket söt bör vinet vara minst lika sött."
   - q: "Hur hittar jag en konkret flaska på Systembolaget?"
     a: "Beskriv rätten i Elvina-appen, så får du konkreta viner ur sortimentet i den Systembolagsbutik du väljer, med en förklaring till varför varje vin passar."
 ---
-**Kort svar:** välj frisk syra och låg tannin. Med tre flaskor, bubbel, ett friskt vitt och ett lätt, fruktigt rött, täcker du de flesta julbord. Ha ett sött vin redo till dessert.
+**Kort svar:** välj frisk syra och låga tanniner. Med tre flaskor – bubbel, ett friskt vitt och ett lätt, fruktigt rött – täcker du de flesta julbord. Ha ett sött vin redo till dessert.
 
-Julmat är inte en rätt utan många. Ett svenskt julbord har salt skinka, fet sidfläsk, krämig Janssons och söta lingon på samma bord, och varje rätt ställer sina egna krav. Den här guiden ger dig de viktigaste principerna först och tar dig sedan genom julbordet rätt för rätt, med länkar till våra fördjupande guider.
+Julmat är inte en rätt utan många. Ett svenskt julbord har salt skinka, fett sidfläsk, krämig Janssons och söta lingon på samma bord, och varje rätt ställer sina egna krav. Den här guiden ger dig de viktigaste principerna först och tar dig sedan genom julbordet rätt för rätt, med länkar till våra fördjupande guider.
 
 ## Varför är julmat så krävande för vin?
 
@@ -72,10 +72,10 @@ Julmaten kombinerar fyra saker som drar åt olika håll:
 
 - **Fett** (sidfläsk, köttbullar, grädde, smör) behöver syra i glaset för att lyftas och skäras igenom
 - **Salt** (skinka, ansjovis, gravad lax) framhäver beska och tanniner, så tunga, tanninrika röda viner blir hårdare än du tror
-- **Sött** tillbehör (lingonsylt, äppelmos, senap, rödkål) gör att helt knastertorra viner kan kännas tunna
-- **Syrligt** tillbehör (inlagd sill, inlagd gurka, rödbetor) hjälper vinet en bit, men skärper samtidigt kravet på friskhet
+- **Söta** tillbehör (lingonsylt, äppelmos, senap, rödkål) gör att helt knastertorra viner kan kännas tunna
+- **Syrliga** tillbehör (inlagd sill, inlagd gurka, rödbetor) hjälper vinet en bit, men skärper samtidigt kravet på friskhet
 
-Resultatet är lätt att sammanfatta: leta efter **frisk syra**, **mogen frukt** och **låg tannin och lite ek**. Det är de egenskaper som återkommer i alla våra guider.
+Resultatet är lätt att sammanfatta: leta efter **frisk syra**, **mogen frukt** och **låga tanniner och lite ek**. Det är de egenskaper som återkommer i alla våra guider.
 
 ## Tre flaskor, och en till dessert
 
@@ -95,7 +95,7 @@ Du behöver inte en full vinkällare för att täcka julbordet. De här tre stil
   <div class="pillar-trio-item">
     <span class="num">Flaska 3</span>
     <h3>Lätt, fruktigt rött</h3>
-    <p>Pinot Noir eller Gamay. Frisk syra, mogen frukt och låg tannin följer med både skinka, köttbullar och sidfläsk.</p>
+    <p>Pinot Noir eller Gamay. Frisk syra, mogen frukt och låga tanniner passar till både skinka, köttbullar och sidfläsk.</p>
   </div>
 </div>
 
@@ -111,11 +111,11 @@ Varje rätt har en egen fördjupande guide. Här är det korta svaret för var o
 
 Julbordet serveras traditionellt i omgångar, och vinet kan följa samma rytm:
 
-1. **Vid ankomsten och till sill och lax:** torrt mousserande. Det fungerar till fisken och är ett festligt öppningsgrepp.
+1. **Vid ankomsten och till sill och lax:** torrt mousserande. Det fungerar till fisken och är en festlig start.
 2. **Till kött och varmrätter:** ett friskt vitt eller ett lätt, fruktigt rött. Äter alla från flera rätter samtidigt, välj ett vin som fungerar brett i stället för att jaga den perfekta matchen till varje enskild rätt.
 3. **Till dessert och ost:** ett vin som är minst lika sött som desserten, serverat kallt i små glas.
 
-> Står skinka, köttbullar och Janssons på samma tallrik, välj helst ett allsidigt vin med god syra och medelfyllig kropp.
+> Står skinka, köttbullar och Janssons på samma tallrik, välj helst ett allsidigt vin med god syra och medelkropp.
 
 **Mängd:** en flaska på 75 cl ger ungefär fem glas. Som tumregel kan du räkna med en halv flaska per gäst som dricker vin, fördelat på de olika vinerna.
 
@@ -126,7 +126,7 @@ Samma rätt kan kräva olika vin beroende på vad som står bredvid:
 - **Lingonsylt, äppelmos och rödkål** tillför fruktighet och sötma och öppnar för viner med lite mognare frukt
 - **Inlagd sill och inlagd gurka** är syrliga och hjälper vinet, som då kan ha något mindre syra
 - **Senap** är skarp, och lite restsötma i vinet dämpar den
-- **Gräddsås och kryddig korv** blir lätt beska och hårda med mycket tannin och ek, så håll dig till låg tannin
+- **Med gräddsås och kryddig korv** blir viner med mycket tannin och ek lätt beska och hårda, så håll dig till låga tanniner
 
 ## Hitta rätt flaska
 

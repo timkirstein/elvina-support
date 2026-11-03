@@ -11,7 +11,7 @@
     <a class="card" href="{{ post.url | relative_url }}">
       {% if post.category %}<span class="cat-tag">{{ post.category }}</span>{% endif %}
       <h5>{{ post.title }}</h5>
-      <span class="date">{{ r_day }}. {{ r_month }} {{ r_year }}</span>
+      <span class="date">{{ r_day }} {{ r_month }} {{ r_year }}</span>
     </a>
     {% endfor %}
   </div>
