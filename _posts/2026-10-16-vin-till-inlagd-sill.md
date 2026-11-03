@@ -11,6 +11,7 @@ hero:
   src: /assets/img/sill.jpg
   alt: "inlagd sill med potatis och gräslök"
   caption: "Sillen – julbordets första tallrik"
+pillar: julmat
 ---
 **Kort svar:** hög syra, ren frukt och lite sötma är vad du bör leta efter i vin till inlagd sill.
 

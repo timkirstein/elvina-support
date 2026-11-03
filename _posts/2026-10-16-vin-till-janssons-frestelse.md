@@ -11,6 +11,7 @@ hero:
   src: /assets/img/janssons_frestelse.jpg
   alt: "Janssons frestelse i en ugnsform"
   caption: "Janssons frestelse – krämig och salt julbordsklassiker"
+pillar: julmat
 ---
 **Kort svar:** god syra, ren frukt och medelfyllig kropp är vad du bör leta efter i vin till Janssons frestelse.
 

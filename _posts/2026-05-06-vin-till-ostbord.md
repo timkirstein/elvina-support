@@ -11,6 +11,7 @@ hero:
   src: /assets/img/cheese.jpg
   alt: "ostbricka på ett träbord"
   caption: "En bra ostbricka – vinvalets konst där syra och fett möts"
+pillar: julmat
 ---
 **Kort svar:** god syra, intensitetsmatchning och låg till måttlig tannin är vad du bör leta efter i vin till ostbricka.
 

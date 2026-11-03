@@ -11,6 +11,7 @@ hero:
   src: /assets/img/gravad_lax.jpg
   alt: "gravad lax med hovmästarsås och dill"
   caption: "Gravad lax – en klassiker på julbordet och påskbordet"
+pillar: julmat
 ---
 **Kort svar:** hög syra, ren frukt och lite sötma är vad du bör leta efter i vin till gravad lax.
 

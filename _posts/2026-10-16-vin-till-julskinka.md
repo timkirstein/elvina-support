@@ -11,6 +11,7 @@ hero:
   src: /assets/img/julskinka.jpg
   alt: "julskinka med senap och ströbröd"
   caption: "Julskinka – själva hjärtat i det svenska julbordet"
+pillar: julmat
 ---
 **Kort svar:** fruktighet, frisk syra och lätt tannin är vad du bör leta efter i vin till julskinka.
 

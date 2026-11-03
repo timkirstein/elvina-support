@@ -27,6 +27,14 @@ layout: default
       {{ content }}
     </div>
 
+    {% if page.pillar == "julmat" %}
+    <aside class="pillar-link">
+      <span class="eyebrow">Del av guiden</span>
+      <a href="/blogg/vin-till-julmat/">Vin till julmat: den kompletta guiden</a>
+      <span> med alla julbordets rätter och en enkel plan för vinet genom middagen.</span>
+    </aside>
+    {% endif %}
+
     {% include conversion-card.html %}
 
     <div class="back-link">

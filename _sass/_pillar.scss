@@ -1,0 +1,224 @@
+/* Pillar page (julemat): tre-flaskers-stripe, rett-kort per kurs, FAQ. */
+
+.pillar .body {
+  max-width: var(--reading-width);
+}
+
+/* "Tre flasker"-stripe */
+.pillar-trio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 24px 0 32px;
+
+  .pillar-trio-item {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 20px 22px;
+
+    .num {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+
+    h3 {
+      font-size: 17px;
+      line-height: 1.3;
+      margin: 8px 0 8px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--ink-2);
+      margin: 0;
+    }
+  }
+}
+
+.pillar-trio-extra {
+  font-size: 15px;
+  color: var(--ink-2);
+}
+
+/* Kurs-seksjon med rett-kort */
+.pillar-course {
+  margin: 0 0 36px;
+
+  h3 {
+    margin-top: 32px;
+  }
+
+  .pillar-course-intro {
+    font-size: 15.5px;
+    color: var(--ink-2);
+    margin-bottom: 14px;
+  }
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px 20px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: transform 0.15s, box-shadow 0.15s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -16px rgba(11, 63, 53, 0.2);
+  }
+
+  .pillar-card-name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.3;
+    color: var(--ink);
+  }
+
+  .pillar-card-wine {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--ink-2);
+    flex-grow: 1;
+  }
+
+  .pillar-card-more {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--green-deep);
+  }
+}
+
+/* FAQ */
+.pillar-faq {
+  margin-top: 56px;
+
+  details {
+    border-bottom: 1px solid var(--line);
+    padding: 4px 0;
+
+    &:first-of-type {
+      border-top: 1px solid var(--line);
+    }
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.4;
+    padding: 14px 28px 14px 0;
+    list-style: none;
+    position: relative;
+
+    &::-webkit-details-marker { display: none; }
+
+    &::after {
+      content: "+";
+      position: absolute;
+      right: 4px;
+      top: 12px;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--green);
+    }
+  }
+
+  details[open] summary::after {
+    content: "\2212";
+  }
+
+  details p {
+    margin: 0 0 16px;
+    font-size: 16px;
+  }
+}
+
+/* Cluster-innlegg -> pillar */
+.pillar-link {
+  max-width: var(--content-width);
+  margin: 40px 0 0;
+  padding: 18px 22px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  font-size: 15px;
+  color: var(--ink-2);
+
+  .eyebrow {
+    display: block;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 400;
+    margin: 0 0 6px;
+  }
+
+  a {
+    font-weight: 700;
+    color: var(--green-deep);
+  }
+}
+
+/* Fremhevet banner øverst på bloggindeksen */
+.featured-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 32px;
+  padding: 24px 28px;
+  background: var(--green-dark);
+  color: #fff;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: transform 0.15s;
+
+  &:hover { transform: translateY(-2px); }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mint-bright);
+    margin: 0;
+  }
+
+  strong {
+    font-size: clamp(20px, 2.4vw, 26px);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.85;
+  }
+}
+
+@media (max-width: 880px) {
+  .pillar-trio,
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-banner { padding: 20px; }
+}

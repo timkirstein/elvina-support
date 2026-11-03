@@ -11,6 +11,7 @@ hero:
   src: /assets/img/roast_turkey.jpg
   alt: "ugnsstekt kalkon med kastanjefyllning och lingonsås"
   caption: "Kalkon med kastanjefyllning – höstfestens klassiska huvudrätt"
+pillar: julmat
 ---
 **Kort svar:** fruktig, men balanserad profil, nötig eller fruktig djup och god syra är vad du bör leta efter i vin till kalkon med kastanjefyllning.
 

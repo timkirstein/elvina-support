@@ -1,0 +1,15 @@
+{%- for course in page.courses -%}
+<div class="pillar-course">
+<h3>{{ course.title }}</h3>
+<p class="pillar-course-intro">{{ course.intro }}</p>
+<div class="pillar-grid">
+{%- for d in course.dishes %}
+<a class="pillar-card" href="{{ d.url }}">
+<span class="pillar-card-name">{{ d.name }}</span>
+<span class="pillar-card-wine">{{ d.wine }}</span>
+<span class="pillar-card-more">Läs guiden →</span>
+</a>
+{%- endfor %}
+</div>
+</div>
+{%- endfor -%}

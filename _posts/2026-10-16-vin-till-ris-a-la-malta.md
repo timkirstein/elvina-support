@@ -11,6 +11,7 @@ hero:
   src: /assets/img/ris_a_la_malta.jpg
   alt: "ris à la Malta med hallonsås"
   caption: "Ris à la Malta – julens svala och krämiga avslutning"
+pillar: julmat
 ---
 **Kort svar:** lätt sötma, frisk syra och bärfrukt är vad du bör leta efter i vin till ris à la Malta.
 

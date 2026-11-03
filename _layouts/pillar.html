@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<article class="post pillar">
+  <div class="article-wrap">
+
+    {% include meta-row.html %}
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.lead %}
+    <p class="post-lead">{{ page.lead }}</p>
+    {% endif %}
+
+    {% if page.hero.src %}
+    <figure class="hero-fig">
+      <div class="frame">
+        <img src="{{ page.hero.src }}" alt="{{ page.hero.alt | default: page.title }}" loading="eager"{% if page.hero.position %} style="object-position: {{ page.hero.position }}"{% endif %} />
+      </div>
+      {% if page.hero.caption %}
+      <figcaption>{{ page.hero.caption }}</figcaption>
+      {% endif %}
+    </figure>
+    {% endif %}
+
+    <div class="body">
+      {{ content }}
+
+      {% if page.faq %}
+      <section class="pillar-faq" aria-label="Vanliga frågor">
+        <h2>Vanliga frågor</h2>
+        {% for item in page.faq %}
+        <details>
+          <summary>{{ item.q }}</summary>
+          <p>{{ item.a }}</p>
+        </details>
+        {% endfor %}
+      </section>
+      {% endif %}
+    </div>
+
+    {% include conversion-card.html %}
+
+    <div class="back-link">
+      <a href="/blogg/">← Tillbaka till bloggen</a>
+    </div>
+
+  </div>
+</article>
+
+{% if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "sv-SE",
+  "mainEntity": [
+    {% for item in page.faq %}{
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}

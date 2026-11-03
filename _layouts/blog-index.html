@@ -11,6 +11,14 @@ layout: default
       {% endif %}
     </div>
 
+    {% if page.featured %}
+    <a class="featured-banner" href="{{ page.featured.url }}">
+      <span class="eyebrow">{{ page.featured.eyebrow }}</span>
+      <strong>{{ page.featured.title }}</strong>
+      <span class="text">{{ page.featured.text }}</span>
+    </a>
+    {% endif %}
+
     {% if site.categories.size > 0 %}
     <nav class="meta-row" aria-label="Kategorier" style="margin-bottom:32px; flex-wrap:wrap;">
       {% for cat in site.categories %}

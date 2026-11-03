@@ -11,6 +11,7 @@ hero:
   src: /assets/img/kottbullar.jpg
   alt: "köttbullar med gräddsås och lingonsylt"
   caption: "Köttbullar – julbordets mest älskade rätt"
+pillar: julmat
 ---
 **Kort svar:** fruktigt rött med mjuk tannin och frisk syra är vad du bör leta efter i vin till köttbullar.
 
