@@ -33,6 +33,7 @@ Grundfunktionerna är gratis. Premium-abonnemang: 69 SEK/månad eller 599 SEK/å
 - Fullständig beskrivning för agenter: https://elvina.se/llms-full.txt
 - Blogg (vin till mat): https://elvina.se/blogg/
 - Vin till julmat, komplett guide till julskinka, köttbullar, sill och resten av julbordet: https://elvina.se/blogg/vin-till-julmat/
+- Vin till nyårsmiddagen, komplett guide till ostron, toast Skagen, hummer, oxfilé och nyårsbubbel: https://elvina.se/blogg/vin-till-nyar/
 - Integritet: https://elvina.se/privacy.html
 - Villkor: https://elvina.se/terms.html
 - Kontakt: hej@elvina.se

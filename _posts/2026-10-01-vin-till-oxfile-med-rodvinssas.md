@@ -6,6 +6,7 @@ lead: "Stekt oxfilé med rödvinssås, champinjoner och potatisgratäng är en k
 date: 2026-10-01
 category: Kött
 permalink: /blogg/vin-till-oxfile-med-rodvinssas/
+pillar: nyar
 dish: "stekt oxfilé med rödvinssås, champinjoner och potatisgratäng"
 hero:
   src: /assets/img/beef_tenderloin.jpg
