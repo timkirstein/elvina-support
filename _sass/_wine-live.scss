@@ -59,6 +59,25 @@
   box-shadow: 0 1px 0 var(--line), 0 2px 8px rgba(10,26,20,.05);
 }
 
+// Sponsored placement (paid): first card, clearly labelled "Sponsrad".
+.wine-live-card--sponsored {
+  box-shadow: 0 0 0 1.5px var(--gold), 0 2px 8px rgba(10,26,20,.06);
+}
+
+.wine-sponsored-label {
+  align-self: flex-start;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.wine-sponsored-note {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
 .wine-live-bottle {
   width: 64px;
   height: 96px;

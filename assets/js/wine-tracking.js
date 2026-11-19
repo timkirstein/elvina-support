@@ -44,6 +44,9 @@ function cardData(card) {
     name: card.dataset.wineName || "",
     position: Number(card.dataset.position) || 0,
     wineType: card.dataset.wineType || "",
+    ...(card.dataset.sponsored === "true"
+      ? { sponsored: true, placementId: card.dataset.placementId || "" }
+      : {}),
   };
 }
 
