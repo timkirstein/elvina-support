@@ -191,6 +191,7 @@
   transition: transform 0.15s;
 
   &:hover { transform: translateY(-2px); }
+  & + .featured-banner { margin-top: -20px; }
 
   .eyebrow {
     font-family: var(--mono);
