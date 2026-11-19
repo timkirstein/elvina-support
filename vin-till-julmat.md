@@ -22,7 +22,7 @@ courses:
         wine: "Friskt, syrligt vitt vin eller mousserande med ren frukt, till exempel Champagne eller torr Riesling."
         url: /blogg/vin-till-gravad-lax/
       - name: "Janssons frestelse"
-        wine: "Friskt, rent vin med god syra och medelkropp."
+        wine: "Fylligt vitt vin med god syra, till exempel Chardonnay, gärna med lite ek. Champagne fungerar också."
         url: /blogg/vin-till-janssons-frestelse/
   - title: "Kött och varmrätter"
     intro: "Julbordets kött är fett och salt. God syra, fruktighet och låga tanniner gör vinet allsidigt."
@@ -31,19 +31,19 @@ courses:
         wine: "Fruktighet, frisk syra och lätta tanniner. Lätt till medelfylligt vin."
         url: /blogg/vin-till-julskinka/
       - name: "Julköttbullar"
-        wine: "Fruktigt rött med mjuka tanniner och frisk syra, som Pinot Noir eller Gamay."
+        wine: "Fruktigt rött med mjuka tanniner och frisk syra, som Pinot Noir, Gamay eller Barbera."
         url: /blogg/vin-till-julkottbullar/
       - name: "Ugnsbakat sidfläsk"
-        wine: "Hög syra, saftig frukt och låga tanniner."
+        wine: "Hög syra, saftig frukt och låga tanniner. Torrt mousserande, som Crémant, skär genom den krispiga svålen."
         url: /blogg/vin-till-ugnsbakat-sidflask/
       - name: "Kalkon med kastanjefyllning"
-        wine: "Fruktigt, men balanserat vin med nötigt djup och god syra."
+        wine: "Fruktigt, men balanserat vin med god syra: Chardonnay eller halvtorr Riesling, alternativt ett lätt rött."
         url: /blogg/vin-till-kalkon-med-kastanjefyllning/
   - title: "Dessert och ost"
     intro: "Vinet bör vara minst lika sött som desserten, annars känns det tunt och surt."
     dishes:
       - name: "Ris à la Malta"
-        wine: "Lätt sött vin med frisk syra och bärfrukt, till exempel Moscato d'Asti eller Brachetto d'Acqui."
+        wine: "Sött vin med frisk syra, till exempel Moscato d'Asti, en söt Riesling (Spätlese eller Auslese) eller Brachetto d'Acqui."
         url: /blogg/vin-till-ris-a-la-malta/
       - name: "Ostbricka"
         wine: "God syra, intensitetsmatchning och låga till måttliga tanniner."
@@ -56,9 +56,9 @@ faq:
   - q: "Vilket vin passar till sill?"
     a: "Sillen är syrlig och salt, så välj ett friskt, syrligt vin eller ett mousserande med ren frukt. Torrt mousserande fungerar genom hela sillbordet. Till söt senapssill passar halvtorr Riesling, till löksill och matjessill torr Riesling, Chablis eller Sauvignon Blanc. Många tycker dock att snaps och öl smakar bäst till sillen."
   - q: "Vilket vin passar till Janssons frestelse?"
-    a: "Janssons frestelse är krämig och salt av ansjovis och grädde. Ett friskt, rent vin med god syra och medelkropp lyfter rätten utan att ta över. Är gratängen rik på grädde passar Chablis, en ekfri Chardonnay eller Chenin Blanc. Champagne och andra torra mousserande viner är också ett klassiskt val."
+    a: "Janssons frestelse är krämig och salt av ansjovis och grädde. Rätten behöver ett fylligt vitt vin med god syra som står emot grädden: Chardonnay, gärna med lite ek, eller en fyllig Chenin Blanc. Lätta, tunna viner försvinner bredvid gratängen. Champagne och andra torra mousserande viner är också ett klassiskt val."
   - q: "Vilket vin passar till ris à la Malta?"
-    a: "Ett lätt sött vin med frisk syra och bärfrukt, till exempel Moscato d'Asti, Asti eller Brachetto d'Acqui. Är hallonsåsen mycket söt bör vinet vara minst lika sött."
+    a: "Ett sött vin med frisk syra, till exempel Moscato d'Asti, Asti, en söt Riesling (Spätlese eller Auslese) eller Brachetto d'Acqui. Är hallonsåsen mycket söt bör vinet vara minst lika sött."
   - q: "Hur hittar jag en konkret flaska på Systembolaget?"
     a: "Beskriv rätten i Elvina-appen, så får du konkreta viner ur sortimentet i den Systembolagsbutik du väljer, med en förklaring till varför varje vin passar."
 ---
