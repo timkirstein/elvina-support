@@ -8,8 +8,8 @@ category: Kött
 permalink: /blogg/vin-till-kalkon-med-kastanjefyllning/
 dish: "ugnsstekt kalkon med kastanjefyllning, lingonsås och ugnsbakade rotfrukter"
 hero:
-  src: /assets/img/roast_turkey.jpg
-  alt: "ugnsstekt kalkon med kastanjefyllning och lingonsås"
+  src: /assets/img/kalkon.jpg
+  alt: "ugnsstekt kalkon med rotfrukter på ett dukat julbord"
   caption: "Kalkon med kastanjefyllning – höstfestens klassiska huvudrätt"
 pillar: julmat
 ---

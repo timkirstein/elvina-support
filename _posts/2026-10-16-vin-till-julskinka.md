@@ -9,7 +9,7 @@ permalink: /blogg/vin-till-julskinka/
 dish: "ugnsbakad julskinka med senap och ströbröd"
 hero:
   src: /assets/img/julskinka.jpg
-  alt: "julskinka med senap och ströbröd"
+  alt: "skivad julskinka med senap"
   caption: "Julskinka – själva hjärtat i det svenska julbordet"
 pillar: julmat
 ---
