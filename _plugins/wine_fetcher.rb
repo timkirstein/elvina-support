@@ -185,9 +185,10 @@ module Savino
     codes = picks.map { |r| r.dig('wine', 'code') }.compact
     return nil if codes.empty?
 
-    sponsored_code = sponsored&.dig('wine', 'code')
+    sponsored_code  = sponsored&.dig('wine', 'code')
+    sponsored_score = sponsored&.dig('score')
     key = "se|#{dish}|#{codes.join(',')}"
-    key += "|sponsored:#{sponsored_code}" if sponsored_code
+    key += "|sponsored:#{sponsored_code}:#{sponsored_score}" if sponsored_code
     cache_file = File.join(CACHE_DIR, "intro-#{Digest::MD5.hexdigest(key)}.json")
     return JSON.parse(File.read(cache_file))['introText'] if File.exist?(cache_file)
 
@@ -203,7 +204,9 @@ module Savino
       dishText: dish.encode('UTF-8'),
       marketId: 'se',
       codes:    codes,
-      sponsoredCode: sponsored_code
+      sponsoredCode: sponsored_code,
+      # Decides how strongly the intro may praise the sponsor.
+      sponsoredScore: sponsored_score
     )
     req.body.force_encoding('UTF-8')
     res = http.request(req)
