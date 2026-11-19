@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Vin till julskinka"
-description: "Ugnsbakad julskinka med senap och ströbröd är julbordets stora klassiker och passar bäst med ett fruktigt vin med frisk syra och lätt till medelfyllig kropp."
-lead: "Ugnsbakad julskinka med senap och ströbröd är julbordets stora klassiker och passar bäst med ett fruktigt vin med frisk syra och lätt till medelfyllig kropp."
+description: "Griljerad julskinka med senap och rödkål är julbordets stora klassiker och passar bäst med ett fruktigt vin med frisk syra och lätt till medelfyllig kropp."
+lead: "Griljerad julskinka med senap och rödkål är julbordets stora klassiker och passar bäst med ett fruktigt vin med frisk syra och lätt till medelfyllig kropp."
 date: 2026-10-16
 category: Kött
 permalink: /blogg/vin-till-julskinka/
-dish: "ugnsbakad julskinka med senap och ströbröd"
+dish: "griljerad julskinka med senap och rödkål"
 hero:
   src: /assets/img/julskinka.jpg
   alt: "griljerad julskinka uppskuren på en träbräda med grovkornig senap"
@@ -29,7 +29,7 @@ Julskinkan är lite salt och sötaktig, och senapen ger en kryddig kant. Vinet b
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsbakad julskinka med senap och ströbröd.
+Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till griljerad julskinka med senap och rödkål.
 
 {% include wine-list-live.html %}
 
