@@ -8,8 +8,8 @@ category: Kött
 permalink: /blogg/vin-till-ugnsbakat-sidflask/
 dish: "ugnsbakat sidfläsk med krispig svål, serverat med äppelmos och ugnsrostade rotfrukter"
 hero:
-  src: /assets/img/pork_belly.jpg
-  alt: "ugnsbakat sidfläsk serverat med potatismos och sås"
+  src: /assets/img/sidflask.jpg
+  alt: "ugnsbakat sidfläsk med krispig svål, päron och rostad potatis"
   caption: "Ugnsbakat sidfläsk – fett, krispigt och fullt av smak"
 pillar: julmat
 ---
