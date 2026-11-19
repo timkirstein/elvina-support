@@ -9,9 +9,8 @@ permalink: /blogg/vin-till-ostron/
 pillar: nyar
 dish: "färska ostron med citron och schalottenlöksvinäger"
 hero:
-  src: /assets/img/sjomatfat.jpg
-  position: "35% 80%"
-  alt: "färska ostron med citron på ett skaldjursfat"
+  src: /assets/img/ostron.jpg
+  alt: "färska ostron på is med citron"
   caption: "Ostron och bubbel – nyårsaftonens klassiska förrätt"
 ---
 **Kort svar:** hög syra, ren frukt utan ek och gärna bubblor. Torr Champagne, Crémant, Chablis och Muscadet är de klassiska valen till ostron.

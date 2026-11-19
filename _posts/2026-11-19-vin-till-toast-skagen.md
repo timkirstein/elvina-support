@@ -9,9 +9,9 @@ permalink: /blogg/vin-till-toast-skagen/
 pillar: nyar
 dish: "toast skagen"
 hero:
-  src: /assets/img/shrimps.jpg
-  alt: "skalade räkor"
-  caption: "Räkor, majonnäs och dill – toast Skagen är en svensk festklassiker"
+  src: /assets/img/lojrom.jpg
+  alt: "blinier med löjrom, smetana och rödlök"
+  caption: "Löjrom med smetana och rödlök – salt, krämigt och festligt"
 ---
 **Kort svar:** torrt mousserande vin med hög syra, gärna en Blanc de Blancs. Vill du ha stilla vin passar torr Riesling eller Chablis.
 

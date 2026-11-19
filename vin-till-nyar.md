@@ -7,10 +7,9 @@ date: 2026-11-19
 category: Guide
 permalink: /blogg/vin-till-nyar/
 hero:
-  src: /assets/img/sjomatfat.jpg
-  position: "50% 70%"
-  alt: "skaldjursfat med ostron, havskräftor och citron"
-  caption: "Nyårsmiddagen börjar ofta med skaldjur, och skaldjur älskar bubbel"
+  src: /assets/img/nyar.jpg
+  alt: "champagneflaska och glas på ett dukat nyårsbord"
+  caption: "Nyårsmiddagen slutar med bubbel – och börjar gärna med det också"
 courses:
   - title: "Förrätt"
     intro: "Salt, kallt och delikat. Skaldjur och rom behöver hög syra och ren frukt, och bubblor gör det ännu bättre."
