@@ -11,13 +11,20 @@ layout: default
       {% endif %}
     </div>
 
-    {% if page.featured %}
-    <a class="featured-banner" href="{{ page.featured.url }}">
-      <span class="eyebrow">{{ page.featured.eyebrow }}</span>
-      <strong>{{ page.featured.title }}</strong>
-      <span class="text">{{ page.featured.text }}</span>
+    {%- comment -%}
+      Season banners: each item may have from/until ("YYYY-MM-DD", inclusive).
+      The site is rebuilt every morning, so banners switch on their own.
+    {%- endcomment -%}
+    {%- assign today = site.time | date: "%Y-%m-%d" -%}
+    {%- for f in page.featured -%}
+      {%- if f.from and today < f.from -%}{%- continue -%}{%- endif -%}
+      {%- if f.until and today > f.until -%}{%- continue -%}{%- endif %}
+    <a class="featured-banner" href="{{ f.url }}">
+      <span class="eyebrow">{{ f.eyebrow }}</span>
+      <strong>{{ f.title }}</strong>
+      <span class="text">{{ f.text }}</span>
     </a>
-    {% endif %}
+    {%- endfor %}
 
     {% if site.categories.size > 0 %}
     <nav class="meta-row" aria-label="Kategorier" style="margin-bottom:32px; flex-wrap:wrap;">
