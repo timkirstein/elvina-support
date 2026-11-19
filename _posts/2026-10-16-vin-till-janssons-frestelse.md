@@ -9,7 +9,7 @@ permalink: /blogg/vin-till-janssons-frestelse/
 dish: "Janssons frestelse med potatis, lök, ansjovis och grädde"
 hero:
   src: /assets/img/janssons_frestelse.jpg
-  alt: "Janssons frestelse i en ugnsform"
+  alt: "Janssons frestelse med gyllene ströbrödsyta i en ugnsform på julbordet"
   caption: "Janssons frestelse – krämig och salt julbordsklassiker"
 pillar: julmat
 ---
