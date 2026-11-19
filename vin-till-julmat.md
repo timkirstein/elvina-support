@@ -7,9 +7,9 @@ date: 2026-11-03
 category: Guide
 permalink: /blogg/vin-till-julmat/
 hero:
-  src: /assets/img/julskinka.jpg
-  position: "50% 45%"
-  alt: "julskinka med senap och ströbröd på julbordet"
+  src: /assets/img/jul.jpg
+  position: "50% 55%"
+  alt: "smörgåsar med sill, ägg och löjrom på julbordet"
   caption: "Julbordet samlar fett, salt, sött och syrligt på samma tallrik"
 courses:
   - title: "Sill, lax och Janssons"
