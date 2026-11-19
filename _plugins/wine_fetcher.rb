@@ -179,11 +179,16 @@ module Savino
   # response's own intro describes the pipeline's top three, which the variety
   # pick above often replaces, so it named wines the post never showed.
   # Returns nil on failure: no intro is better than one about other wines.
-  def self.fetch_intro(dish, picks, api_key)
+  # A sponsored card shown above the picks is named in the intro too, disclosed
+  # as sponsored (the backend checks that the placement is live).
+  def self.fetch_intro(dish, picks, api_key, sponsored = nil)
     codes = picks.map { |r| r.dig('wine', 'code') }.compact
     return nil if codes.empty?
 
-    cache_file = File.join(CACHE_DIR, "intro-#{Digest::MD5.hexdigest("se|#{dish}|#{codes.join(',')}")}.json")
+    sponsored_code = sponsored&.dig('wine', 'code')
+    key = "se|#{dish}|#{codes.join(',')}"
+    key += "|sponsored:#{sponsored_code}" if sponsored_code
+    cache_file = File.join(CACHE_DIR, "intro-#{Digest::MD5.hexdigest(key)}.json")
     return JSON.parse(File.read(cache_file))['introText'] if File.exist?(cache_file)
 
     uri  = URI(ENDPOINT)
@@ -197,7 +202,8 @@ module Savino
       action:   'intro',
       dishText: dish.encode('UTF-8'),
       marketId: 'se',
-      codes:    codes
+      codes:    codes,
+      sponsoredCode: sponsored_code
     )
     req.body.force_encoding('UTF-8')
     res = http.request(req)
@@ -274,7 +280,8 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
 
   # Sponsored placement (paid, labelled "Sponsrad"): shown first, on top of
   # the usual three. It is taken out of the organic candidates so it never
-  # appears twice and never counts toward the variety or the intro text.
+  # appears twice and never counts toward the variety; the intro names it as
+  # sponsored.
   sponsored = data['sponsored']
   candidates = data['recommendations'] || []
   if sponsored
@@ -284,7 +291,7 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
   end
   post.data['wine_sponsored']       = sponsored
   post.data['wine_recommendations'] = Savino.pick_diverse(candidates, Savino::RESULTS_PER_POST, data.dig('meta', 'homeCountry'))
-  post.data['wine_intro']           = Savino.fetch_intro(dish, post.data['wine_recommendations'], api_key)
+  post.data['wine_intro']           = Savino.fetch_intro(dish, post.data['wine_recommendations'], api_key, sponsored)
   Savino.report_picks(dish, post.data['wine_recommendations'], api_key)
   Jekyll.logger.info 'WineFetcher:', "#{post.data['wine_recommendations']&.length || 0} wines ready"
 end
