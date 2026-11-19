@@ -272,7 +272,18 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
   data = Savino.fetch_wines(dish, api_key)
   next unless data
 
-  post.data['wine_recommendations'] = Savino.pick_diverse(data['recommendations'], Savino::RESULTS_PER_POST, data.dig('meta', 'homeCountry'))
+  # Sponsored placement (paid, labelled "Sponsrad"): shown first, on top of
+  # the usual three. It is taken out of the organic candidates so it never
+  # appears twice and never counts toward the variety or the intro text.
+  sponsored = data['sponsored']
+  candidates = data['recommendations'] || []
+  if sponsored
+    code = sponsored.dig('wine', 'code')
+    candidates = candidates.reject { |r| r.dig('wine', 'code') == code }
+    Jekyll.logger.info 'WineFetcher:', "Sponsored '#{sponsored.dig('wine', 'name')}' for '#{dish}'"
+  end
+  post.data['wine_sponsored']       = sponsored
+  post.data['wine_recommendations'] = Savino.pick_diverse(candidates, Savino::RESULTS_PER_POST, data.dig('meta', 'homeCountry'))
   post.data['wine_intro']           = Savino.fetch_intro(dish, post.data['wine_recommendations'], api_key)
   Savino.report_picks(dish, post.data['wine_recommendations'], api_key)
   Jekyll.logger.info 'WineFetcher:', "#{post.data['wine_recommendations']&.length || 0} wines ready"

@@ -44,6 +44,9 @@ function cardData(card) {
     name: card.dataset.wineName || "",
     position: Number(card.dataset.position) || 0,
     wineType: card.dataset.wineType || "",
+    ...(card.dataset.sponsored === "true"
+      ? { sponsored: true, placementId: card.dataset.placementId || "" }
+      : {}),
   };
 }
 
@@ -83,7 +86,20 @@ function init() {
     if (!link) return;
     const card = link.closest(".wine-live-card[data-wine-code]");
     if (!card) return;
-    send({ event: "external_click", dishText: dish, result: cardData(card) });
+    const result = cardData(card);
+    send({ event: "external_click", dishText: dish, result });
+    // GA4-händelse (kan importeras som sekundär konvertering i Google Ads).
+    // gtag respekterar samtyckesläget från google-ads.js.
+    window.gtag?.(
+      "event",
+      result.sponsored ? "elvina_sponsored_click" : "elvina_wine_click",
+      {
+        dish,
+        product_id: result.productId,
+        position: result.position,
+        ...(result.sponsored ? { placement_id: result.placementId } : {}),
+      },
+    );
   });
 }
 
