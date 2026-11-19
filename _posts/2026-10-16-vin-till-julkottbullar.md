@@ -9,7 +9,7 @@ permalink: /blogg/vin-till-julkottbullar/
 dish: "svenska köttbullar med gräddsås, lingonsylt och inlagd gurka"
 hero:
   src: /assets/img/kottbullar.jpg
-  alt: "köttbullar med gräddsås och lingonsylt"
+  alt: "köttbullar med brunsås, kokt potatis och lingonsylt på julbordet"
   caption: "Köttbullar – julbordets mest älskade rätt"
 pillar: julmat
 ---
