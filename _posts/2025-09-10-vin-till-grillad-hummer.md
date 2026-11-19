@@ -6,6 +6,7 @@ lead: "Grillad hummer med vitlökssmör är sommarens festmiddag framför andra 
 date: 2025-09-10
 category: Fisk och skaldjur
 permalink: /blogg/vin-till-grillad-hummer/
+pillar: nyar
 dish: "grillad hummer med vitlökssmör"
 hero:
   src: /assets/img/hummer.jpg
