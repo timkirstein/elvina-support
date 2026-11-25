@@ -29,7 +29,7 @@ Det viktigaste med sidfläsk är syra. Fettet lägger sig i munnen, och ett vin 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsbakat sidfläsk.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsbakat sidfläsk.
 
 {% include wine-list-live.html %}
 

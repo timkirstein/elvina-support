@@ -28,7 +28,7 @@ Viltköttets rustika kraft kallar på ett vin med tillräckligt med struktur fö
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till burgare av viltfärs med lingonkompott, karamelliserad lök och portvinssås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till burgare av viltfärs med lingonkompott, karamelliserad lök och portvinssås.
 
 {% include wine-list-live.html %}
 

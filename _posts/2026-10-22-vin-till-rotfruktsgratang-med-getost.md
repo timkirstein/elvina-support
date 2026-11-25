@@ -28,7 +28,7 @@ Getostens karakteristiska syrlighet är den viktigaste faktorn i vinvalet – de
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsbakad rotfruktsgratäng med getost och timjan.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsbakad rotfruktsgratäng med getost och timjan.
 
 {% include wine-list-live.html %}
 

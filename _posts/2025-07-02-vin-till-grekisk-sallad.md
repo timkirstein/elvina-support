@@ -28,7 +28,7 @@ Fetaostens salt och syrlighet är det dominerande elementet för vinvalet. Kalam
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grekisk sallad med fetaost, kalamataoliver och tomat.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grekisk sallad med fetaost, kalamataoliver och tomat.
 
 {% include wine-list-live.html %}
 

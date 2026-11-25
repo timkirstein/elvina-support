@@ -28,7 +28,7 @@ Såsen bygger på rött vin, så rött vin i glaset är naturligt. Men kyckling 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till coq au vin.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till coq au vin.
 
 {% include wine-list-live.html %}
 

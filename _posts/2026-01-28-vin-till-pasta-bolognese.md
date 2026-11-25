@@ -28,7 +28,7 @@ Tomatsåsens syra är den viktigaste faktorn att ta hänsyn till. Ett vin med l�
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till pasta bolognese.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till pasta bolognese.
 
 {% include wine-list-live.html %}
 

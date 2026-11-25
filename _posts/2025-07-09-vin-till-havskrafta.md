@@ -28,7 +28,7 @@ Havskräftköttet är naturligt sött och delikat. Smöret tillför rikedom och 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad havskräfta med smör och vitlök.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad havskräfta med smör och vitlök.
 
 {% include wine-list-live.html %}
 

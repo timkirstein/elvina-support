@@ -28,7 +28,7 @@ Kalvkindens eleganta mörhet kräver ett vin med finess snarare än rå kraft, m
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till långbräserad kalvkind i rött vin med rotfrukter och potatismos.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till långbräserad kalvkind i rött vin med rotfrukter och potatismos.
 
 {% include wine-list-live.html %}
 

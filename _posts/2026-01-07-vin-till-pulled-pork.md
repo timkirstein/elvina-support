@@ -28,7 +28,7 @@ Rökigheten och den sötaktiga BBQ-såsen är rättens två mest dominerande ele
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till pulled pork.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till pulled pork.
 
 {% include wine-list-live.html %}
 

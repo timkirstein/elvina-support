@@ -28,7 +28,7 @@ Rödbetans jordiga sötma kräver ett vin med diskret fruktighet och gärna lite
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till krämig rödbetsrisotto med getost och valnötter.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till krämig rödbetsrisotto med getost och valnötter.
 
 {% include wine-list-live.html %}
 

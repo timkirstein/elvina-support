@@ -28,7 +28,7 @@ Lapskojs är vardagsmat, och vinet behöver inte vara komplicerat. Köttet och d
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till lapskojs.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till lapskojs.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Linsernas jordiga, nötiga karaktär och spiskumminens kryddiga bitterhet behöv
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till linssoppa.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till linssoppa.
 
 {% include wine-list-live.html %}
 

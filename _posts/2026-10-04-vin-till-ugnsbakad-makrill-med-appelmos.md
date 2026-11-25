@@ -28,7 +28,7 @@ Makrillens höga fetthalt kräver ett vin med markant syra som kan skära igenom
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsbakad makrill med syrligt äppelmos och pepparrot.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsbakad makrill med syrligt äppelmos och pepparrot.
 
 {% include wine-list-live.html %}
 

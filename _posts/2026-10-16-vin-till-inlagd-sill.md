@@ -29,7 +29,7 @@ Den inlagda sillen innehåller ättika, socker och salt, så vinet måste ha til
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till inlagd sill med färskpotatis, gräddfil och gräslök.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till inlagd sill med färskpotatis, gräddfil och gräslök.
 
 {% include wine-list-live.html %}
 

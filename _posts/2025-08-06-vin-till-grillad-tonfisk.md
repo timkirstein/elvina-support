@@ -28,7 +28,7 @@ Tonfiskens täta köttstruktur och umamiprofilen från sojasås och sesam gör a
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad tonfiskbiff med sesam, ingefära och sojasås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad tonfiskbiff med sesam, ingefära och sojasås.
 
 {% include wine-list-live.html %}
 

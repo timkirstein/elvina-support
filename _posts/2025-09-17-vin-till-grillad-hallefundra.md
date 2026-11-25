@@ -28,7 +28,7 @@ Hälleflundra är en fet fisk med en mild, nästan krämig smak. Smörbaserad s�
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad hälleflundra med kapris och smörbaserad sås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad hälleflundra med kapris och smörbaserad sås.
 
 {% include wine-list-live.html %}
 

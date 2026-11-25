@@ -28,7 +28,7 @@ Ratatouillens smakprofil är bred och komplex: tomatens syra, auberginens rökig
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ratatouille med aubergine, zucchini, tomat och paprika.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ratatouille med aubergine, zucchini, tomat och paprika.
 
 {% include wine-list-live.html %}
 

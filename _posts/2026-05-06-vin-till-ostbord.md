@@ -29,7 +29,7 @@ Ostens fetthalt är det viktigaste elementet att navigera kring. Fett dämpar ta
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ostbricka.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ostbricka.
 
 {% include wine-list-live.html %}
 

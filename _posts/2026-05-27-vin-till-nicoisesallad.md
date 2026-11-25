@@ -28,7 +28,7 @@ Det är ansjovisen och oliverna som styr vinvalet mest. Båda har intensiv umami
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till niçoisesallad med tonfisk och oliver.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till niçoisesallad med tonfisk och oliver.
 
 {% include wine-list-live.html %}
 

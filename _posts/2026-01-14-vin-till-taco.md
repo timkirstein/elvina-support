@@ -28,7 +28,7 @@ Kryddblandningen i tacokörtet – typiskt spiskummin, chili och paprika – dom
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till taco med köttfärs, salsa och gräddfil.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till taco med köttfärs, salsa och gräddfil.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Fläsk är det mest mångsidiga köttet för vinmatchning – det tål vitt vin,
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad fläskkotlett med äpple, salvia och senap.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad fläskkotlett med äpple, salvia och senap.
 
 {% include wine-list-live.html %}
 

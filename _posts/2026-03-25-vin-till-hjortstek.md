@@ -28,7 +28,7 @@ Hjortköttets intensiva viltsmak är dominerande och krävande. Ett för lätt v
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till hjortstek.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till hjortstek.
 
 {% include wine-list-live.html %}
 

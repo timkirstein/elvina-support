@@ -28,7 +28,7 @@ Fasanens delikata karaktär tål inte ett för kraftigt eller tanninrikt vin –
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till fasan med gräddsås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till fasan med gräddsås.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Kycklingens milda, vita kött är subtilt i smaken och tål inte kraftiga, domin
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsstekt kyckling med vitlök och citron.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsstekt kyckling med vitlök och citron.
 
 {% include wine-list-live.html %}
 

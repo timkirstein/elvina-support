@@ -28,7 +28,7 @@ Nötköttets rikedom och saftighet kallar på tanniner i vinet som binder sig ti
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till hamburgare.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till hamburgare.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Andens rikedom och skinnets fett behöver ett vin med tillräckligt med kropp oc
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till andbröst med plommonsås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till andbröst med plommonsås.
 
 {% include wine-list-live.html %}
 

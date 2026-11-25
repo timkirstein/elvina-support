@@ -28,7 +28,7 @@ Torskens milda karaktär sätter gränser för hur kraftigt vinet kan vara, meda
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsbakad torsk med baconsmulor och rotfruktspuré.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsbakad torsk med baconsmulor och rotfruktspuré.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Den långa bräseringen i rött vin ger rätten en djup, komplex smakprofil som 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till boeuf bourguignon.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till boeuf bourguignon.
 
 {% include wine-list-live.html %}
 

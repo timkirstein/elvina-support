@@ -29,7 +29,7 @@ Riset är inte särskilt sött i sig, men bärsåsen är det. Vinet bör vara ti
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ris à la Malta med hallonsås och mandel.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ris à la Malta med hallonsås och mandel.
 
 {% include wine-list-live.html %}
 

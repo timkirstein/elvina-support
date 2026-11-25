@@ -29,7 +29,7 @@ Oxfiléns delikata mörhet kräver ett vin som inte kör över köttet, medan r�
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till stekt oxfilé med rödvinssås, champinjoner och potatisgratäng.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till stekt oxfilé med rödvinssås, champinjoner och potatisgratäng.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Det är tonfisksåsens intensiva umami och saltsyrliga karaktär som styr vinval
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till vitello tonnato – tunna skivor kalvkött med krämig tonfisksås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till vitello tonnato – tunna skivor kalvkött med krämig tonfisksås.
 
 {% include wine-list-live.html %}
 

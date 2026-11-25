@@ -28,7 +28,7 @@ Långkokt lamm har en koncentrerad, rik smak med mycket umami från köttsaften.
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till lammlägg.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till lammlägg.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Svampens djupa umamikaraktär och smördegens rika, smöriga textur kräver ett 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till vegetarisk svampwellington med portabello, spenat och rödvinssås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till vegetarisk svampwellington med portabello, spenat och rödvinssås.
 
 {% include wine-list-live.html %}
 

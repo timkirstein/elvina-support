@@ -28,7 +28,7 @@ Aiolins vitlök och fett är det mest utmanande elementet. Ett vin utan tillräc
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillade räkor med aioli och citron.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillade räkor med aioli och citron.
 
 {% include wine-list-live.html %}
 

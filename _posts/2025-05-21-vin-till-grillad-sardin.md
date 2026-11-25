@@ -28,7 +28,7 @@ Sardinens höga fetthalt och intensiva marina umami är det dominerande elemente
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad sardin med citron, persilja och olivolja.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad sardin med citron, persilja och olivolja.
 
 {% include wine-list-live.html %}
 

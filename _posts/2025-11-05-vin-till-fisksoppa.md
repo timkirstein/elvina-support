@@ -28,7 +28,7 @@ En krämig fisksoppa behöver ett vin som kan stå emot grädden utan att ta öv
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till krämig fisksoppa med lax och torsk.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till krämig fisksoppa med lax och torsk.
 
 {% include wine-list-live.html %}
 

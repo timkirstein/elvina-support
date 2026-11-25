@@ -28,7 +28,7 @@ Den krämiga fonden kräver ett vin med tillräckligt med kropp och en aning rik
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till krämig fiskgryta med torsk, lax och rotfrukter i fiskfond.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till krämig fiskgryta med torsk, lax och rotfrukter i fiskfond.
 
 {% include wine-list-live.html %}
 

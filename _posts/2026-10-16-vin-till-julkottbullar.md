@@ -29,7 +29,7 @@ Köttbullarna är inte särskilt kraftiga i smaken, men gräddsåsen är rik och
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till svenska köttbullar med gräddsås, lingonsylt och inlagd gurka.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till svenska köttbullar med gräddsås, lingonsylt och inlagd gurka.
 
 {% include wine-list-live.html %}
 

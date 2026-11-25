@@ -28,7 +28,7 @@ Dessertvin till grillad ananas handlar om balans: vinet ska alltid vara sötare 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad ananas med vaniljglass, rom och karamelliserat socker.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad ananas med vaniljglass, rom och karamelliserat socker.
 
 {% include wine-list-live.html %}
 

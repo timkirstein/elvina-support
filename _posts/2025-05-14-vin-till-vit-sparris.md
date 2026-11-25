@@ -28,7 +28,7 @@ Sparris är i vinkretsar känd för att vara extremt svår att matcha med vin. D
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till vit sparris med hollandaisesås och kokt ägg.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till vit sparris med hollandaisesås och kokt ägg.
 
 {% include wine-list-live.html %}
 

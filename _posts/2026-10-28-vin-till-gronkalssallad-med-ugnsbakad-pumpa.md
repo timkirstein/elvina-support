@@ -28,7 +28,7 @@ Grönkålens lätta bitterhet och granatäpplets syrlighet kräver ett vin med f
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grönkålssallad med ugnsbakad pumpa, granatäppelkärnor och rostade mandlar.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grönkålssallad med ugnsbakad pumpa, granatäppelkärnor och rostade mandlar.
 
 {% include wine-list-live.html %}
 

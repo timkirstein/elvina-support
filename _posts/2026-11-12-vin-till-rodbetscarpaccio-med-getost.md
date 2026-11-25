@@ -28,7 +28,7 @@ Rödbetans jordiga sötma och getostens syrlighet kräver ett vin med frisk syra
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till rödbetscarpaccio med getost, valnötter och honungs-senapsdressing.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till rödbetscarpaccio med getost, valnötter och honungs-senapsdressing.
 
 {% include wine-list-live.html %}
 

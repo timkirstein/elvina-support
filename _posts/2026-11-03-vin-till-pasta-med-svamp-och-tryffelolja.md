@@ -28,7 +28,7 @@ Svampens umami och tryffeloljans intensiva arom kräver ett vin med jordiga, kom
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till krämig pasta med champinjoner, portabello och tryffelolja.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till krämig pasta med champinjoner, portabello och tryffelolja.
 
 {% include wine-list-live.html %}
 

@@ -27,7 +27,7 @@ Toast Skagen är räkor i majonnäs och crème fraiche med dill och citron, ofta
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till toast Skagen.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till toast Skagen.
 
 {% include wine-list-live.html %}
 

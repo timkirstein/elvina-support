@@ -28,7 +28,7 @@ Pumpans sötma och gräddens krämiga textur kräver ett vin med motsvarande fyl
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till krämig pumpasoppa.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till krämig pumpasoppa.
 
 {% include wine-list-live.html %}
 

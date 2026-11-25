@@ -28,7 +28,7 @@ Lammets intensiva, lätt vilda smak är för stark för de flesta vita viner –
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillade lammkotletter med rosmarin och vitlök.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillade lammkotletter med rosmarin och vitlök.
 
 {% include wine-list-live.html %}
 

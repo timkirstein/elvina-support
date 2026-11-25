@@ -28,7 +28,7 @@ Kycklingens milda köttsmak är det förlåtande fundamentet. Yoghurtens milda s
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till kycklingspett med yoghurtmarinad, kryddor och pitabröd.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till kycklingspett med yoghurtmarinad, kryddor och pitabröd.
 
 {% include wine-list-live.html %}
 

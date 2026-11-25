@@ -28,7 +28,7 @@ Här handlar allt om fett. Ankfettet, korven och bönorna ger en rik och tung r�
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till confit de canard och cassoulet.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till confit de canard och cassoulet.
 
 {% include wine-list-live.html %}
 

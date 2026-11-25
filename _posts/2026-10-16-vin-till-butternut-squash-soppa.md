@@ -28,7 +28,7 @@ Pumpans naturliga sötma och kokosmjölkens rikedom kräver ett vin med motsvara
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till krämig butternut squash-soppa med kokosmjölk, ingefära och rostade pumpakärnor.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till krämig butternut squash-soppa med kokosmjölk, ingefära och rostade pumpakärnor.
 
 {% include wine-list-live.html %}
 

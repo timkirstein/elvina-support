@@ -28,7 +28,7 @@ Den långa bräseringen koncentrerar smakerna avsevärt, och vinet måste ha til
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till vildsvinsgryta.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till vildsvinsgryta.
 
 {% include wine-list-live.html %}
 
