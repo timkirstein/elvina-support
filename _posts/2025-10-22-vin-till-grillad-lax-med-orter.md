@@ -28,7 +28,7 @@ Ett vin till grillad lax med örter bör ha tillräckligt med friskhet för att 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad lax med örter.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad lax med örter.
 
 {% include wine-list-live.html %}
 

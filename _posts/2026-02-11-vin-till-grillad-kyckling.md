@@ -28,7 +28,7 @@ Grillens rökighet och de aromatiska örterna är rättens två viktigaste smakd
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad kyckling.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad kyckling.
 
 {% include wine-list-live.html %}
 

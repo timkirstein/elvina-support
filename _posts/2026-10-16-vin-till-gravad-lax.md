@@ -29,7 +29,7 @@ Fiskens fett och såsens sötma kräver ett vin med frisk syra. Lite restsötma 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till gravad lax med hovmästarsås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till gravad lax med hovmästarsås.
 
 {% include wine-list-live.html %}
 

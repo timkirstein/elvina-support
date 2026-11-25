@@ -28,7 +28,7 @@ Gazpachons smakprofil domineras av syra från tomaten och vinägern, kryddig fri
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till kall gazpacho med tomat, gurka och paprika.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till kall gazpacho med tomat, gurka och paprika.
 
 {% include wine-list-live.html %}
 

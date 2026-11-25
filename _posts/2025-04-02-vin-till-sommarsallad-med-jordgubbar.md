@@ -28,7 +28,7 @@ Jordgubbarnas söta syra och fetaostens salta intensitet är det dominerande sma
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till sommarsallad med färska jordgubbar, fetaost och valnötter.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till sommarsallad med färska jordgubbar, fetaost och valnötter.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Pasta primavera är en lätt och fräsch rätt där grönsakerna är hjältarna.
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till pasta primavera med färska ärtor, sparris och zucchini.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till pasta primavera med färska ärtor, sparris och zucchini.
 
 {% include wine-list-live.html %}
 

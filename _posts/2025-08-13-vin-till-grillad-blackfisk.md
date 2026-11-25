@@ -28,7 +28,7 @@ Bläckfisk har en mild, delikat smak som är lite sötaktig och mycket marin. Gr
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad bläckfisk med citron, persilja och olivolja.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad bläckfisk med citron, persilja och olivolja.
 
 {% include wine-list-live.html %}
 

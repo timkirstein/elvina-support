@@ -28,7 +28,7 @@ Kalv är mildare än nötkött, men den långa bräseringen och märgbenet gör 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till osso buco.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till osso buco.
 
 {% include wine-list-live.html %}
 

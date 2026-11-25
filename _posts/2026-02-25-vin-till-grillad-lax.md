@@ -32,7 +32,7 @@ Tunga, fatlagrade viner kan fungera, men de slåss ofta med citronen. Lätta och
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad lax med citron.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad lax med citron.
 
 {% include wine-list-live.html %}
 

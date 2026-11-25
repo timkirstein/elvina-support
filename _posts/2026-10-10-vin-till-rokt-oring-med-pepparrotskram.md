@@ -28,7 +28,7 @@ Den rökta fisken behöver ett vin med tillräckligt med aromatiskt djup för at
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till rökt öring med pepparrotskräm, rödlök och rågbröd.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till rökt öring med pepparrotskräm, rödlök och rågbröd.
 
 {% include wine-list-live.html %}
 

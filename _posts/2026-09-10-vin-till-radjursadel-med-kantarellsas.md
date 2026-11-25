@@ -28,7 +28,7 @@ Rådjurets finess kräver ett vin som är kraftigt nog att matcha viltsmaken, me
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till stekt rådjurssadel med krämig kantarellsås och potatisgratäng.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till stekt rådjurssadel med krämig kantarellsås och potatisgratäng.
 
 {% include wine-list-live.html %}
 

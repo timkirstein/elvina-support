@@ -28,7 +28,7 @@ Det klassiska rådet är att dricka det du lagar med. Det är inte dumt. Ett fri
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till blåmusslor i vitt vin och vitlök.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till blåmusslor i vitt vin och vitlök.
 
 {% include wine-list-live.html %}
 

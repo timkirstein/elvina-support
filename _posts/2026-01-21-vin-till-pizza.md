@@ -28,7 +28,7 @@ Tomatsåser har hög naturlig syra, och vinet du väljer bör ha tillräckligt m
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till pizza med tomatsås och mozzarella.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till pizza med tomatsås och mozzarella.
 
 {% include wine-list-live.html %}
 

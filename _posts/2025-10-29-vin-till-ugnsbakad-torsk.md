@@ -28,7 +28,7 @@ Eftersom torsk är en mager och mild fisk behöver du ett vin som är friskt och
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsbakad torsk.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsbakad torsk.
 
 {% include wine-list-live.html %}
 

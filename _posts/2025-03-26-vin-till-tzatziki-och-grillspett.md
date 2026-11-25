@@ -28,7 +28,7 @@ Lammet är intensivt och kryddigt med tydliga toner av vitlök och oregano. Tzat
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillspett av lamm med tzatziki, vitlök och varmt pitabröd.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillspett av lamm med tzatziki, vitlök och varmt pitabröd.
 
 {% include wine-list-live.html %}
 

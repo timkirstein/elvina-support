@@ -28,7 +28,7 @@ Fårikål är kokt, inte stekt, så den saknar de rostade, karamelliserade smake
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till fårikål.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till fårikål.
 
 {% include wine-list-live.html %}
 

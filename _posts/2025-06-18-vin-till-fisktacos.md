@@ -28,7 +28,7 @@ Mangosalsan dominerar smakprofilen med tropisk sötma och friskhet, limekrämen 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till fisktacos med vit fisk, mangosalsa och limekräm.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till fisktacos med vit fisk, mangosalsa och limekräm.
 
 {% include wine-list-live.html %}
 

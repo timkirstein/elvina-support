@@ -28,7 +28,7 @@ Få desserter förknippas mer med hösten än en varm äppelkaka. De syrliga äp
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till varm äppelkaka med kanel, mandlar och vaniljsås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till varm äppelkaka med kanel, mandlar och vaniljsås.
 
 {% include wine-list-live.html %}
 

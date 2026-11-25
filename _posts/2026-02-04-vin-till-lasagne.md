@@ -28,7 +28,7 @@ Lasagnens komplexitet med två olika såstyper – den tomatbaserade köttsåsen
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till lasagne.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till lasagne.
 
 {% include wine-list-live.html %}
 

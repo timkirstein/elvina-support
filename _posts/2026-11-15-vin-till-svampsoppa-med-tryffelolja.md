@@ -28,7 +28,7 @@ Svampens jordiga umami och tryffeloljans intensiva arom kräver ett vin med mots
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till krämig svampsoppa med champinjoner, portabello och tryffelolja.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till krämig svampsoppa med champinjoner, portabello och tryffelolja.
 
 {% include wine-list-live.html %}
 

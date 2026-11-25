@@ -28,7 +28,7 @@ Majs är naturligt söt och stärkelserik med en karamelliserad yta från grille
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad majs med smör, chili och limejuice.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad majs med smör, chili och limejuice.
 
 {% include wine-list-live.html %}
 

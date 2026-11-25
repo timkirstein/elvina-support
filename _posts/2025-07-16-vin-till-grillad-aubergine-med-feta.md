@@ -28,7 +28,7 @@ Den grillade auberginens rökiga bitterhet och fetaostens salta syrlighet är de
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad aubergine med fetaost, mynta och olivolja.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad aubergine med fetaost, mynta och olivolja.
 
 {% include wine-list-live.html %}
 

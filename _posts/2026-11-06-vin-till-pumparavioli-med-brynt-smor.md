@@ -28,7 +28,7 @@ Pumpafyllningens naturliga sötma kräver ett vin med diskret fruktig karaktär,
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till hemgjord pumparavioli med brynt smör, salvia och parmesan.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till hemgjord pumparavioli med brynt smör, salvia och parmesan.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Rätten är rik på smör, men kantarellen är en delikat svamp, så vinet bör 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till kantareller på toast.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till kantareller på toast.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Fettet i den marmorerade entrecôten kräver tanniner i vinet för att lösa upp
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till entrecôte med bearnaisesås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till entrecôte med bearnaisesås.
 
 {% include wine-list-live.html %}
 

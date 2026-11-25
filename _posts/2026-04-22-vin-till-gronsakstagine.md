@@ -28,7 +28,7 @@ De varma, sötaktiga kryddorna i taginen – kanel, saffran, ingefära – kalla
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grönsakstagine.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grönsakstagine.
 
 {% include wine-list-live.html %}
 

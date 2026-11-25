@@ -29,7 +29,7 @@ Hummerkött är naturligt sött med en delikat intensitet. Vitlökssmöret tillf
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till grillad hummer med vitlökssmör.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till grillad hummer med vitlökssmör.
 
 {% include wine-list-live.html %}
 

@@ -29,7 +29,7 @@ Kalkonens milda kött kräver ett vin som inte kör över det, medan kastanjefyl
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsstekt kalkon med kastanjefyllning och lingonsås.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsstekt kalkon med kastanjefyllning och lingonsås.
 
 {% include wine-list-live.html %}
 

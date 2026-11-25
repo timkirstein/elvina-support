@@ -28,7 +28,7 @@ Valnötternas djupa, nästan oxidativa karaktär kräver ett vin med motsvarande
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till valnötskaka med karamelliserat päron, kanel och vaniljglass.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till valnötskaka med karamelliserat päron, kanel och vaniljglass.
 
 {% include wine-list-live.html %}
 

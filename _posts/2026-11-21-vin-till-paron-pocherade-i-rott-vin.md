@@ -28,7 +28,7 @@ Det röda vinet som päronen pocherats i ger en direkt fingervisning om vinvalet
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till päron pocherade i rött vin med kanel, stjärnanis och mascarponekräm.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till päron pocherade i rött vin med kanel, stjärnanis och mascarponekräm.
 
 {% include wine-list-live.html %}
 

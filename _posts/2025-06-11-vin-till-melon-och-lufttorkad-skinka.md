@@ -28,7 +28,7 @@ Den klassiska smakkontrasten – söt melon mot salt skinka – är det som styr
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till färsk melon med lufttorkad skinka och färsk basilika.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till färsk melon med lufttorkad skinka och färsk basilika.
 
 {% include wine-list-live.html %}
 

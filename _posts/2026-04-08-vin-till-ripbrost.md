@@ -28,7 +28,7 @@ Ripbröstets intensiva viltsmak har en jordig, nästan skogsaktig karaktär som 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ripbröst.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ripbröst.
 
 {% include wine-list-live.html %}
 

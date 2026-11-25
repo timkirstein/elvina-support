@@ -29,7 +29,7 @@ Julskinkan är lite salt och sötaktig, och senapen ger en kryddig kant. Vinet b
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till griljerad julskinka med senap och rödkål.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till griljerad julskinka med senap och rödkål.
 
 {% include wine-list-live.html %}
 

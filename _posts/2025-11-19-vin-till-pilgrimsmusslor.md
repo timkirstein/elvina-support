@@ -28,7 +28,7 @@ Pilgrimsmusslans delikata sötma och rika textur kräver ett vin med tillräckli
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till stekta pilgrimsmusslor med smör och citron.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till stekta pilgrimsmusslor med smör och citron.
 
 {% include wine-list-live.html %}
 

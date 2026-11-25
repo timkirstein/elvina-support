@@ -27,7 +27,7 @@ Ostron är en av de enklaste rätterna att servera och en av de mest krävande a
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ostron.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ostron.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Svampens naturliga umami och jordighet är det dominerande elementet för vinval
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till svamprisotto.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till svamprisotto.
 
 {% include wine-list-live.html %}
 

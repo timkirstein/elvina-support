@@ -28,7 +28,7 @@ Basilika är extremt aromatisk och örtig på ett sätt som lätt krockar med vi
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till pasta med basilikapesto, pinjenötter och parmesan.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till pasta med basilikapesto, pinjenötter och parmesan.
 
 {% include wine-list-live.html %}
 

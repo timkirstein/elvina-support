@@ -28,7 +28,7 @@ Limesyrans intensitet är det viktigaste elementet att navigera kring. Ett vin m
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ceviche.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ceviche.
 
 {% include wine-list-live.html %}
 

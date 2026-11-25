@@ -28,7 +28,7 @@ Burratans krämiga, milda karaktär är det avgörande elementet för vinvalet. 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till burrata med tomater och basilika.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till burrata med tomater och basilika.
 
 {% include wine-list-live.html %}
 

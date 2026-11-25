@@ -28,7 +28,7 @@ Mogen tomat kombinerar sötma och syra i ett balanserat förhållande. Basilikan
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till tomatsallad med basilika, mozzarella och bra olivolja.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till tomatsallad med basilika, mozzarella och bra olivolja.
 
 {% include wine-list-live.html %}
 

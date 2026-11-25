@@ -28,7 +28,7 @@ Ett skaldjursfat innehåller sällan bara en sorts skaldjur – smakens bredd ä
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till skaldjursfat med krabba, räkor, hummer och skaldjur från kusten.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till skaldjursfat med krabba, räkor, hummer och skaldjur från kusten.
 
 {% include wine-list-live.html %}
 

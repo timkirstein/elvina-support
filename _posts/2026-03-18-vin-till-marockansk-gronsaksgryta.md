@@ -28,7 +28,7 @@ De varma, sötaktiga kryddorna i grönsaksgrytan kallar på ett vin med motsvara
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till marockansk grönsaksgryta.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till marockansk grönsaksgryta.
 
 {% include wine-list-live.html %}
 

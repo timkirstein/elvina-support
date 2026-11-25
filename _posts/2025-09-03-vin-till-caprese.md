@@ -28,7 +28,7 @@ Capreses smak domineras av tomatens syra och sötma, mozzarellans milda krämigh
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till caprese med färsk mozzarella, tomat och basilika.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till caprese med färsk mozzarella, tomat och basilika.
 
 {% include wine-list-live.html %}
 

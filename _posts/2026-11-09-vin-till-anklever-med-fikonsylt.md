@@ -28,7 +28,7 @@ Leverns extrema rikedom och smöriga konsistens kräver ett vin med tillräcklig
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till stekt anklever med fikonsylt, rostad brioche och flingsalt.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till stekt anklever med fikonsylt, rostad brioche och flingsalt.
 
 {% include wine-list-live.html %}
 

@@ -28,7 +28,7 @@ Pumpans sötma och fetaostens salta kant kräver ett vin med god fruktighet och 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till ugnsbakad pumpa med fetaost, salvia och rostade valnötter.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till ugnsbakad pumpa med fetaost, salvia och rostade valnötter.
 
 {% include wine-list-live.html %}
 

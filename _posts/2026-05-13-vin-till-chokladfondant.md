@@ -28,7 +28,7 @@ Regeln för dessertvin är enkel men absolut: vinet ska alltid vara sötare än 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till chokladfondant.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till chokladfondant.
 
 {% include wine-list-live.html %}
 

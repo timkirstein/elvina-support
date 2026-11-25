@@ -28,7 +28,7 @@ Paellans smakprofil är brokig och komplex: saffransens bittra, blommiga toppar,
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till spansk paella med skaldjur och saffran.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till spansk paella med skaldjur och saffran.
 
 {% include wine-list-live.html %}
 

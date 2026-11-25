@@ -28,7 +28,7 @@ Pumpafyllningens rikedom och de varma kryddorna kräver ett vin med motsvarande 
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till amerikansk pumpapaj med kanel, muskot och vispad grädde.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till amerikansk pumpapaj med kanel, muskot och vispad grädde.
 
 {% include wine-list-live.html %}
 

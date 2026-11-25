@@ -29,7 +29,7 @@ Grädden gör rätten rik och ansjovisen ger salt och umami. Vinet behöver syra
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till Janssons frestelse med potatis, lök, ansjovis och grädde.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till Janssons frestelse med potatis, lök, ansjovis och grädde.
 
 {% include wine-list-live.html %}
 

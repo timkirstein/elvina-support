@@ -28,7 +28,7 @@ Räkornas naturliga sötma och saltighet kallar på ett vin som speglar havet sn
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till färska räkor med majonnäs och citron.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till färska räkor med majonnäs och citron.
 
 {% include wine-list-live.html %}
 

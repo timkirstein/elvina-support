@@ -28,7 +28,7 @@ Lammkarréns milda elegans kräver ett vin med god struktur, men inte överdrive
 
 ## Elvinas förslag just nu
 
-Elvina har hittat 3 viner i Systembolagets sortiment som passar mycket bra till stekt lammkarré med rosmarin, vitlök och ugnsbakade rotfrukter.
+Elvina har hittat viner i Systembolagets sortiment som passar mycket bra till stekt lammkarré med rosmarin, vitlök och ugnsbakade rotfrukter.
 
 {% include wine-list-live.html %}
 
