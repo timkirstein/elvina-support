@@ -11,5 +11,13 @@
 </a>
 {%- endfor %}
 </div>
+{%- if course.sponsored %}
+<div class="wine-live pillar-sponsor" data-dish="{{ course.sponsored_dish | escape }}">
+<p class="pillar-sponsor-dish">Till {{ course.sponsored_dish_name | downcase }}</p>
+<ul class="wine-live-list">
+{% include wine-live-card.html rec=course.sponsored position=1 sponsored=true %}
+</ul>
+</div>
+{%- endif %}
 </div>
 {%- endfor -%}

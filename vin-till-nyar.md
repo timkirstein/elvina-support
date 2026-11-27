@@ -1,7 +1,7 @@
 ---
 layout: pillar
 title: "Vin till nyårsmiddagen: den kompletta guiden"
-description: "Vilket vin passar till ostron, toast Skagen, hummer och oxfilé? Elvinas guide till vin på nyårsafton, rätt för rätt, och vilket bubbel du ska välja till skålen."
+description: "Vilket vin passar till ostron, toast Skagen, hummer och oxfilé? Elvinas guide till vin på nyårsafton, rätt för rätt, och bubbel till nyår: så väljer du rätt till skålen."
 lead: "Skaldjur till förrätt, oxfilé till huvudrätt och bubbel vid tolvslaget. Här är hela guiden till nyårsmiddagens vin, rätt för rätt."
 date: 2026-11-19
 category: Guide
@@ -36,7 +36,7 @@ faq:
     a: "Torr Champagne, Crémant eller Cava är klassiskt, liksom Chablis och Muscadet. Ostron är salta och mineraliska, så vinet behöver hög syra och ren frukt. Undvik ekade och söta viner, och undvik rött."
   - q: "Vilket vin passar till toast Skagen?"
     a: "Torrt mousserande vin, till exempel Champagne, Crémant eller en Riesling-sekt. Majonnäsen och räkorna är krämiga och söta, och bubblorna och syran rensar gommen. Vill du ha stilla vin passar torr Riesling eller Chablis."
-  - q: "Vilket bubbel ska jag välja till nyårsskålen?"
+  - q: "Vilket bubbel ska jag välja till nyår?"
     a: "Till skålen vid tolvslaget passar ett torrt mousserande vin, Brut eller Extra Brut. Champagne är klassikern, men Crémant från Bourgogne, Alsace eller Loire ger mycket för pengarna och görs på samma sätt. Ska bubblet följa med till efterrätten bör det vara sötare, till exempel Demi-Sec eller Moscato d'Asti."
   - q: "Hur mycket bubbel behöver jag till nyår?"
     a: "En flaska på 75 cl ger ungefär sex mindre glas till skålen. Ska bubblet även serveras till förrätten, räkna med en flaska per tre till fyra gäster."
@@ -85,7 +85,7 @@ Varje rätt har en egen fördjupande guide. Här är det korta svaret för var o
 
 {% include pillar-courses.html %}
 
-## Nyårsskålen: välj rätt bubbel
+## Bubbel till nyår: välj rätt till skålen
 
 Vid tolvslaget dricker de flesta bara ett glas, och det ska vara torrt, kallt och festligt. Några tips:
 
