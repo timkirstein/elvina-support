@@ -66,6 +66,12 @@ module Savino
   # ...and a little for the same wine colour, so a cheese board or mixed menu
   # gets a red, a fortified/white and not three of the same kind.
   COLOR_REPEAT_PENALTY    = 0.03
+  # A candidate that earns the "Perfekt match" badge (score rounds to 90 %)
+  # is always shown when it is the post's best: variety may reorder the other
+  # picks, but never leave a dish without its one perfect match because that
+  # bottle already appears in another guide (Fritz Haag Auslese on äppelkaka,
+  # 28 Nov 2026).
+  PERFECT_MATCH_MIN_SCORE = 0.895
   @usage = Hash.new(0)
 
   def self.usage
@@ -78,6 +84,11 @@ module Savino
     best = recommendations.map { |r| r['score'].to_f }.max
     pool = recommendations.select { |r| r['score'].to_f >= best - DIVERSITY_MAX_SCORE_GAP }
     picked = []
+    if best >= PERFECT_MATCH_MIN_SCORE
+      top = pool.max_by { |r| r['score'].to_f }
+      picked << top
+      pool.delete(top)
+    end
     while picked.length < count && !pool.empty?
       choice = pool.max_by do |r|
         r['score'].to_f -
