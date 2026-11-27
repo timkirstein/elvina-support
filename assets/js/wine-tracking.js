@@ -50,9 +50,13 @@ function cardData(card) {
   };
 }
 
+// En dish-guide har en lista; en pelarguide (julmat, nyår) kan ha en
+// sponsrad lista per kursavsnitt. Varje lista räknas för sig.
 function init() {
-  const list = document.querySelector(".wine-live[data-dish]");
-  if (!list) return;
+  document.querySelectorAll(".wine-live[data-dish]").forEach(initList);
+}
+
+function initList(list) {
   const dish = list.dataset.dish;
   if (!dish) return;
   const cards = [...list.querySelectorAll(".wine-live-card[data-wine-code]")];

@@ -298,3 +298,46 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
   Savino.report_picks(dish, post.data['wine_recommendations'], api_key)
   Jekyll.logger.info 'WineFetcher:', "#{post.data['wine_recommendations']&.length || 0} wines ready"
 end
+
+# Pillar guides (vin till julmat, vin till nyår) list dishes per course and link
+# to each dish guide. A course shows at most one sponsored card, the best-scoring
+# live placement among its dishes. The dish text comes from the linked post, so
+# the card is exactly what that dish guide shows (same backend rule: the wine
+# scores at least the sponsor threshold for the dish). A wine is never shown in
+# two courses on the same page.
+Jekyll::Hooks.register :pages, :pre_render do |page|
+  next unless page.data['layout'] == 'pillar'
+
+  courses = page.data['courses']
+  next unless courses.is_a?(Array)
+
+  api_key = ENV['ELVINA_API_KEY']
+  next unless api_key
+
+  posts_by_url = page.site.posts.docs.each_with_object({}) { |p, h| h[p.url] = p }
+  used_codes = []
+
+  courses.each do |course|
+    best = nil
+    (course['dishes'] || []).each do |d|
+      dish = posts_by_url[d['url']]&.data&.dig('dish')
+      next unless dish
+
+      sponsored = Savino.fetch_wines(dish, api_key)&.dig('sponsored')
+      next unless sponsored
+
+      code = sponsored.dig('wine', 'code')
+      next if used_codes.include?(code)
+      next if best && best[:rec]['score'].to_f >= sponsored['score'].to_f
+
+      best = { rec: sponsored, dish: dish, name: d['name'] }
+    end
+    next unless best
+
+    used_codes << best[:rec].dig('wine', 'code')
+    course['sponsored']           = best[:rec]
+    course['sponsored_dish']      = best[:dish]
+    course['sponsored_dish_name'] = best[:name]
+    Jekyll.logger.info 'WineFetcher:', "Pillar '#{page.url}': sponsored '#{best[:rec].dig('wine', 'name')}' in '#{course['title']}'"
+  end
+end

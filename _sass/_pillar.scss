@@ -223,3 +223,20 @@
 
   .featured-banner { padding: 20px; }
 }
+
+// Sponsored card under a course (one per course at most, labelled "Sponsrad").
+.pillar-sponsor {
+  margin: 18px 0 0;
+
+  .pillar-sponsor-dish {
+    font-size: 14px;
+    color: var(--ink-2);
+    margin: 0 0 8px;
+  }
+
+  // The pillar body styles lists with an indent; the card list has none.
+  .wine-live-list {
+    padding-left: 0;
+    margin: 0;
+  }
+}
